@@ -1,1 +1,53 @@
-# Abgabe
+=Low-Code Ansatz zur Anwendungsprogrammierung
+
+== Gliederung
+
+:toc:
+
+==Motivation
+
+==Generationen von Programmiersprachen
+
+==Model Dricen Development (MDD)
+
+==Low Code
+
+===Ziele von Low Code
+
+===Architektur von Low Code
+
+==Vergleich von Low Code und traditioneller Programmierung an Anwendungsbeispiel
+
+===Vorstellung Anwendungsbeispiel
+
+===verwendete Werkzeuge
+
+====ReactJS etc.
+
+====Mendix
+
+===Vergleich
+
+====GUI
+
+====Anwendungslogik
+
+====Datenverwaltung
+
+====Qualitätskontrolle
+
+====Wiederverwendbarkeit
+
+====Zeitaufwand
+
+===Literaturvergleich
+
+===Grenzen von Low Code
+
+==Fazit
+
+==Ausblick
+
+===Garter Hype Cycle
+
+==Literaturverzeichnis
