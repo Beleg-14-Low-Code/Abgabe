@@ -1,5 +1,5 @@
 = Low-Code Ansatz zur Anwendungsprogrammierung
-Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt 
+Elisabeth Lorenz; Erik Semmler; Galiia Shaekhova; Luisa Schnebelt 
 :toc:
 :toc-title: Gliederung
 
