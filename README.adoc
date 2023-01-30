@@ -1,8 +1,7 @@
 = Low-Code Ansatz zur Anwendungsprogrammierung
-
-== Gliederung
-
+Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt 
 :toc:
+:toc-title: Gliederung
 
 == Motivation
 
