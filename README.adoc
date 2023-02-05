@@ -2,7 +2,7 @@
 Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt 
 :toc:
 :toc-title: Gliederung
-:imagesdir: /img
+:imagesdir: ./img
 
 == Motivation
 
@@ -167,62 +167,105 @@ Deployer: Software bereitstellen. Zum beispiel Webanwendung
 
 
 == Vergleich von Low Code und traditioneller Programmierung an Anwendungsbeispiel
+Im Vergleich zur traditionellen Programmierung ermöglicht es Low-Code eine Anwendung ohne große Programmierkenntnisse, mittels einer grafischen Oberfläche zu entwickeln. 
+Der Code wird automatisch erzeugt. 
+Um diese Aussage zu testen, haben wir zwei Webanwendungen mit der Programmiersprache JavaScript und der Low-Code-Plattform Mendix entwickelt.
 
 === Vorstellung Anwendungsbeispiel
 
 Wir haben als Beispiel beschlossen, eine Anwendung zu entwickeln, die den Prozess der Meldung eines Unfalls, der den versicherten Gegenständen eines Nutzers zugestoßen ist, vereinfacht.
 Mit dieser App kann man: 
-* das versicherte Objekt des Benutzers auswählen,
-* einen der vier Vorfälle auswählen und die Einzelheiten des Vorfalls eintragen,
-* Nach Eintragung der wichtigsten Angaben können Bilder des Schadens hochgeladen werden.
-* Anschließend können weitere Details des Unfalls genannt werden. 
-* Zum Schluss erhält der Nutzer eine Übersicht und kann die Reklamierung absenden.
+
+
+* das versicherte Objekt des Benutzers auswählen, 
+*   einen der vier Vorfälle auswählen und die Einzelheiten des Vorfalls eintragen, 
+*   Nach Eintragung der wichtigsten Angaben können Bilder des Schadens hochgeladen werden.
+*   Anschließend können weitere Details des Unfalls genannt werden. 
+*   Zum Schluss erhält der Nutzer eine Übersicht und kann die Reklamierung absenden.
+
 image:screen-react-1.png[,200]
+image:screen-react-2.png[,300]
 
 === verwendete Werkzeuge
-
-Im Vergleich zur traditionellen Programmierung ermöglicht es Low-Code eine Anwendung ohne große Programmierkenntnisse, mittels einer grafischen Oberfläche zu entwickeln. 
-Der Code wird automatisch erzeugt. 
-Um diese Aussage zu testen, haben wir zwei Webanwendungen mit der Programmiersprache JavaScript und der Low-Code-Plattform Mendix entwickelt. 
-
+Für die Erstellung dieser Anwendungen wurden verschiedene Tools verwendet.
 
 ==== ReactJS etc.
 
 Für die JavaScript-Entwicklung wurden die Bibliotheken React und React-Bootstrap gewählt, um die Benutzeroberfläche zu erstellen. React ermöglicht es, eine interaktive Benutzeroberfläche zu erstellen, und React-Bootstrap bietet eine einfache Anpassung der Stile, ohne dass große CSS-Dateien erstellt werden müssen. Für das Backend wurden Node.js und eine MySQL-Datenbank verwendet.
 
 ==== Mendix
+Mendix ist  eine vielseitige Softwareentwicklungsplattform, die es ermöglicht, mobile und Webanwendungen in großem Umfang zu erstellen, einzusetzen, zu warten und zu verbessern.
+
+https://www.netguru.com/blog/what-is-mendix
+
+Warum wurde Mendix gewählt?
+
+Weil Mendix ein Marktführer in seinem Bereich ist. Das IT-Beratungsunternehmen Gartner veröffentlichte im August 2022 einen Bericht zur Marktforschung über Low-Code-Unternehmensanwendungsplattformen (Enterprise Low-Code Application Platforms - LCAP). Sie verwenden den Magic Quadrant, der Markttrends wie Richtung, Reifegrad und Teilnehmer aufzeigt.
+https://www.gartner.com/doc/reprints?id=1-2C8VSOAH&ct=230113&st=sb
+
+
+image:magic_Quadrant.png[,500 "Magic Quadrant for Enterprise Low-Code Application Platforms"]
+
+Horizontal (Completeness of Vision) wird die Vollständigkeit der Vision dargestellt. Das heißt, sie spiegelt die Innovationskraft des Anbieters wider und zeigt, ob der Anbieter den Markt steuert oder ihm folgt.
+
+Die Vertikale (Ability to execute) zeigt die Fähigkeit zur Ausführung. Er fasst Faktoren wie die finanzielle Rentabilität des Anbieters, seine Reaktionsfähigkeit auf dem Markt, die Produktentwicklung, die Vertriebskanäle und den Kundenstamm zusammen.
+
+
+Der Magic Quadrant ist in vier Teile unterteilt und zeigt die Wettbewerbsposition von vier Arten von Technologieanbietern in Märkten mit hohem Wachstum und signifikanter Anbieterdifferenzierung:
+
+
+- *Führungskräfte* (Leaders) setzen ihre aktuelle Vision gut um und sind für morgen gut aufgestellt.
+- *Visionäre* (Visionaries) verstehen, wohin der Markt geht, oder haben eine Vision für die Veränderung der Marktregeln, setzen sie aber noch nicht gut um.
+- *Nischenplayer* (Niche Players) konzentrieren sich erfolgreich auf ein kleines Segment oder sind unfokussiert und übertreffen andere nicht.
+- *Herausforderer* (Challengers) führen heute gut aus oder dominieren vielleicht ein großes Segment, zeigen aber kein Verständnis für die Marktrichtung.
+
+https://www.gartner.de/de/methoden/magic-quadrants
+
+Der Magic Quadrant zeigt, dass Mendix die obere rechte Position, d.h. die führende Position, besetzt.
+
 
 === Vergleich
+Auf Grund der entwickelten Beispiele wird der Vergleich in 4 Punkten erfolgen:
+
+- GUI
+- Anwendungslogik
+- Qualitätskontrolle
+- Wiederverwendbarkeit
 
 ==== GUI
 
-
 GUI steht für "Graphical User Interface" und bezieht sich auf die Art und Weise, wie ein Computerprogramm oder ein Betriebssystem dargestellt wird. Es nutzt Bilder und Symbole anstelle von Textbefehlen, um dem Benutzer die Interaktion mit dem Computer zu erleichtern.
+https://en.wikipedia.org/wiki/Graphical_user_interface 
 
-TP
+_Traditionelle Programmierung_ +
 Bei der Entwicklung in JavaScript gibt es keine grafische Benutzeroberfläche. Alle einzelnen Komponenten und Styles werden zunächst blind hinzugefügt, ohne zu wissen, wie die endgültige Benutzeroberfläche aussehen wird. Beim Start der Anwendung kann der Entwickler das Layout der einzelnen Komponenten im Code oder zunächst im Entwicklertool einrichten und dann alles in seinen Code übernehmen.
 
-Mendix
+_Mendix_ +
 Domänenmodell: Grafische Darstellung einer Datenbank. Besteht aus Entäitäten. Vergleichbar mit einer Datenbanktabelle. 
 Auf der Seite (“Page”)wird die Benutzeroberfläche erstellt. 
 Microflows (Hier passiert die Logik) : Mit Mikroflows wie bentzerdefniert logik ausgeführt 
 
-==== Anwendungslogik
-Damit meinen wir, wie die Anwendung auf die Aktionen des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
+==== Logik
+Damit meinen wir, wie die Anwendung auf die Events des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
 
-TP
-Die Anwendungslogik  einer Anwendung beschreibt die konkrete Verknüpfung von Bausteinen zu einer Anwendung. Sie schreibt also die Aufrufreihenfolge der einzelnen Bausteine sowie die Parameterübergabe innerhalb der Anwendung vor.
-При программирование на JavaScript разработчик получая требования продумывает полностью  Event Listeners
+_Traditionelle Programmierung_ +
 
+Zunächst entscheidet der Entwickler über die Architektur der Anwendung. Und je nach Architektur ist es möglich, über zusätzlichen Entwicklungsaufwand zu sprechen. In diesem Beispiel wurde eine Client-Server-Architektur verwendet.
 
-Mendix
+Wenn es um die Logik zwischen den Komponenten geht, dann ist für jeden Event eine eigene Funktion zu erstellen, die das Verhalten der Komponente definiert. Neben der Entwicklung muss der Entwickler auch Clean Code schreiben, d.h. der Programmcode muss optimiert und für andere Entwickler leicht verständlich gemacht werden.
+
+_Mendix_ +
 The graphical notation of microflows is based on the Business Process Model and Notation (BPMN).
 Nanoflows. Most of the actions run directly on the device, so there is also a speed benefit for logic which does not need access to the server.
 Funktionen über Flows, Microflows und Datenmodelle
 
-==== Qualitätskontrolle
+==== Qualitätssicherung/Qualitätskontrolle
 
-Mendix
+Die Qualität der Software ist ein wichtiger Bestandteil für den Kunden. Um die Qualität zu sichern, lohnt es sich, Softwaretests zu erstellen. Dies wird dem Kunden zeigen, wie sicher die Software ist und das tut, was er braucht.
+
+_Traditionelle Programmierung_ +
+
+_Mendix_ +
 alle Komponenten sind vorgetestet
 Test werden automatisch im Hintergrund durchgeführt
 Anbindung von Selenium oder JUnit möglich 
@@ -230,15 +273,29 @@ Anbindung von Selenium oder JUnit möglich
 
 ==== Wiederverwendbarkeit
 
-При программирование одинаковые куски кода компонуются в отдельные компоненты или функции, которые используются в дальнейшем в том же проекте. Для удобства данные функции/компоненты могут быть собраны в отдельную библиотеку, что позволит легко внедрить в другие проекты.
+Die Wiederverwendung von Code oder Komponenten, die neu entwickelt wurden. 
 
-Mendix
+_Traditionelle Programmierung_ +
+
+Bei der Entwicklung mit React kann man einzelne UI-Komponenten erstellen, die später im Projekt verwendet werden, oder sie können einfach in ein anderes Projekt kopiert werden. Man kann sie auch leicht nach Bedarf ändern. Eine weitere Möglichkeit, entwickelte Funktionen und Komponenten zu verwenden, besteht darin, eine eigene Bibliothek dieser Komponenten zu erstellen. Diese Bibliothek kann in andere Projekte importiert werden. 
+
+_Mendix_
 Speicherung von eigenen Komponenten möglich
 Wiederverwendbarkeit Plattform intern
 
 
 ==== Zeitaufwand
 
+Das Interessanteste an diesem Vergleich ist die Entwicklungszeit. Wie der Begriff "Low Code" schon sagt, verkürzt er die Entwicklungszeit.
+
+[width="100%",options="header", cols="^,^,^"]
+|===
+|_Konventionell (ReactJS)_ |Aufgabenteil |_Low Code (Mendix)_
+|1 h |Einarbeitung |10 h
+|3,5 h |Aufsetzen des Projekts |0 h
+|40 h |Entwicklungszeit |15h
+|44,5 h |*Gesamt* |25 h
+|===
 
 === Literaturvergleich
 
