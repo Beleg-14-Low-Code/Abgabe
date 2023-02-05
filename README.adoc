@@ -2,6 +2,7 @@
 Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt 
 :toc:
 :toc-title: Gliederung
+:imagesdir: /img
 
 == Motivation
 
@@ -171,11 +172,12 @@ Deployer: Software bereitstellen. Zum beispiel Webanwendung
 
 Wir haben als Beispiel beschlossen, eine Anwendung zu entwickeln, die den Prozess der Meldung eines Unfalls, der den versicherten Gegenständen eines Nutzers zugestoßen ist, vereinfacht.
 Mit dieser App kann man: 
-das versicherte Objekt des Benutzers auswählen,
-einen der vier Vorfälle auswählen und die Einzelheiten des Vorfalls eintragen,
-Nach Eintragung der wichtigsten Angaben können Bilder des Schadens hochgeladen werden.
-Anschließend können weitere Details des Unfalls genannt werden. 
-Zum Schluss erhält der Nutzer eine Übersicht und kann die Reklamierung absenden.
+* das versicherte Objekt des Benutzers auswählen,
+* einen der vier Vorfälle auswählen und die Einzelheiten des Vorfalls eintragen,
+* Nach Eintragung der wichtigsten Angaben können Bilder des Schadens hochgeladen werden.
+* Anschließend können weitere Details des Unfalls genannt werden. 
+* Zum Schluss erhält der Nutzer eine Übersicht und kann die Reklamierung absenden.
+image:screen-react-1.png[,200]
 
 === verwendete Werkzeuge
 
