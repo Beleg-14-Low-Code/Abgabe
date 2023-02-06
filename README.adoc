@@ -82,7 +82,9 @@ Mit dieser App kann man:
 *   weitere Details des Unfalls ausfühllen
 *   zum Schluss eine Übersicht erhalten und die Reklamierung absenden
 
-Das untenstehende Aktivitätsdiagramm stellt das Verhalten der Anwendung dar, wenn die Option "Unfall" gewählt wird. Jede Farbe des Rechtecks steht für eine Seite. Je nach der vom Benutzer gegebenen Antwort hängt es davon ab, welches zusätzliche Feld oder welche Seite für den Benutzer zum Ausfüllen sichtbar sein wird.  
+Das untenstehende Aktivitätsdiagramm stellt das Verhalten der Anwendung dar, wenn die Option "Unfall" gewählt wird. Jede Farbe des Rechtecks steht für eine Seite. Je nach der vom Benutzer gegebenen Antwort hängt es davon ab, welches zusätzliche Feld oder welche Seite für den Benutzer zum Ausfüllen sichtbar sein wird.
+
+Als Vorlage für diese Anwendung wurde ein Beispiel von Mendix verwendet, welches unter <<31>> zu finden ist.
 
 .Aktivitätsdiagramm der "Unfall"-Option
 image::unfall_diagramm.png[]
@@ -222,25 +224,22 @@ Wie aus der Tabelle erkennbar ist, war der Zeitaufwand um einiges kürzer. Hierb
 
 === Literaturvergleich
 
-Zur Erweiterung der im vorangegangenen Abschnitt dargestellten Ergebnisse wurde nach vergleichbaren Experimenten in der wissenschaftlichen Literatur gesucht. Dabei fiel das Experiment von Calçada und Bernardino [QUELLE] auf, dessen Ergebnisse in Abbildung [ABBNR] zu sehen sind. Dieses Experiment befasste sich mit der Programmierung von zwei simplen Anwendungen in verschiedenen Entwicklungsumgebungen und dem Vergleich verschiedener Metriken bezüglich der Entwicklung. Es wurden je ein einfacher Taschenrechner sowie ein Texteditor entwickelt. Bei den verwendeten Umgebungen handelte es sich um Java Swing, die Low-Code Umgebung Neptune9 und JavaScript.
+Zur Erweiterung der im vorangegangenen Abschnitt dargestellten Ergebnisse wurde nach vergleichbaren Experimenten in der wissenschaftlichen Literatur gesucht. Dabei fiel das Experiment von Calçada und Bernardino <<27>> auf, dessen Ergebnisse in Figure 5 zu sehen sind. Dieses Experiment befasste sich mit der Programmierung von zwei simplen Anwendungen in verschiedenen Entwicklungsumgebungen und dem Vergleich verschiedener Metriken bezüglich der Entwicklung. Es wurden je ein einfacher Taschenrechner sowie ein Texteditor entwickelt. Bei den verwendeten Umgebungen handelte es sich um Java Swing, die Low-Code Umgebung Neptune9 und JavaScript.
 
-Zusätzlich zu der von uns betrachteten Entwicklungszeit wurden in diesem Experiment die Anzahl an selbst geschriebenen Codezeilen, die Zeiten zum Laden der graphischen Oberfläche sowie die Zeiten zum Ausführen verschiedener anwendungsspezifischer Operationen erfasst. Die genauen Anforderungen und untersuchten Operationen sind in [QUELLE] aufgelistet. In Abbildung [ABBNR] sind jeweils die durchschnittlichen Werte zwischen den beiden Anwendungen erfasst. Beim Vergleich dieser Ergebnisse mit den von uns gesammelten Daten ergibt sich zunächst eine Ähnlichkeit bezüglich der Entwicklungszeiten. In beiden Versuchen liegt bei der Low-Code Anwendung die niedrigste Entwicklungszeit vor, wobei der Unterschied zwischen Low-Code und JavaScript im Experiment von Calçada und Bernardino wesentlich geringer ist als in unserem Beispiel.
+Zusätzlich zu der von uns betrachteten Entwicklungszeit wurden in diesem Experiment die Anzahl an selbst geschriebenen Codezeilen, die Zeiten zum Laden der graphischen Oberfläche sowie die Zeiten zum Ausführen verschiedener anwendungsspezifischer Operationen erfasst. Die genauen Anforderungen und untersuchten Operationen sind in <<27>> aufgelistet. In Figure 5 sind jeweils die durchschnittlichen Werte zwischen den beiden Anwendungen erfasst. Beim Vergleich dieser Ergebnisse mit den von uns gesammelten Daten ergibt sich zunächst eine Ähnlichkeit bezüglich der Entwicklungszeiten. In beiden Versuchen liegt bei der Low-Code Anwendung die niedrigste Entwicklungszeit vor, wobei der Unterschied zwischen Low-Code und JavaScript im Experiment von Calçada und Bernardino wesentlich geringer ist als in unserem Beispiel.
 
-.Bildunterschrift, [QUELLE]
-image::literature_comparison_table.PNG[]
+.Messwerte aus experimentellem Vergleich, <<27>>
+image::literature_comparison_table.PNG[0,600]
 
 Zudem ist die hohe Diskrepanz zwischen den beim Aufbauen der GUI ermittelten Zeiten bemerkenswert, da diese auf einen eventuellen Tradeoff von Performance zugunsten von Entwicklungszeit bei der Low-Code Entwicklung hinweist. Allerdings ist hierbei sowohl auf die geringe Stichprobenmenge als auch auf die fehlenden Vergleiche zwischen verschiedenen Low-Code Plattformen hinzuweisen, weshalb diese Ergebnisse nicht belastbar sind, um allgemeine  Schlussfolgerungen zu Low-Code zu ziehen.
 
 Vergleiche dieser Art sind in der Literatur allerdings selten, da sie zum einen abhängig von den Vorkenntnissen der jeweils beteiligten Entwickler unterschiedlich ausfallen. Zum anderen sind diese Experimente zeitaufwendig und geben auf Grund der schwer definierbaren Rahmenbedingungen nur wenig objektive Rückschlüsse auf die verwendeten Technologien.
 
-Quelle: Calçada, André, and Jorge Bernardino. “Experimental Evaluation of Low Code Development, Java Swing and JavaScript Programming.” International	Database Engineered Applications Symposium, September 22, 2022. https://doi.org/10.1145/3548785.3548792.
-
-
 === Grenzen von Low Code
 
 Es ist nicht möglich, klare Grenzen von Low Code zu definieren. Die Grenzen beschreiben hier bei eher den Aufwand und Nutzen.
 Die Nutzung von Low Code Plattformen eignet sich vor allem für nicht innovative Anwendungen, wie zum Beispiel Zugriff auf verschiedene APIs oder das Einrichten einer simplen Website. Neue Funktionen müssen immer mit eigenen Code unterstützt werden, somit muss man zu Beginn des Projektes eine Einschätzung treffen, ob man mit Low Code schneller sein würde, weil man zum Teil vorgefertigte Komponenten nutzen kann oder ob es sinnvoller ist, ein traditionelles Programm aufzusetzen.
-Außerdem sind bei jeder Plattform die Grenzen verschieden, da oftmals Low Code Plattformen auf verschiedene Funktionalitäten spezialisiert sind. Deswegen ist die Wahl des richtigen Systems umso wichtiger, da ein Wechsel auf eine andere Plattform oftmals nicht möglich ist, weil man an die Plattform gebunden ist. (https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#eine-lowcodeplattform-auswählen)
+Außerdem sind bei jeder Plattform die Grenzen verschieden, da oftmals Low Code Plattformen auf verschiedene Funktionalitäten spezialisiert sind. Deswegen ist die Wahl des richtigen Systems umso wichtiger, da ein Wechsel auf eine andere Plattform oftmals nicht möglich ist, weil man an die Plattform gebunden ist. <<28>>
 
 
 == Fazit
@@ -251,15 +250,12 @@ Jedoch kommt auch Low-Code in einem gewissen Punkt an seine Grenzen. Individuell
 
 == Ausblick
 
-Abschließend wollen wir einen Ausblick zur zukünftigen Entwicklung von Low-Code Entwicklungsplattformen geben. Hierzu wenden wir uns an den im August 2022 veröffentlichten Cloud Platform Technology Hype-Cycle der IT-Beratungsfirma Gartner [QUELLE]. Dabei handelt es sich um eine Visualisierung der Erwartungen von potentiellen Nutzern und Medien bezüglich einer Technologie in den frühen Phasen ihres Bestehens. Wie in Abbildung [ABBNR] sichtbar ist, befinden sich Low-Code Entwicklungsplattformen, verzeichnet als LCAP (Low-Code Application Platforms), am Ende des Hype Cycles. 
+Abschließend wollen wir einen Ausblick zur zukünftigen Entwicklung von Low-Code Entwicklungsplattformen geben. Hierzu wenden wir uns an den im August 2022 veröffentlichten Cloud Platform Technology Hype-Cycle der IT-Beratungsfirma Gartner <<29>>. Dabei handelt es sich um eine Visualisierung der Erwartungen von potentiellen Nutzern und Medien bezüglich einer Technologie in den frühen Phasen ihres Bestehens. Wie in Figure 6 sichtbar ist, befinden sich Low-Code Entwicklungsplattformen, verzeichnet als LCAP (Low-Code Application Platforms), am Ende des Hype Cycles. 
 
-.Gartner Cloud Platform Service Hype Cycle AUgust 2022, [QUELLE1]
+.Gartner Cloud Platform Service Hype Cycle AUgust 2022, <<29>>
 image::cloud_hc_2022.jpg[]
 
-Diese Positionierung bedeutet, dass Low-Code Entwicklungsplattformen nach Einschätzung von Gartner, in weniger als 2 Jahren, also spätestens im Sommer 2024, das Plateau der Produktivität erreichen. Technologien, welche diese Phase in ihrer Entwicklung erreicht haben, sind laut Gartner [QUELLE2] praxiserprobt genug, um vom Mainstream adoptiert zu werden. Zudem sind Kriterien zur Auswahl von unterschiedlichen Anbietern klar definiert [Quelle2]. 
-
-Quelle1: https://www.gartner.com/en/newsroom/press-releases/2022-08-04-cloud-platform-hc-press-release
-Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
+Diese Positionierung bedeutet, dass Low-Code Entwicklungsplattformen nach Einschätzung von Gartner, in weniger als 2 Jahren, also spätestens im Sommer 2024, das Plateau der Produktivität erreichen. Technologien, welche diese Phase in ihrer Entwicklung erreicht haben, sind laut Gartner <<30>> praxiserprobt genug, um vom Mainstream adoptiert zu werden. Zudem sind Kriterien zur Auswahl von unterschiedlichen Anbietern klar definiert <<30>>. 
 
 [bibloigraphy]
 == Literaturverzeichnis
@@ -290,7 +286,11 @@ Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
 * [24] https://habr.com/ru/company/sberbank/blog/675660/
 * [25] https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode
 * [26] https://devm.io/testing/time-estimation-for-software-testing-128078
-
+* [27] Calçada, André, and Jorge Bernardino. “Experimental Evaluation of Low Code Development, Java Swing and JavaScript Programming.” International	Database Engineered Applications Symposium, September 22, 2022. https://doi.org/10.1145/3548785.3548792.
+* [28] (https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#eine-lowcodeplattform-auswählen)
+* [29] https://www.gartner.com/en/newsroom/press-releases/2022-08-04-cloud-platform-hc-press-release
+* [30] https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
+* [31] https://mendixinsuranceclaimsportal.mendixcloud.com/
 
 
 
