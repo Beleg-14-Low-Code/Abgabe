@@ -152,17 +152,9 @@ Wenig technische Anforderungen erforderlich. Dadurch Abteilungsleiter die sich m
 
 === Architektur von Low Code
 
-Visual Application Modeler: 
-Das Fronte-end der Platform damit arbeitet der Entwickler
-Entwicklungen und implementiert alle funktionalitäten mit den ein entwickler interagiert, wie code erstellung (grafisch oder mit text) Debugging, Datenmodellierung, debugging, testen, Anwendungsversionen
-Encoder:
-Exportiert visuelle Anwendungsmodell  in ein json oder xml Format exportiert, ohne das Funktionalitäten verloren gehen. 
-Decoder:
- Interpretiert die encodierten Daten 
-Source Code Generator: 
-Aus dem Format wird ein Quellcode generiert. Dies können unterschiedliche Sprachen sein. Skripte müssen enthalten sein, um mit einer Datenbank zu arbeiten. 
-Compiler: Quellcode wir compiliert, geprüft ob der code correct ist
-Deployer: Software bereitstellen. Zum beispiel Webanwendung
+Alle Low Code Plattformen sind ähnlich aufgebaut. Hierbei gibt es eine Teilung in zwei verschiedene Teile: IDE, welches die integrierte Entwicklungsumgebung beschreibt und dem Platform Server, welche das Backend der Plattform ist.
+Im IDE befindet sich zum einen der Vision Application Modeler. In diesem werden alle Funktionalitäten vom Nutzer entwickelt und implementiert. Dazu gehört die Codeerstellung, welche grafisch oder mit Text angefertigt werden kann, das Debugging und das Testen. Zum anderen befindet sich im IDE der Encoder. Dieser exportiert das visuelle Anwendungsmodell in ein neues Format, ohne das Funktionen verloren gehen. 
+Der Decoder, welcher sich im Platform Server befindet, interpretiert dann die codierten Daten und gibt sie an den Source Code Generator weiter. Hier wird der Code dann in Quellcode umgewandelt, wobei man die Entscheidung treffen kann, in welche Sprache es geniert werden soll. Der Deployer stellt das Projekt in der gewünschten Plattform bereit und im Compiler wird der Code dann übersetzt.
 
 
 == Vergleich von Low Code und traditioneller Programmierung an Anwendungsbeispiel
