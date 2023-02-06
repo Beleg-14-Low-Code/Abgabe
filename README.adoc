@@ -62,7 +62,7 @@ Alle Low Code Plattformen sind ähnlich aufgebaut. Hierbei gibt es eine Teilung 
 Im IDE befindet sich zum einen der Vision Application Modeler. In diesem werden alle Funktionalitäten vom Nutzer entwickelt und implementiert. Dazu gehört die Codeerstellung, welche grafisch oder mit Text angefertigt werden kann, das Debugging und das Testen. Zum anderen befindet sich im IDE der Encoder. Dieser exportiert das visuelle Anwendungsmodell in ein neues Format, ohne das Funktionen verloren gehen. 
 Der Decoder, welcher sich im Platform Server befindet, interpretiert dann die codierten Daten und gibt sie an den Source Code Generator weiter. Hier wird der Code dann in Quellcode umgewandelt, wobei man die Entscheidung treffen kann, in welche Sprache es geniert werden soll. Der Deployer stellt das Projekt in der gewünschten Plattform bereit und im Compiler wird der Code dann übersetzt. (https://www.researchgate.net/publication/354862325_OLP-A_RESTful_Open_Low-Code_Platform/fulltext/6151c756f8c9c51a8af9f640/OLP-A-RESTful-Open-Low-Code-Platform.pdf?origin=publication_detail)
 
-.Architecture von Low-code
+.grundlegende Architektur von Low-code Entwicklungsplattformen
 image::httpswww.researchgate.netpublication354862325_OLP-A_RESTful_Open_Low-Code_Platformfulltext6151c756f8c9c51a8af9f640OLP-A-.png[]
 
 
@@ -231,7 +231,7 @@ Zur Erweiterung der im vorangegangenen Abschnitt dargestellten Ergebnisse wurde 
 
 Zusätzlich zu der von uns betrachteten Entwicklungszeit wurden in diesem Experiment die Anzahl an selbst geschriebenen Codezeilen, die Zeiten zum Laden der graphischen Oberfläche sowie die Zeiten zum Ausführen verschiedener anwendungsspezifischer Operationen erfasst. Die genauen Anforderungen und untersuchten Operationen sind in [QUELLE] aufgelistet. In Abbildung [ABBNR] sind jeweils die durchschnittlichen Werte zwischen den beiden Anwendungen erfasst. Beim Vergleich dieser Ergebnisse mit den von uns gesammelten Daten ergibt sich zunächst eine Ähnlichkeit bezüglich der Entwicklungszeiten. In beiden Versuchen liegt bei der Low-Code Anwendung die niedrigste Entwicklungszeit vor, wobei der Unterschied zwischen Low-Code und JavaScript im Experiment von Calçada und Bernardino wesentlich geringer ist als in unserem Beispiel.
 
-.Bildunterschrift, [QUELLE]
+.Messdaten aus Low-Code Vergleichsexperiment, [QUELLE]
 image::literature_comparison_table.PNG[]
 
 Zudem ist die hohe Diskrepanz zwischen den beim Aufbauen der GUI ermittelten Zeiten bemerkenswert, da diese auf einen eventuellen Tradeoff von Performance zugunsten von Entwicklungszeit bei der Low-Code Entwicklung hinweist. Allerdings ist hierbei sowohl auf die geringe Stichprobenmenge als auch auf die fehlenden Vergleiche zwischen verschiedenen Low-Code Plattformen hinzuweisen, weshalb diese Ergebnisse nicht belastbar sind, um allgemeine  Schlussfolgerungen zu Low-Code zu ziehen.
@@ -258,7 +258,7 @@ Jedoch kommt auch Low-Code in einem gewissen Punkt an seine Grenzen. Individuell
 
 Abschließend wollen wir einen Ausblick zur zukünftigen Entwicklung von Low-Code Entwicklungsplattformen geben. Hierzu wenden wir uns an den im August 2022 veröffentlichten Cloud Platform Technology Hype-Cycle der IT-Beratungsfirma Gartner [QUELLE]. Dabei handelt es sich um eine Visualisierung der Erwartungen von potentiellen Nutzern und Medien bezüglich einer Technologie in den frühen Phasen ihres Bestehens. Wie in Abbildung [ABBNR] sichtbar ist, befinden sich Low-Code Entwicklungsplattformen, verzeichnet als LCAP (Low-Code Application Platforms), am Ende des Hype Cycles. 
 
-.Bildunterschrift, [QUELLE1]
+.Gartner Cloud Platform Service Hype Cycle AUgust 2022, [QUELLE1]
 image::cloud_hc_2022.jpg[]
 
 Diese Positionierung bedeutet, dass Low-Code Entwicklungsplattformen nach Einschätzung von Gartner, in weniger als 2 Jahren, also spätestens im Sommer 2024, das Plateau der Produktivität erreichen. Technologien, welche diese Phase in ihrer Entwicklung erreicht haben, sind laut Gartner [QUELLE2] praxiserprobt genug, um vom Mainstream adoptiert zu werden. Zudem sind Kriterien zur Auswahl von unterschiedlichen Anbietern klar definiert [Quelle2]. 
