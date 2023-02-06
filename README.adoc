@@ -156,6 +156,8 @@ Alle Low Code Plattformen sind ähnlich aufgebaut. Hierbei gibt es eine Teilung 
 Im IDE befindet sich zum einen der Vision Application Modeler. In diesem werden alle Funktionalitäten vom Nutzer entwickelt und implementiert. Dazu gehört die Codeerstellung, welche grafisch oder mit Text angefertigt werden kann, das Debugging und das Testen. Zum anderen befindet sich im IDE der Encoder. Dieser exportiert das visuelle Anwendungsmodell in ein neues Format, ohne das Funktionen verloren gehen. 
 Der Decoder, welcher sich im Platform Server befindet, interpretiert dann die codierten Daten und gibt sie an den Source Code Generator weiter. Hier wird der Code dann in Quellcode umgewandelt, wobei man die Entscheidung treffen kann, in welche Sprache es geniert werden soll. Der Deployer stellt das Projekt in der gewünschten Plattform bereit und im Compiler wird der Code dann übersetzt.
 
+image::[]
+
 
 == Vergleich von Low Code und traditioneller Programmierung an Anwendungsbeispiel
 
@@ -194,7 +196,8 @@ Bei der Entwicklung in JavaScript gibt es keine grafische Benutzeroberfläche. A
 
 Low Code
 
-Die grafische Oberfläche einer Low Code Plattform ist das einzige und wichtigste Tool für den Nutzer. Hier kann über ein Drag & Drop Baukasten grafisch „programmiert“ werden, wobei die Frontend-Elemente mit Workflows verknüpft werden können. Workflows beschreiben hierbei die Anwendungslogik. Die Nutzung von vorgefertigten Code-Elementen vereinfachen das Bauen von diversen Anwendungen, jedoch ist das Hinzufügen von eigenem Code auch über die GUI möglich. 
+Die grafische Oberfläche einer Low Code Plattform ist das einzige und wichtigste Tool für den Nutzer. Hier kann über ein Drag & Drop Baukasten grafisch „programmiert“ werden, wobei die Frontend-Elemente mit Workflows verknüpft werden können. Workflows beschreiben hierbei die Anwendungslogik. Die Nutzung von vorgefertigten Code-Elementen vereinfachen das Bauen von diversen Anwendungen, jedoch ist das Hinzufügen von eigenem Code auch über die GUI möglich.
+(https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode)
 
 ==== Anwendungslogik
 Damit meinen wir, wie die Anwendung auf die Aktionen des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
@@ -206,14 +209,14 @@ Die Anwendungslogik  einer Anwendung beschreibt die konkrete Verknüpfung von Ba
 
 Low Code 
 
-Die Anwendungslogik basiert bei Low Code Plattformen auf Workflows und Datenmodellen. Es ist möglich, seine Anwendung so mit einfachen Abläufen zusammenzustellen, wobei man auch hier die Möglichkeit hat, auf vorgefertigte Flows und Datenmodelle zuzugreifen.Funktionen über Flows, Microflows und Datenmodelle
+Die Anwendungslogik basiert bei Low Code Plattformen auf Workflows und Datenmodellen. Es ist möglich, seine Anwendung so mit einfachen Abläufen zusammenzustellen, wobei man auch hier die Möglichkeit hat, auf vorgefertigte Flows und Datenmodelle zuzugreifen.Funktionen über Flows, Microflows und Datenmodelle.
 
 ==== Qualitätskontrolle
 
 Low Code 
 
 Bei Mendix ist die Qualitätssicherung dadurch gegeben, dass alle plattforminternen Elemente vorgetestet sind. Das bedeutet, dass alle Komponenten ohne zusätzliche Tests ausgeführt werden können. Zusätzlich dazu laufen im Hintergrund für den Nutzer nicht ersichtlich, Test. Hier wird dann ausgegeben und auf der GUI direkt gekennzeichnet, wo und was der Fehler ist. 
-Das Anbinden von externen Testsystemen wie Selenium oder JUnit, wird von Mendix unterstützt.
+Das Anbinden von externen Testsystemen wie Selenium oder JUnit, wird von Mendix unterstützt. (https://www.mendix.com/blog/three-tools-to-test-your-mendix-application/)
 
 
 ==== Wiederverwendbarkeit
@@ -223,7 +226,7 @@ Das Anbinden von externen Testsystemen wie Selenium oder JUnit, wird von Mendix 
 Low Code
 
 Die Wiederverwendbarkeit bei Low Code Plattformen ist durch das Nutzen von vorgefertigten Elementen grundsätzlich gegeben. Die Speicherung und dadurch auch die Wiederverwendung von eigenen Segmenten ist je nach Plattform möglich. So kann die eigene Bibliothek kontinuierlich erweitert werden und ermöglicht auch anderen Nutzer des Teams auf diese zugreifen zu können.
-Ein Nachteil hierbei ist, dass die Wiederverwendbarkeit nur plattformintern gegeben ist.
+Ein Nachteil hierbei ist, dass die Wiederverwendbarkeit nur plattformintern gegeben ist. (https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode)
 
 
 ==== Zeitaufwand
@@ -235,7 +238,7 @@ Ein Nachteil hierbei ist, dass die Wiederverwendbarkeit nur plattformintern gege
 
 Es ist nicht möglich, klare Grenzen von Low Code zu definieren. Die Grenzen beschreiben hier bei eher den Aufwand und Nutzen.
 Die Nutzung von Low Code Plattformen eignet sich vor allem für nicht innovative Anwendungen, wie zum Beispiel Zugriff auf verschiedene APIs oder das Einrichten einer simplen Website. Neue Funktionen müssen immer mit eigenen Code unterstützt werden, somit muss man zu Beginn des Projektes eine Einschätzung treffen, ob man mit Low Code schneller sein würde, weil man zum Teil vorgefertigte Komponenten nutzen kann oder ob es sinnvoller ist, ein traditionelles Programm aufzusetzen.
-Außerdem sind bei jeder Plattform die Grenzen verschieden, da oftmals Low Code Plattformen auf verschiedene Funktionalitäten spezialisiert sind. Deswegen ist die Wahl des richtigen Systems umso wichtiger, da ein Wechsel auf eine andere Plattform oftmals nicht möglich ist, weil man an die Plattform gebunden ist.
+Außerdem sind bei jeder Plattform die Grenzen verschieden, da oftmals Low Code Plattformen auf verschiedene Funktionalitäten spezialisiert sind. Deswegen ist die Wahl des richtigen Systems umso wichtiger, da ein Wechsel auf eine andere Plattform oftmals nicht möglich ist, weil man an die Plattform gebunden ist. (https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#eine-lowcodeplattform-auswählen)
 
 
 == Fazit
