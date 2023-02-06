@@ -173,14 +173,14 @@ Um diese Aussage zu testen, haben wir zwei Webanwendungen mit der Programmierspr
 
 === Vorstellung Anwendungsbeispiel
 
-Wir haben als Beispiel beschlossen, eine Anwendung zu entwickeln, die den Prozess der Meldung eines Unfalls, der den versicherten Gegenständen eines Nutzers zugestoßen ist, vereinfacht.
+Als Beispiel wurde beschlossen, eine App zu entwickeln, die den Prozess der Meldung eines Unfalls, der dem versicherten Fahrzeug eines Nutzers zugestoßen ist, vereinfacht.
 Mit dieser App kann man: 
 
-*   das versicherte Objekt des Benutzers auswählen
+*   ein versichertes Fahrzeug des Nutzers auswählen
 *   einen der vier Vorfälle auswählen und die Einzelheiten des Vorfalls eintragen
 *   die Bilder des Schadens hochladen
 *   weitere Details des Unfalls ausfühllen
-*   zum Schluss erhält der Nutzer eine Übersicht und kann die Reklamierung absenden
+*   zum Schluss eine Übersicht erhalten und die Reklamierung absenden
 
 Abbildung ... stellt Screenshots einer Anwendung dar, die mit ReactJS und anderen Tools entwickelt wurde. 
 
@@ -242,10 +242,11 @@ Auf Grund der entwickelten Beispiele wird der Vergleich in 4 Punkten erfolgen:
 GUI steht für "Graphical User Interface" und bezieht sich auf die Art und Weise, wie ein Computerprogramm oder ein Betriebssystem dargestellt wird. 
 https://en.wikipedia.org/wiki/Graphical_user_interface 
 
-_Traditionelle Programmierung_ +
+_Traditionelle Programmierung_ 
+
 Bei der Entwicklung in JavaScript gibt es keine grafische Benutzeroberfläche. Alle einzelnen Komponenten und Styles werden zunächst blind hinzugefügt, ohne zu wissen, wie die endgültige Benutzeroberfläche aussehen wird. Beim Start der Anwendung kann der Entwickler das Layout der einzelnen Komponenten im Code oder zunächst im Entwicklertool einrichten und dann alles in seinen Code übernehmen. Das heißt, der Entwickler muss mindestens drei Fenster verwenden (den Browser, das Entwicklertool im Browser und die Entwicklungsumgebung), um Änderungen vorzunehmen und auftretende Fehler zu sehen.
 
-_Mendix_ +
+_Mendix_ 
 Domänenmodell: Grafische Darstellung einer Datenbank. Besteht aus Entäitäten. Vergleichbar mit einer Datenbanktabelle. 
 Auf der Seite (“Page”)wird die Benutzeroberfläche erstellt. 
 Microflows (Hier passiert die Logik) : Mit Mikroflows wie bentzerdefniert logik ausgeführt 
@@ -253,24 +254,35 @@ Microflows (Hier passiert die Logik) : Mit Mikroflows wie bentzerdefniert logik 
 ==== Logik
 Damit meinen wir, wie die Anwendung auf die Events des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
 
-_Traditionelle Programmierung_ +
+_Traditionelle Programmierung_ 
 
 Zunächst entscheidet der Entwickler über die Architektur der Anwendung. Und je nach Architektur ist es möglich, über zusätzlichen Entwicklungsaufwand zu sprechen. In unserem Beispiel wurde eine Client-Server-Architektur verwendet.
 
 Wenn es um die Logik zwischen den Komponenten geht, dann ist für jeden Event eine eigene Funktion zu erstellen, die das Verhalten der Komponente definiert. Neben der Entwicklung muss der Entwickler auch Clean Code schreiben, d.h. der Programmcode muss optimiert und für andere Entwickler leicht verständlich gemacht werden.
 
-_Mendix_ +
+_Mendix_ 
+
 The graphical notation of microflows is based on the Business Process Model and Notation (BPMN).
 Nanoflows. Most of the actions run directly on the device, so there is also a speed benefit for logic which does not need access to the server.
 Funktionen über Flows, Microflows und Datenmodelle
 
 ==== Qualitätssicherung/Qualitätskontrolle
 
-Die Qualität der Software ist ein wichtiger Bestandteil für den Kunden. Um die Qualität zu sichern, lohnt es sich, Softwaretests zu erstellen. Dies wird dem Kunden zeigen, wie sicher die Software ist und das tut, was er braucht.
+Die Qualität der Software ist ein wichtiger Bestandteil für den Kunden. Der Kunde hat ein großes Interesse daran, dass sein Produkt störungsfrei läuft und seinen Anforderungen entspricht. 
 
-_Traditionelle Programmierung_ +
+Softwaretests ermöglichen einen gewissen Einblick in die Softwarequalität. Softwaretests ermöglichen einen Einblick in die Softwarequalität. Alle dokumentierten und entwickelten Tests geben dem Kunden einen klaren Hinweis darauf, ob die Software die Anforderungen erfüllt, welchen Belastungen sie standhält, welcher Prozentsatz des Codes von den Tests abgedeckt wird usw.
 
-_Mendix_ +
+_Traditionelle Programmierung_ 
+
+Bei der traditionellen Programmierung können Tests manuell durchgeführt oder automatisierte Tests entwickelt werden. 
+
+Es gibt viele verschiedene Arten von automatisierten Tests. Welches Konzept, d.h. welche Art von Tests angewendet wird, hängt von der Art der Software ab. Das heißt, Testen auf verschiedenen Ebenen, von Unit-Tests bis zu End2End- und Akzeptanztest.
+
+Die Entwicklung automatisierter Tests ist sehr zeitaufwändig. In der Praxis besteht die meiste Entwicklung immer zu 50 Prozent aus Entwicklungszeit und zu 50 Prozent aus der Entwicklung automatisierter Tests.
+
+
+_Mendix_ 
+
 alle Komponenten sind vorgetestet
 Test werden automatisch im Hintergrund durchgeführt
 Anbindung von Selenium oder JUnit möglich 
@@ -278,7 +290,7 @@ Anbindung von Selenium oder JUnit möglich
 
 ==== Wiederverwendbarkeit
 
-Wiederverwendbarkeit, d. h. die Wiederverwendung von Komponenten oder Codeteilen. Dies ist eine sehr beliebte Methode in der Entwicklung: Software, Webservices, Design, usw. Durch die Systematisierung der Wiederverwendung von Komponenten werden die Kosten für Projekterstellung und -pflege gesenkt, die Entwicklungszeiten verkürzt und in vielen Fällen die Qualität der Softwareprodukte verbessert. [...] 
+Wiederverwendbarkeit, d. h. die Wiederverwendung von Komponenten oder Codeteilen. Dies ist eine sehr beliebte Methode in der Entwicklung: Software, Webservices, Design, usw. Durch die Systematisierung der Wiederverwendung von Komponenten werden viele Kosten und Entwicklungszeiten gesenkt und in vielen Fällen wird die Qualität der Softwareprodukte verbessert. [...] 
 
 https://habr.com/ru/company/sberbank/blog/675660/
 
@@ -296,6 +308,8 @@ Wiederverwendbarkeit Plattform intern
 
 Das Interessanteste an diesem Vergleich ist die Entwicklungszeit. Wie der Begriff "Low Code" schon sagt, verkürzt er die Entwicklungszeit.
 
+Die nachstehende Tabelle zeigt, wie viel Zeit für die Entwicklung aufgewendet wurde. Die Low-Code-Anwendung wurde von einer Person entwickelt, die React-Anwendung wurde in einem Team von drei Personen entwickelt.
+
 [width="100%",options="header", cols="^,^,^"]
 |===
 |_Konventionell (ReactJS)_ |Aufgabenteil |_Low Code (Mendix)_
@@ -306,6 +320,12 @@ Das Interessanteste an diesem Vergleich ist die Entwicklungszeit. Wie der Begrif
 |===
 
 _Traditionelle Programmierung_
+
+Die Einarbeitung dauerte nicht lange, da jedes Teammitglied sowohl Erfahrung in der JavaScript-Entwicklung als auch in ReactJS hatte. Das Team musste lediglich sein Wissen auffrischen. Hätte das Team jedoch nicht bereits Kenntnisse in diesem Bereich, hätte es sehr viel Zeit zum Lernen gebraucht. 
+
+Die Aufsetzung des Projekts dauerte etwa 3,5 Stunden. Wir mussten bestimmte Bibliotheken installieren, eine Verbindung zum Git-Repository herstellen, eine Verbindung zur Datenbank herstellen und so weiter.
+
+Die Entwicklung hat am meisten Zeit in Anspruch genommen. Dies ist jedoch nicht der endgültige Zeitaufwand, da einige kleine Dinge nicht fertiggestellt wurden.
 
 _Mendix_
 
