@@ -75,10 +75,16 @@ Als Beispiel wurde beschlossen, eine App zu entwickeln, die den Prozess der Meld
 Mit dieser App kann man: 
 
 *   ein versichertes Fahrzeug des Nutzers auswählen
-*   einen der vier Vorfälle auswählen und die Einzelheiten des Vorfalls eintragen
+*   einen der vier Vorfälle (Unfall, Brand, Diebstahl, Sonstiges) auswählen und die Einzelheiten des Vorfalls eintragen
 *   die Bilder des Schadens hochladen
 *   weitere Details des Unfalls ausfühllen
 *   zum Schluss eine Übersicht erhalten und die Reklamierung absenden
+
+Das untenstehende Aktivitätsdiagramm stellt das Verhalten der Anwendung dar, wenn die Option "Unfall" gewählt wird. Jede Farbe des Rechtecks steht für eine Seite. Je nach der vom Benutzer gegebenen Antwort hängt es davon ab, welches zusätzliche Feld oder welche Seite für den Benutzer zum Ausfüllen sichtbar sein wird.  
+
+image:unfall_diagramm.png[]
+
+
 
 Abbildung ... stellt Screenshots einer Anwendung dar, die mit ReactJS und anderen Tools entwickelt wurde. 
 
