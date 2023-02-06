@@ -241,10 +241,9 @@ Ein Nachteil hierbei ist, dass die Wiederverwendbarkeit nur plattformintern gege
 
 === Grenzen von Low Code
 
-vorgebaute Komponenten / Widgets nur für häufig auftretende / wenig innovative Anwendungsfälle verfügbar
-Für neue Funktionalitäten muss Low Code mit selbst geschriebenem Code unterstützt werden → je nach Innovationsgrad lohnt sich der Einsatz von Low Code nicht mehr?
-dazu bei neueren Plattformen die Möglichkeit, selbst geschriebenen Code hinzuzufügen
-Toolabhängigkeit. Die Anwendung selbest als auch die Datenstruktur ist von einem Tollabhängig. Vorteile mann muss keine vorinstalationen treffen. Nachteil man ist an ein tool gebunden. Möchte man auf ein anderes System umsteigen, ist dies mit viel aufwand verbunden,
+Es ist nicht möglich, klare Grenzen von Low Code zu definieren. Die Grenzen beschreiben hier bei eher den Aufwand und Nutzen.
+Die Nutzung von Low Code Plattformen eignet sich vor allem für nicht innovative Anwendungen, wie zum Beispiel Zugriff auf verschiedene APIs oder das Einrichten einer simplen Website. Neue Funktionen müssen immer mit eigenen Code unterstützt werden, somit muss man zu Beginn des Projektes eine Einschätzung treffen, ob man mit Low Code schneller sein würde, weil man zum Teil vorgefertigte Komponenten nutzen kann oder ob es sinnvoller ist, ein traditionelles Programm aufzusetzen.
+Außerdem sind bei jeder Plattform die Grenzen verschieden, da oftmals Low Code Plattformen auf verschiedene Funktionalitäten spezialisiert sind. Deswegen ist die Wahl des richtigen Systems umso wichtiger, da ein Wechsel auf eine andere Plattform oftmals nicht möglich ist, weil man an die Plattform gebunden ist.
 
 
 == Fazit
