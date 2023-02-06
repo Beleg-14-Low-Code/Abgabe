@@ -46,11 +46,15 @@ Durch die automatische Generierung von Quellcode, kann Entwicklungszeit eingespa
 Ein erster Ansatz der modellgetriebenen Entwicklung startete in den 1990er mit Computer Aided Software Engineering (Case). Die war ein Ansatz um aus Modellen Quellcode zu erzeugen. (https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf) Dieser Ansatz war  allerdings nicht ausgearbeitet. Zum Beispiel waren Case-Werkzeuge waren Hersteller abhängig. Deswegen setzte sich Case nicht durch. (https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf)  
 In den 1990er der wurde der objektorientierte Ansatz in den meisten Sprachen durchgesetzt.  Der Fokus musste nun auf die Entwicklung von objektorientierten Werkzeugen liegen, dadurch entstand der bis heute verwendete Modellierungssprache „UML“ (Udenifind Modelling Language). Durch Tools wurde es ermöglicht, zeitgleich Modell und Code zu ändern. (http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf)
 
-== Low Code? 
+== Low Code
 Low-code ist auch eine Modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine Grafische Benutzeroberfläche. Es können per Drag and Drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Die Verknüpfung von Elementen funktioniert über Workflows, des Weiteren können Datentabellen in Form von Datenmodellen erstellt werden und in einer Cloud abgespeichert. 
 
 Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet und somit die Anforderungen am besten kennen. 
 https://link.springer.com/content/pdf/10.1007/978-3-662-61374-0.pdf?pdf=button
+
+=== Ziele von LC:
+Das Ziel von Low-Code ist es zum einem über einen kurzen Zeitraum Anwendungen zu entwickeln. Es werden Zeit und Kosten gespart. Des Weiteren sind wenig technische Anforderungen erforderlich und kaum Programmierkenntnisse nötig. Die Einarbeitungszeit ist wesentliche geringer als das Beibringen von Programmiersprachen. 
+Dadurch können zum Beispiel Abteilungsleiter, die sich mit Programmieren   kaum oder überhaupt nicht auskennen Anwendungen erstellen. Ein Vorteil ist, sie besitzen viel Fachliches Wissen und können dadurch besser Anforderungen spezifizieren.  
 
 
 === Architektur von Low Code
