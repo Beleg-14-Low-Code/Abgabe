@@ -45,7 +45,7 @@ Ein erster Ansatz der modellgetriebenen Entwicklung startete in den 1990er mit C
 In den 1990er der wurde der objektorientierte Ansatz in den meisten Sprachen durchgesetzt.  Der Fokus musste nun auf die Entwicklung von objektorientierten Werkzeugen liegen, dadurch entstand der bis heute verwendete Modellierungssprache „UML“ (Udenifind Modelling Language). Durch Tools wurde es ermöglicht, zeitgleich Modell und Code zu ändern. <<8>>
 
 == Low Code
-Low-code ist auch eine Modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine Grafische Benutzeroberfläche. Es können per Drag and Drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Die Verknüpfung von Elementen funktioniert über Workflows, des Weiteren können Datentabellen in Form von Datenmodellen erstellt werden und in einer Cloud abgespeichert. 
+Low-code ist auch eine Modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine Grafische Benutzeroberfläche. Es können per Drag and Drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Die Verknüpfung von Elementen funktioniert über Workflows, des Weiteren können Datentabellen in Form von Datenmodellen erstellt und in einer Cloud abgespeichert werden. Es können Desktop als auch Mobileanwendungen schnell entwickelt werden. 
 
 Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet und somit die Anforderungen am besten kennen. 
 <<12>>
