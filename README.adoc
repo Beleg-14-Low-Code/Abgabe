@@ -34,7 +34,7 @@ Durch die Modellierung einer Software entsteht zum einen ein besseres Verständn
 Es können Designprobleme besser erkannt werden. Werden diese erste nach der Entwicklung bekannt, können höhere Kosten entstehen.<<6>>
 Aus einer Umfrage von Großunternehmen weltweit resultierte, dass 70 % der befragten Unternehmen bereits, das Scheitern eines Projektes erlebt haben. Grund hierbei waren Anforderungen, die bei der Planung des Projektes nicht bekannt waren. <<7>>
 
-Daraus resultiert, dass Modelle einen wichtigen Bestandteil zur Entwicklung von Softwaresystemen beitragen. Dabei gibt es Unterschiede zwischen modellbasierter- und modellgetriebener Softwareentwicklung. Modellbasiert bedeutet, das Modell wird erstellt und darauf basierend wird anschließende der Code geschrieben. (http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf) Code und Modell sind somit unabhängig voneinander. Nimmt man eine Änderung im Code vor, wird dies nicht zeitgleich im Modell übernommen. (https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf). 
+Daraus resultiert, dass Modelle einen wichtigen Bestandteil zur Entwicklung von Softwaresystemen beitragen. Dabei gibt es Unterschiede zwischen modellbasierter- und modellgetriebener Softwareentwicklung. Modellbasiert bedeutet, das Modell wird erstellt und darauf basierend wird anschließende der Code geschrieben.<<8>> Code und Modell sind somit unabhängig voneinander. Nimmt man eine Änderung im Code vor, wird dies nicht zeitgleich im Modell übernommen. (https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf). 
 
 In der modellgetriebenen Softwareentwicklung hingegen wird ermöglicht aus einem Modell einen lauffähigen Code zu generieren. Ein Kriterium hierbei ist es, dass es sich um eine Formales Modell handeln muss. Formale Modell besitzen eindeutige Syntax und Semantik. (https://silo.tips/download/seminararbeit-modellgetriebene-softwareentwicklung-anhand-des-oaw-frameworks)
 
@@ -192,4 +192,5 @@ Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
 *[5] https://www.itwissen.info/Abstraktion-abstraction-OOP.html
 *[6] Model-Driven Software Development,Stephen W. Liddle
 *[7] https://www.pressebox.de/pressemitteilung/alfabet-ag/Studie-belegt-In-70-der-Unternehmen-scheitern-IT-Projekte-wegen-unterschiedlicher-Planungssichten/boxid/596894
+*[8] http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf
 
