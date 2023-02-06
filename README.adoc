@@ -231,6 +231,7 @@ Ein Nachteil hierbei ist, dass die Wiederverwendbarkeit nur plattformintern gege
 
 ==== Zeitaufwand
 
+Wie aus der. Grafik erkennbar ist, war der Zeitaufwand um einiges kürzer. Hierbei ist jedoch die Verteilung der Zeiten komplett anders als bei der traditionellen Programmierung. Die erste Einarbeitung und Kennenlernen der Plattform ist zeitaufwendig. Wenn man es aber mit der Erlernen einer neuen Programmiersprache vergleichen würde, ist der Zeitaufwand jedoch relativ gering. Das Aufsetzen eines neuen Projektes funktioniert hier über einen Klick voraus gesetzt man möchte ein neues leeres Projekt aufsetzten, da die Auswahl einer Vorlage wahrscheinlich ein bisschen mehr Zeit in Anspruch nehmen würde. Die Entwicklungszeit ist bei Low Code direkt abhängig von dem Verhältnis selbst geschriebenen und vorgefertigten Codes.
 
 === Literaturvergleich
 
