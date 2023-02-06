@@ -37,15 +37,17 @@ Daraus resultiert, dass Modelle einen wichtigen Bestandteil zur Entwicklung von 
 
 In der modellgetriebenen Softwareentwicklung hingegen wird ermöglicht aus einem Modell einen lauffähigen Code zu generieren. Ein Kriterium hierbei ist es, dass es sich um eine Formales Modell handeln muss. Formale Modell besitzen eindeutige Syntax und Semantik. <<10>>
 
+
+.https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
 image::Modell_Driven_Development.png[] 
-Abbildung 1, https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
+
 
 Durch die automatische Generierung von Quellcode, kann Entwicklungszeit eingespart werden und somit auch Kosten. Des Weiteren ist die Abstraktion höher. Durch gute Dokumentation ist es einfacher Fehler zu finden. In der modellbasierten Entwicklung war dies nicht möglich, da durch ständige Änderungen des Quellcodes, das Modell oft nicht aktualisiert wurde.<<11>>
 Ein erster Ansatz der modellgetriebenen Entwicklung startete in den 1990er mit Computer Aided Software Engineering (Case). Die war ein Ansatz um aus Modellen Quellcode zu erzeugen.  Dieser Ansatz war  allerdings nicht ausgearbeitet. Zum Beispiel waren Case-Werkzeuge waren Hersteller abhängig. Deswegen setzte sich Case nicht durch. <<9>>
 In den 1990er der wurde der objektorientierte Ansatz in den meisten Sprachen durchgesetzt.  Der Fokus musste nun auf die Entwicklung von objektorientierten Werkzeugen liegen, dadurch entstand der bis heute verwendete Modellierungssprache „UML“ (Udenifind Modelling Language). Durch Tools wurde es ermöglicht, zeitgleich Modell und Code zu ändern. <<8>>
 
 == Low Code
-Low-code ist auch ein Ansatz der Modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine Grafische Benutzeroberfläche. Es können per Drag and Drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Der Code wird Automatisch im Hintergrund generiert.  Die Verknüpfung von Elementen funktioniert über Workflows. Des Weiteren können Datentabellen in Form von Datenmodellen erstellt und in einer Cloud abgespeichert werden. Es können Desktop als auch Mobileanwendungen schnell entwickelt werden. <<12>>
+Low-code ist auch eine Modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine Grafische Benutzeroberfläche. Es können per Drag and Drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Die Verknüpfung von Elementen funktioniert über Workflows, des Weiteren können Datentabellen in Form von Datenmodellen erstellt und in einer Cloud abgespeichert werden. Es können Desktop als auch Mobileanwendungen schnell entwickelt werden. 
 
 Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet und somit die Anforderungen am besten kennen. 
 <<12>>
@@ -61,6 +63,7 @@ Alle Low Code Plattformen sind ähnlich aufgebaut. Hierbei gibt es eine Teilung 
 Im IDE befindet sich zum einen der Vision Application Modeler. In diesem werden alle Funktionalitäten vom Nutzer entwickelt und implementiert. Dazu gehört die Codeerstellung, welche grafisch oder mit Text angefertigt werden kann, das Debugging und das Testen. Zum anderen befindet sich im IDE der Encoder. Dieser exportiert das visuelle Anwendungsmodell in ein neues Format, ohne das Funktionen verloren gehen. 
 Der Decoder, welcher sich im Platform Server befindet, interpretiert dann die codierten Daten und gibt sie an den Source Code Generator weiter. Hier wird der Code dann in Quellcode umgewandelt, wobei man die Entscheidung treffen kann, in welche Sprache es geniert werden soll. Der Deployer stellt das Projekt in der gewünschten Plattform bereit und im Compiler wird der Code dann übersetzt. (https://www.researchgate.net/publication/354862325_OLP-A_RESTful_Open_Low-Code_Platform/fulltext/6151c756f8c9c51a8af9f640/OLP-A-RESTful-Open-Low-Code-Platform.pdf?origin=publication_detail)
 
+.Architecture von Low-code
 image::httpswww.researchgate.netpublication354862325_OLP-A_RESTful_Open_Low-Code_Platformfulltext6151c756f8c9c51a8af9f640OLP-A-.png[]
 
 
@@ -82,16 +85,8 @@ Mit dieser App kann man:
 
 Das untenstehende Aktivitätsdiagramm stellt das Verhalten der Anwendung dar, wenn die Option "Unfall" gewählt wird. Jede Farbe des Rechtecks steht für eine Seite. Je nach der vom Benutzer gegebenen Antwort hängt es davon ab, welches zusätzliche Feld oder welche Seite für den Benutzer zum Ausfüllen sichtbar sein wird.  
 
-image:unfall_diagramm.png[]
-
-
-
-Abbildung ... stellt Screenshots einer Anwendung dar, die mit ReactJS und anderen Tools entwickelt wurde. 
-
-image:screen-react-1.png[,200] 
-image:screen-react-2.png[,300]
-
-//.Screenshots der React-Anwendung
+.Aktivitätsdiagramm der "Unfall"-Option
+image::unfall_diagramm.png[]
 
 === Verwendete Werkzeuge
 Für die Erstellung dieser Anwendungen wurden verschiedene Tools verwendet.
@@ -110,8 +105,8 @@ Warum wurde Mendix gewählt?
 Weil Mendix ein Marktführer in seinem Bereich ist. Das IT-Beratungsunternehmen Gartner veröffentlichte im August 2022 einen Bericht zur Marktforschung über Low-Code-Unternehmensanwendungsplattformen (Enterprise Low-Code Application Platforms - LCAP) [...]. Sie verwenden den Magic Quadrant, der Markttrends wie Richtung, Reifegrad und Teilnehmer aufzeigt.
 https://www.gartner.com/doc/reprints?id=1-2C8VSOAH&ct=230113&st=sb
 
-image:magic_Quadrant.png[,500 ]
-// Magic Quadrant for Enterprise Low-Code Application Platforms
+.Magic Quadrant for Enterprise Low-Code Application Platforms
+image::magic_Quadrant.png[,500 ]
 
 Horizontal (Completeness of Vision) wird die Vollständigkeit der Vision dargestellt. Das heißt, sie spiegelt die Innovationskraft des Anbieters wider und zeigt, ob der Anbieter den Markt steuert oder ihm folgt [...].
 https://www.gartner.de/de/methoden/magic-quadrants
@@ -229,7 +224,7 @@ Die Entwicklung hat am meisten Zeit in Anspruch genommen. Dies ist jedoch nicht 
 
 _Low Code_
 
-Wie aus der. Grafik erkennbar ist, war der Zeitaufwand um einiges kürzer. Hierbei ist jedoch die Verteilung der Zeiten komplett anders als bei der traditionellen Programmierung. Die erste Einarbeitung und Kennenlernen der Plattform ist zeitaufwendig. Wenn man es aber mit der Erlernen einer neuen Programmiersprache vergleichen würde, ist der Zeitaufwand jedoch relativ gering. Das Aufsetzen eines neuen Projektes funktioniert hier über einen Klick voraus gesetzt man möchte ein neues leeres Projekt aufsetzten, da die Auswahl einer Vorlage wahrscheinlich ein bisschen mehr Zeit in Anspruch nehmen würde. Die Entwicklungszeit ist bei Low Code direkt abhängig von dem Verhältnis selbst geschriebenen und vorgefertigten Codes.
+Wie aus der Tabelle erkennbar ist, war der Zeitaufwand um einiges kürzer. Hierbei ist jedoch die Verteilung der Zeiten komplett anders als bei der traditionellen Programmierung. Die erste Einarbeitung und Kennenlernen der Plattform ist zeitaufwendig. Wenn man es aber mit der Erlernen einer neuen Programmiersprache vergleichen würde, ist der Zeitaufwand jedoch relativ gering. Das Aufsetzen eines neuen Projektes funktioniert hier über einen Klick voraus gesetzt man möchte ein neues leeres Projekt aufsetzten, da die Auswahl einer Vorlage wahrscheinlich ein bisschen mehr Zeit in Anspruch nehmen würde. Die Entwicklungszeit ist bei Low Code direkt abhängig von dem Verhältnis selbst geschriebenen und vorgefertigten Codes.
 
 === Literaturvergleich
 
@@ -238,7 +233,7 @@ Zur Erweiterung der im vorangegangenen Abschnitt dargestellten Ergebnisse wurde 
 Zusätzlich zu der von uns betrachteten Entwicklungszeit wurden in diesem Experiment die Anzahl an selbst geschriebenen Codezeilen, die Zeiten zum Laden der graphischen Oberfläche sowie die Zeiten zum Ausführen verschiedener anwendungsspezifischer Operationen erfasst. Die genauen Anforderungen und untersuchten Operationen sind in [QUELLE] aufgelistet. In Abbildung [ABBNR] sind jeweils die durchschnittlichen Werte zwischen den beiden Anwendungen erfasst. Beim Vergleich dieser Ergebnisse mit den von uns gesammelten Daten ergibt sich zunächst eine Ähnlichkeit bezüglich der Entwicklungszeiten. In beiden Versuchen liegt bei der Low-Code Anwendung die niedrigste Entwicklungszeit vor, wobei der Unterschied zwischen Low-Code und JavaScript im Experiment von Calçada und Bernardino wesentlich geringer ist als in unserem Beispiel.
 
 .Bildunterschrift, [QUELLE]
-image::literature_comparison_table.png[]
+image::literature_comparison_table.PNG[]
 
 Zudem ist die hohe Diskrepanz zwischen den beim Aufbauen der GUI ermittelten Zeiten bemerkenswert, da diese auf einen eventuellen Tradeoff von Performance zugunsten von Entwicklungszeit bei der Low-Code Entwicklung hinweist. Allerdings ist hierbei sowohl auf die geringe Stichprobenmenge als auch auf die fehlenden Vergleiche zwischen verschiedenen Low-Code Plattformen hinzuweisen, weshalb diese Ergebnisse nicht belastbar sind, um allgemeine  Schlussfolgerungen zu Low-Code zu ziehen.
 
