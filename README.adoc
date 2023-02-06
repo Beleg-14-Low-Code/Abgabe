@@ -200,10 +200,9 @@ GUI steht für "Graphical User Interface" und bezieht sich auf die Art und Weise
 TP
 Bei der Entwicklung in JavaScript gibt es keine grafische Benutzeroberfläche. Alle einzelnen Komponenten und Styles werden zunächst blind hinzugefügt, ohne zu wissen, wie die endgültige Benutzeroberfläche aussehen wird. Beim Start der Anwendung kann der Entwickler das Layout der einzelnen Komponenten im Code oder zunächst im Entwicklertool einrichten und dann alles in seinen Code übernehmen.
 
-Mendix
-Domänenmodell: Grafische Darstellung einer Datenbank. Besteht aus Entäitäten. Vergleichbar mit einer Datenbanktabelle. 
-Auf der Seite (“Page”)wird die Benutzeroberfläche erstellt. 
-Microflows (Hier passiert die Logik) : Mit Mikroflows wie bentzerdefniert logik ausgeführt 
+Low Code
+
+Die grafische Oberfläche einer Low Code Plattform ist das einzige und wichtigste Tool für den Nutzer. Hier kann über ein Drag & Drop Baukasten grafisch „programmiert“ werden, wobei die Frontend-Elemente mit Workflows verknüpft werden können. Workflows beschreiben hierbei die Anwendungslogik. Die Nutzung von vorgefertigten Code-Elementen vereinfachen das Bauen von diversen Anwendungen, jedoch ist das Hinzufügen von eigenem Code auch über die GUI möglich. 
 
 ==== Anwendungslogik
 Damit meinen wir, wie die Anwendung auf die Aktionen des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
@@ -213,26 +212,26 @@ Die Anwendungslogik  einer Anwendung beschreibt die konkrete Verknüpfung von Ba
 При программирование на JavaScript разработчик получая требования продумывает полностью  Event Listeners
 
 
-Mendix
-The graphical notation of microflows is based on the Business Process Model and Notation (BPMN).
-Nanoflows. Most of the actions run directly on the device, so there is also a speed benefit for logic which does not need access to the server.
-Funktionen über Flows, Microflows und Datenmodelle
+Low Code 
+
+Die Anwendungslogik basiert bei Low Code Plattformen auf Workflows und Datenmodellen. Es ist möglich, seine Anwendung so mit einfachen Abläufen zusammenzustellen, wobei man auch hier die Möglichkeit hat, auf vorgefertigte Flows und Datenmodelle zuzugreifen.Funktionen über Flows, Microflows und Datenmodelle
 
 ==== Qualitätskontrolle
 
-Mendix
-alle Komponenten sind vorgetestet
-Test werden automatisch im Hintergrund durchgeführt
-Anbindung von Selenium oder JUnit möglich 
+Low Code 
+
+Bei Mendix ist die Qualitätssicherung dadurch gegeben, dass alle plattforminternen Elemente vorgetestet sind. Das bedeutet, dass alle Komponenten ohne zusätzliche Tests ausgeführt werden können. Zusätzlich dazu laufen im Hintergrund für den Nutzer nicht ersichtlich, Test. Hier wird dann ausgegeben und auf der GUI direkt gekennzeichnet, wo und was der Fehler ist. 
+Das Anbinden von externen Testsystemen wie Selenium oder JUnit, wird von Mendix unterstützt.
 
 
 ==== Wiederverwendbarkeit
 
 При программирование одинаковые куски кода компонуются в отдельные компоненты или функции, которые используются в дальнейшем в том же проекте. Для удобства данные функции/компоненты могут быть собраны в отдельную библиотеку, что позволит легко внедрить в другие проекты.
 
-Mendix
-Speicherung von eigenen Komponenten möglich
-Wiederverwendbarkeit Plattform intern
+Low Code
+
+Die Wiederverwendbarkeit bei Low Code Plattformen ist durch das Nutzen von vorgefertigten Elementen grundsätzlich gegeben. Die Speicherung und dadurch auch die Wiederverwendung von eigenen Segmenten ist je nach Plattform möglich. So kann die eigene Bibliothek kontinuierlich erweitert werden und ermöglicht auch anderen Nutzer des Teams auf diese zugreifen zu können.
+Ein Nachteil hierbei ist, dass die Wiederverwendbarkeit nur plattformintern gegeben ist.
 
 
 ==== Zeitaufwand
