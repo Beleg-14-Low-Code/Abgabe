@@ -131,7 +131,7 @@ Auf Grund der entwickelten Beispiele wird der Vergleich in 4 Punkten erfolgen:
 
 - GUI
 - Anwendungslogik
-- Qualitätskontrolle
+- Qualitätssicherung/Qualitätskontrolle
 - Wiederverwendbarkeit
 
 ==== GUI
@@ -149,7 +149,7 @@ Die grafische Oberfläche einer Low Code Plattform ist das einzige und wichtigst
 <<19>>
 
 ==== Logik
-Damit meinen wir, wie die Anwendung auf die Events des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
+Die Logik bezieht sich darauf, wie die Anwendung auf die Events des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
 
 _Traditionelle Programmierung_ 
 
@@ -165,15 +165,15 @@ Die Anwendungslogik basiert bei Low Code Plattformen auf Workflows, Microflows u
 
 Die Qualität der Software ist ein wichtiger Bestandteil für den Kunden. Der Kunde hat ein großes Interesse daran, dass sein Produkt störungsfrei läuft und seinen Anforderungen entspricht. 
 
-Softwaretests ermöglichen einen gewissen Einblick in die Softwarequalität. Softwaretests ermöglichen einen Einblick in die Softwarequalität. Alle dokumentierten und entwickelten Tests geben dem Kunden einen klaren Hinweis darauf, ob die Software die Anforderungen erfüllt, welchen Belastungen sie standhält, welcher Prozentsatz des Codes von den Tests abgedeckt wird usw.
+Softwaretests ermöglichen einen Einblick in die Softwarequalität. Alle dokumentierten und entwickelten Tests geben dem Kunden einen klaren Hinweis darauf, ob die Software die Anforderungen erfüllt, welchen Belastungen sie standhält, welcher Prozentsatz des Codes von den Tests abgedeckt wird usw.
 
 _Traditionelle Programmierung_ 
 
 Bei der traditionellen Programmierung können Tests manuell durchgeführt oder automatisierte Tests entwickelt werden. 
 
-Es gibt viele verschiedene Arten von automatisierten Tests. Welches Konzept, d.h. welche Art von Tests angewendet wird, hängt von der Art der Software ab. Das heißt, Testen auf verschiedenen Ebenen, von Unit-Tests bis zu End2End- und Akzeptanztest.
+Es gibt viele verschiedene Arten von automatisierten Tests. Welcher Satz von verschiedenen Testtypen angewendet wird, hängt von der Art der Software ab. Dies könnte z.B. ein Satz von Unit-, Integrations- und End2End-Tests oder Unit- und Akzeptanztests sein.
 
-Die Entwicklung automatisierter Tests ist sehr zeitaufwändig. In der Praxis besteht die meiste Entwicklung immer zu 50 Prozent aus Entwicklungszeit und zu 50 Prozent aus der Entwicklung automatisierter Tests.
+Die Entwicklung automatisierter Tests ist sehr zeitaufwändig. Statistisch gesehen nimmt die Entwicklung von automatisierten Tests zwischen 20 und 50 % der Entwicklungszeit in Anspruch [https://devm.io/testing/time-estimation-for-software-testing-128078].
 
 _Low Code_ 
 
@@ -226,7 +226,7 @@ Zur Erweiterung der im vorangegangenen Abschnitt dargestellten Ergebnisse wurde 
 Zusätzlich zu der von uns betrachteten Entwicklungszeit wurden in diesem Experiment die Anzahl an selbst geschriebenen Codezeilen, die Zeiten zum Laden der graphischen Oberfläche sowie die Zeiten zum Ausführen verschiedener anwendungsspezifischer Operationen erfasst. Die genauen Anforderungen und untersuchten Operationen sind in [QUELLE] aufgelistet. In Abbildung [ABBNR] sind jeweils die durchschnittlichen Werte zwischen den beiden Anwendungen erfasst. Beim Vergleich dieser Ergebnisse mit den von uns gesammelten Daten ergibt sich zunächst eine Ähnlichkeit bezüglich der Entwicklungszeiten. In beiden Versuchen liegt bei der Low-Code Anwendung die niedrigste Entwicklungszeit vor, wobei der Unterschied zwischen Low-Code und JavaScript im Experiment von Calçada und Bernardino wesentlich geringer ist als in unserem Beispiel.
 
 .Bildunterschrift, [QUELLE]
-image::literature_comparison_table.PNG[]
+image::literature_comparison_table.PNG[,400]
 
 Zudem ist die hohe Diskrepanz zwischen den beim Aufbauen der GUI ermittelten Zeiten bemerkenswert, da diese auf einen eventuellen Tradeoff von Performance zugunsten von Entwicklungszeit bei der Low-Code Entwicklung hinweist. Allerdings ist hierbei sowohl auf die geringe Stichprobenmenge als auch auf die fehlenden Vergleiche zwischen verschiedenen Low-Code Plattformen hinzuweisen, weshalb diese Ergebnisse nicht belastbar sind, um allgemeine  Schlussfolgerungen zu Low-Code zu ziehen.
 
