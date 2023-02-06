@@ -52,8 +52,8 @@ Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwend
 <<12>>
 
 === Ziele von Low Code:
-Das Ziel von Low-Code ist es zum einem über einen kurzen Zeitraum Anwendungen zu entwickeln. Es werden Zeit und Kosten gespart. Des Weiteren sind wenig technische Anforderungen erforderlich und kaum Programmierkenntnisse nötig. Die Einarbeitungszeit ist wesentliche geringer als das Beibringen von Programmiersprachen. 
-Dadurch können zum Beispiel Abteilungsleiter, die sich mit Programmieren   kaum oder überhaupt nicht auskennen Anwendungen erstellen. Ein Vorteil ist, sie besitzen viel Fachliches Wissen und können dadurch besser Anforderungen spezifizieren.  
+Das Ziel von Low-Code ist es, zum einem über einen kurzen Zeitraum Anwendungen zu entwickeln, dadurch können auch Kosten gespart werden. Zum anderen sind wenig technische Anforderungen erforderlich und kaum Programmierkenntnisse nötig. Die Einarbeitungszeit ist wesentliche geringer als das Beibringen von Programmiersprachen. 
+Dadurch können zum Beispiel Abteilungsleiter, die sich mit Programmieren kaum oder überhaupt nicht auskennen, Anwendungen erstellen. Ein Vorteil ist, sie besitzen viel fachliches Wissen und können dadurch besser Anforderungen spezifizieren. 
 <<13>>
 
 === Architektur von Low Code
@@ -113,8 +113,6 @@ https://www.gartner.de/de/methoden/magic-quadrants
 Die Vertikale (Ability to execute) zeigt die Fähigkeit zur Ausführung. Er fasst Faktoren wie die finanzielle Rentabilität des Anbieters, seine Reaktionsfähigkeit auf dem Markt, die Produktentwicklung, die Vertriebskanäle und den Kundenstamm zusammen [...].
 https://www.gartner.de/de/methoden/magic-quadrants
 
-
-Darüber hinaus ist der Magic Quadrant in vier Teile unterteilt und zeigt die Wettbewerbsposition von vier Arten von Technologieanbietern in Märkten mit hohem Wachstum und signifikanter Anbieterdifferenzierung [...]:
 
 Darüber hinaus ist der Magic Quadrant in vier Kategorien unterteilt. Er zeigt die Position der unterschielichen Low-Code Anbietern im Markt:
 https://www.gartner.de/de/methoden/magic-quadrants
