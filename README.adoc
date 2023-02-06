@@ -36,25 +36,24 @@ Aus einer Umfrage von Großunternehmen weltweit resultierte, dass 70 % der befra
 
 Daraus resultiert, dass Modelle einen wichtigen Bestandteil zur Entwicklung von Softwaresystemen beitragen. Dabei gibt es Unterschiede zwischen modellbasierter- und modellgetriebener Softwareentwicklung. Modellbasiert bedeutet, das Modell wird erstellt und darauf basierend wird anschließende der Code geschrieben.<<8>> Code und Modell sind somit unabhängig voneinander. Nimmt man eine Änderung im Code vor, wird dies nicht zeitgleich im Modell übernommen. <<9>> 
 
-In der modellgetriebenen Softwareentwicklung hingegen wird ermöglicht aus einem Modell einen lauffähigen Code zu generieren. Ein Kriterium hierbei ist es, dass es sich um eine Formales Modell handeln muss. Formale Modell besitzen eindeutige Syntax und Semantik. (https://silo.tips/download/seminararbeit-modellgetriebene-softwareentwicklung-anhand-des-oaw-frameworks)
+In der modellgetriebenen Softwareentwicklung hingegen wird ermöglicht aus einem Modell einen lauffähigen Code zu generieren. Ein Kriterium hierbei ist es, dass es sich um eine Formales Modell handeln muss. Formale Modell besitzen eindeutige Syntax und Semantik. <<10>>
 
  
 Abbildung 1, https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
 
 Durch die automatische Generierung von Quellcode, kann Entwicklungszeit eingespart werden und somit auch Kosten. Des Weiteren ist die Abstraktion höher. Durch gute Dokumentation ist es einfacher Fehler zu finden. In der modellbasierten Entwicklung war dies nicht möglich, da durch ständige Änderungen des Quellcodes, das Modell oft nicht aktualisiert wurde. (https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf)
 Ein erster Ansatz der modellgetriebenen Entwicklung startete in den 1990er mit Computer Aided Software Engineering (Case). Die war ein Ansatz um aus Modellen Quellcode zu erzeugen. (https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf) Dieser Ansatz war  allerdings nicht ausgearbeitet. Zum Beispiel waren Case-Werkzeuge waren Hersteller abhängig. Deswegen setzte sich Case nicht durch. (https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf)  
-In den 1990er der wurde der objektorientierte Ansatz in den meisten Sprachen durchgesetzt.  Der Fokus musste nun auf die Entwicklung von objektorientierten Werkzeugen liegen, dadurch entstand der bis heute verwendete Modellierungssprache „UML“ (Udenifind Modelling Language). Durch Tools wurde es ermöglicht, zeitgleich Modell und Code zu ändern. (http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf)
-
+In den 1990er der wurde der objektorientierte Ansatz in den meisten Sprachen durchgesetzt.  Der Fokus musste nun auf die Entwicklung von objektorientierten Werkzeugen liegen, dadurch entstand der bis heute verwendete Modellierungssprache „UML“ (Udenifind Modelling Language). Durch Tools wurde es ermöglicht, zeitgleich Modell und Code zu ändern. <<8>>
 == Low Code
 Low-code ist auch eine Modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine Grafische Benutzeroberfläche. Es können per Drag and Drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Die Verknüpfung von Elementen funktioniert über Workflows, des Weiteren können Datentabellen in Form von Datenmodellen erstellt werden und in einer Cloud abgespeichert. 
 
 Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet und somit die Anforderungen am besten kennen. 
-https://link.springer.com/content/pdf/10.1007/978-3-662-61374-0.pdf?pdf=button
+<<12>>
 
 === Ziele von LC:
 Das Ziel von Low-Code ist es zum einem über einen kurzen Zeitraum Anwendungen zu entwickeln. Es werden Zeit und Kosten gespart. Des Weiteren sind wenig technische Anforderungen erforderlich und kaum Programmierkenntnisse nötig. Die Einarbeitungszeit ist wesentliche geringer als das Beibringen von Programmiersprachen. 
 Dadurch können zum Beispiel Abteilungsleiter, die sich mit Programmieren   kaum oder überhaupt nicht auskennen Anwendungen erstellen. Ein Vorteil ist, sie besitzen viel Fachliches Wissen und können dadurch besser Anforderungen spezifizieren.  
-
+<<13>>
 
 === Architektur von Low Code
 
@@ -77,7 +76,7 @@ Nach Eintragung der wichtigsten Angaben können Bilder des Schadens hochgeladen 
 Anschließend können weitere Details des Unfalls genannt werden. 
 Zum Schluss erhält der Nutzer eine Übersicht und kann die Reklamierung absenden.
 
-=== verwendete Werkzeuge
+=== Verwendete Werkzeuge
 
 Im Vergleich zur traditionellen Programmierung ermöglicht es Low-Code eine Anwendung ohne große Programmierkenntnisse, mittels einer grafischen Oberfläche zu entwickeln. 
 Der Code wird automatisch erzeugt. 
@@ -194,5 +193,10 @@ Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
 * [7] https://www.pressebox.de/pressemitteilung/alfabet-ag/Studie-belegt-In-70-der-Unternehmen-scheitern-IT-Projekte-wegen-unterschiedlicher-Planungssichten/boxid/596894
 * [8] http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf
 * [9] https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf
+* [10] https://silo.tips/download/seminararbeit-modellgetriebene-softwareentwicklung-anhand-des-oaw-frameworks
+* [11] https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
+* [12] https://link.springer.com/content/pdf/10.1007/978-3-662-61374-0.pdf?pdf=button
+* [13] Raquel Sanchis, Óscar García-Perales , Francisco Fraile und Raul Poler(2019): Low-Code as Enabler of Digital Transformation in Manufacturing Industry
+
 
 
