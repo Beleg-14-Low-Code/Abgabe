@@ -1,4 +1,4 @@
-= Low-Code Ansatz zur Anwendungsprogrammierung
+= Fähigkeiten und Vorgehen von Low-Code-Ansätzen
 Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt, HTWK Leipzig (WS22/23 MIM Modul Software Engineering, Prof. Andreas Both)
 :toc:
 :toc-title: Gliederung
