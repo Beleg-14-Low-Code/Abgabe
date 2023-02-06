@@ -7,9 +7,7 @@ Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt, HTWK Leipzig 
 
 == Einleitung
 
-In der Softwareentwicklung wird ständig nach alternativen Entwicklungsansätzen und Prozessen gesucht, welche dabei helfen sollen, das Arbeiten effizienter und erfolgreicher gestalten. Ein Grund dafür ist die Anzahl von nicht vollständig erfolgreich abgeschlossenen IT-Projekten. Dem Chaos Report der Standish Group aus dem Jahr 2015 zufolge haben "52% der IT-Vorhaben [...] zumindest teilweise nicht die Wünsche und Anforderungen der Auftraggeber erfüllt. 19% der Projekte sind ein Totalausfall und wurden abgebrochen. Nur 29% der untersuchten Projekte waren total erfolgreich." [QUELLE] Diese Ergebnisse sind das Resultat von vielen unterschiedlichen Faktoren, welche bei der Softwareentwicklung eine Rolle spielen. Durch Untersuchungen wie diese wird deutlich, dass die in der Softwareentwicklung eingesetzten Prozesse noch Verbesserungsbedarf aufweisen. 
-
-https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf
+In der Softwareentwicklung wird ständig nach alternativen Entwicklungsansätzen und Prozessen gesucht, welche dabei helfen sollen, das Arbeiten effizienter und erfolgreicher gestalten. Ein Grund dafür ist die Anzahl von nicht vollständig erfolgreich abgeschlossenen IT-Projekten. Dem Chaos Report der Standish Group aus dem Jahr 2015 zufolge haben "52% der IT-Vorhaben [...] zumindest teilweise nicht die Wünsche und Anforderungen der Auftraggeber erfüllt. 19% der Projekte sind ein Totalausfall und wurden abgebrochen. Nur 29% der untersuchten Projekte waren total erfolgreich." <<1>> Diese Ergebnisse sind das Resultat von vielen unterschiedlichen Faktoren, welche bei der Softwareentwicklung eine Rolle spielen. Durch Untersuchungen wie diese wird deutlich, dass die in der Softwareentwicklung eingesetzten Prozesse noch Verbesserungsbedarf aufweisen. 
 
 Es ist im Rahmen dieser Arbeit nicht möglich, auf die Vielzahl von Faktoren, welche den Ausgang eines Softwareprojekts beeinflussen können, einzugehen. Dementsprechend werden im Weiteren nur ausgewählte Faktoren betrachtet. Im Verlauf dieser Arbeit wird auf die folgenden Problempunkte der Softwareentwicklung sowie die zugehörigen, von Low-Code Entwicklungsplattformen verfolgten, Lösungsansätze eingegangen:
 
@@ -21,9 +19,7 @@ Dies führt potentiell zu ungenauer Anforderungsspezifikation, beziehungsweise s
 
 * hohe Wartungskosten für Software
 
-Auf Grund der hohen Komplexität von Anwendungen ist Wartung aufwändig und erfordert geschultes Personal, wodurch der Ressourcenaufwand für die Softwarewartung steigt. Die Kosten für Softwarewartung bewegen sich seit den 1970er Jahren, wie von Lehner [QUELLE2] gezeigt, zwischen 50% und 90% anteilig zu den Entwicklungskosten. Eine Reduktion der Wartungskosten für Software würde also erhebliche Ressourcen freisetzen. 
-
- Lehner, F., (2021). Die Softwarewartungskosten als Managementproblem im Wandel der Zeit – Ergebnisse einer Metaanalyse. In: Helferich, A., Henzel, R., Herzwurm, G. & Mikusz, M. (Hrsg.), Software Management 2021. Bonn: Gesellschaft für Informatik e.V.. (S. 73-89). DOI: 10.18420/swm2021-006 
+Auf Grund der hohen Komplexität von Anwendungen ist Wartung aufwändig und erfordert geschultes Personal, wodurch der Ressourcenaufwand für die Softwarewartung steigt. Die Kosten für Softwarewartung bewegen sich seit den 1970er Jahren, wie von Lehner <<2>> gezeigt, zwischen 50% und 90% anteilig zu den Entwicklungskosten. Eine Reduktion der Wartungskosten für Software würde also erhebliche Ressourcen freisetzen. 
 
 == Generationen von Programmiersprachen
 
@@ -280,4 +276,8 @@ Diese Positionierung bedeutet, dass Low-Code Entwicklungsplattformen nach Einsch
 Quelle1: https://www.gartner.com/en/newsroom/press-releases/2022-08-04-cloud-platform-hc-press-release
 Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
 
+[bibloigraphy]
 == Literaturverzeichnis
+
+* [1] Chaos Report 2015, Standish Group - https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf
+* [2] Lehner, F., (2021). Die Softwarewartungskosten als Managementproblem im Wandel der Zeit – Ergebnisse einer Metaanalyse. In: Helferich, A., Henzel, R., Herzwurm, G. & Mikusz, M. (Hrsg.), Software Management 2021. Bonn: Gesellschaft für Informatik e.V.. (S. 73-89). DOI: 10.18420/swm2021-006 
