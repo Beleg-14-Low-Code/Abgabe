@@ -209,7 +209,7 @@ Die Anwendungslogik  einer Anwendung beschreibt die konkrete Verknüpfung von Ba
 
 Low Code 
 
-Die Anwendungslogik basiert bei Low Code Plattformen auf Workflows und Datenmodellen. Es ist möglich, seine Anwendung so mit einfachen Abläufen zusammenzustellen, wobei man auch hier die Möglichkeit hat, auf vorgefertigte Flows und Datenmodelle zuzugreifen.Funktionen über Flows, Microflows und Datenmodelle.
+Die Anwendungslogik basiert bei Low Code Plattformen auf Workflows, Microflows und Datenmodellen. Es ist möglich, seine Anwendung so mit einfachen Abläufen zusammenzustellen, wobei man auch hier die Möglichkeit hat, auf vorgefertigte Flows und Datenmodelle zuzugreifen. (https://docs.mendix.com/studio/workflows/, https://docs.mendix.com/studio/microflows/, https://docs.mendix.com/studio/work-with-data/)
 
 ==== Qualitätskontrolle
 
