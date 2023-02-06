@@ -95,21 +95,21 @@ Für die Erstellung dieser Anwendungen wurden verschiedene Tools verwendet.
 Für die JavaScript-Entwicklung wurden die Bibliotheken React und React-Bootstrap gewählt, um die Benutzeroberfläche zu erstellen. React ermöglicht es, eine interaktive Benutzeroberfläche zu erstellen, und React-Bootstrap bietet eine einfache Anpassung der Stile, ohne dass große CSS-Dateien erstellt werden müssen. Für das Backend wurden Node.js und eine MySQL-Datenbank verwendet.
 
 ==== Mendix
-Mendix ist  eine vielseitige Softwareentwicklungsplattform, die es ermöglicht, mobile und Webanwendungen in großem Umfang zu erstellen, einzusetzen, zu warten und zu verbessern. [...]
+Mendix ist  eine vielseitige Softwareentwicklungsplattform, die es ermöglicht, mobile und Webanwendungen in großem Umfang zu erstellen, einzusetzen, zu warten und zu verbessern. 
 <<15>>
 
 Warum wurde Mendix gewählt?
 
-Weil Mendix ein Marktführer in seinem Bereich ist. Das IT-Beratungsunternehmen Gartner veröffentlichte im August 2022 einen Bericht zur Marktforschung über Low-Code-Unternehmensanwendungsplattformen (Enterprise Low-Code Application Platforms - LCAP) [...]. Sie verwenden den Magic Quadrant, der Markttrends wie Richtung, Reifegrad und Teilnehmer aufzeigt.
+Weil Mendix ein Marktführer in seinem Bereich ist. Das IT-Beratungsunternehmen Gartner veröffentlichte im August 2022 einen Bericht zur Marktforschung über Low-Code-Unternehmensanwendungsplattformen (Enterprise Low-Code Application Platforms - LCAP). Sie verwenden den Magic Quadrant, der Markttrends wie Richtung, Reifegrad und Teilnehmer aufzeigt.
 <<16>>
 
 .Magic Quadrant for Enterprise Low-Code Application Platforms
 image::magic_Quadrant.png[,500 ]
 
-Horizontal (Completeness of Vision) wird die Vollständigkeit der Vision dargestellt. Das heißt, sie spiegelt die Innovationskraft des Anbieters wider und zeigt, ob der Anbieter den Markt steuert oder ihm folgt [...].
+Horizontal (Completeness of Vision) wird die Vollständigkeit der Vision dargestellt. Das heißt, sie spiegelt die Innovationskraft des Anbieters wider und zeigt, ob der Anbieter den Markt steuert oder ihm folgt.
 <<17>>
 
-Die Vertikale (Ability to execute) zeigt die Fähigkeit zur Ausführung. Er fasst Faktoren wie die finanzielle Rentabilität des Anbieters, seine Reaktionsfähigkeit auf dem Markt, die Produktentwicklung, die Vertriebskanäle und den Kundenstamm zusammen [...].
+Die Vertikale (Ability to execute) zeigt die Fähigkeit zur Ausführung. Er fasst Faktoren wie die finanzielle Rentabilität des Anbieters, seine Reaktionsfähigkeit auf dem Markt, die Produktentwicklung, die Vertriebskanäle und den Kundenstamm zusammen.
 <<17>>
 
 
@@ -173,15 +173,16 @@ Bei der traditionellen Programmierung können Tests manuell durchgeführt oder a
 
 Es gibt viele verschiedene Arten von automatisierten Tests. Welcher Satz von verschiedenen Testtypen angewendet wird, hängt von der Art der Software ab. Dies könnte z.B. ein Satz von Unit-, Integrations- und End2End-Tests oder Unit- und Akzeptanztests sein.
 
-Die Entwicklung automatisierter Tests ist sehr zeitaufwändig. Statistisch gesehen nimmt die Entwicklung von automatisierten Tests zwischen 20 und 50 % der Entwicklungszeit in Anspruch [https://devm.io/testing/time-estimation-for-software-testing-128078].
+Die Entwicklung automatisierter Tests ist sehr zeitaufwändig. Statistisch gesehen nimmt die Entwicklung von automatisierten Tests zwischen 20 und 50 % der Entwicklungszeit in Anspruch.<<26>>
 
 _Low Code_ 
 
 Bei Mendix ist die Qualitätssicherung dadurch gegeben, dass alle plattforminternen Elemente vorgetestet sind. Das bedeutet, dass alle Komponenten ohne zusätzliche Tests ausgeführt werden können. Zusätzlich dazu laufen im Hintergrund für den Nutzer nicht ersichtlich, Test. Hier wird dann ausgegeben und auf der GUI direkt gekennzeichnet, wo und was der Fehler ist. 
 Das Anbinden von externen Testsystemen wie Selenium oder JUnit, wird von Mendix unterstützt. <<23>>
+
 ==== Wiederverwendbarkeit
 
-Wiederverwendbarkeit, d. h. die Wiederverwendung von Komponenten oder Codeteilen. Dies ist eine sehr beliebte Methode in der Entwicklung: Software, Webservices, Design, usw. Durch die Systematisierung der Wiederverwendung von Komponenten werden viele Kosten und Entwicklungszeiten gesenkt und in vielen Fällen wird die Qualität der Softwareprodukte verbessert. [...] <<24>>
+Wiederverwendbarkeit, d. h. die Wiederverwendung von Komponenten oder Codeteilen. Dies ist eine sehr beliebte Methode in der Entwicklung: Software, Webservices, Design, usw. Durch die Systematisierung der Wiederverwendung von Komponenten werden viele Kosten und Entwicklungszeiten gesenkt und in vielen Fällen wird die Qualität der Softwareprodukte verbessert. <<24>>
 
 _Traditionelle Programmierung_ 
 
@@ -288,6 +289,7 @@ Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
 * [23] https://www.mendix.com/blog/three-tools-to-test-your-mendix-application/
 * [24] https://habr.com/ru/company/sberbank/blog/675660/
 * [25] https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode
+* [26] https://devm.io/testing/time-estimation-for-software-testing-128078
 
 
 
