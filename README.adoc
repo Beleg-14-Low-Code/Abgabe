@@ -38,7 +38,7 @@ Daraus resultiert, dass Modelle einen wichtigen Bestandteil zur Entwicklung von 
 
 In der modellgetriebenen Softwareentwicklung hingegen wird ermöglicht aus einem Modell einen lauffähigen Code zu generieren. Ein Kriterium hierbei ist es, dass es sich um eine Formales Modell handeln muss. Formale Modell besitzen eindeutige Syntax und Semantik. <<10>>
 
-Img::Modell_Driven_Development.png[] 
+image:: Modell_Driven_Development.png[] 
 Abbildung 1, https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
 
 Durch die automatische Generierung von Quellcode, kann Entwicklungszeit eingespart werden und somit auch Kosten. Des Weiteren ist die Abstraktion höher. Durch gute Dokumentation ist es einfacher Fehler zu finden. In der modellbasierten Entwicklung war dies nicht möglich, da durch ständige Änderungen des Quellcodes, das Modell oft nicht aktualisiert wurde.<<11>>
@@ -51,7 +51,7 @@ Low-code ist auch eine Modellgetriebene Softwareentwicklung. Die Erstellung eine
 Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet und somit die Anforderungen am besten kennen. 
 <<12>>
 
-=== Ziele von LC:
+=== Ziele von Low Code:
 Das Ziel von Low-Code ist es zum einem über einen kurzen Zeitraum Anwendungen zu entwickeln. Es werden Zeit und Kosten gespart. Des Weiteren sind wenig technische Anforderungen erforderlich und kaum Programmierkenntnisse nötig. Die Einarbeitungszeit ist wesentliche geringer als das Beibringen von Programmiersprachen. 
 Dadurch können zum Beispiel Abteilungsleiter, die sich mit Programmieren   kaum oder überhaupt nicht auskennen Anwendungen erstellen. Ein Vorteil ist, sie besitzen viel Fachliches Wissen und können dadurch besser Anforderungen spezifizieren.  
 <<13>>
