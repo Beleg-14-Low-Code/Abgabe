@@ -21,134 +21,37 @@ Dies führt potentiell zu ungenauer Anforderungsspezifikation, beziehungsweise s
 
 Auf Grund der hohen Komplexität von Anwendungen ist Wartung aufwändig und erfordert geschultes Personal, wodurch der Ressourcenaufwand für die Softwarewartung steigt. Die Kosten für Softwarewartung bewegen sich seit den 1970er Jahren, wie von Lehner <<2>> gezeigt, zwischen 50% und 90% anteilig zu den Entwicklungskosten. Eine Reduktion der Wartungskosten für Software würde also erhebliche Ressourcen freisetzen. 
 
-== Generationen von Programmiersprachen
+== Die Entwicklung von Programmiersprachen und Einordnung von Low Code
+Die Entwicklung von Programmiersprachen begann im 19. Jahrhundert. Sie lässt sich in 5 Generationen einteilen. Es begann mit der ersetzen Generation, der Maschinensprachen. Diese sprachen waren Prozessorspezifisch und nur für Maschinen lesbar. Hierbei wurde ein Binärer Programmcode and den Prozessor gesendet. Im Jahr 1948 wurde erstmals von Assemblersprachen gesprochen. Im Gegensatz zur Maschinensprache ist die Assemblersprache auch für den Menschen lesbar. Hierbei wird der Code durch einen Assembler in Maschinensprache übersetzt. Die Assemblersprache ersetzte in kurzer Zeit die Maschinensprache. In den 1960er gab es einen großen Sprung in der Programmierentwicklung. Programmcode war nicht mehr Hardware beziehungsweise Software abhängig. Aufgrund dessen wird oft von höheren Programmiersprachen gesprochen. Dazu gehören zum Beispiel prozedurale Sprachen. Zu den prozeduralen Sprachen gehört zum Beispiel die, in den 1970er entwickelten Programmiersprachen Pascal. Es wird auch von strukturierten Programmiersprachen gesprochen. Ebenfalls in den 1970er entstand die Objektorientierte Programmierung. Der objektorientierte Ansatz wurde in den 1990er in den meisten Programmiersprachen durchgesetzt. Ein Beispiel für eine objektorientierte Programmiersprache wäre Java. In der darauffolgenden 4. Generation können keine exakten Programmiersprachen zugeordnete werde. Dazu gehören alle Sprachen, die einen höheren Abstraktionsgrad erzeugen, als in der 3. Generation. (https://medien.umbreitkatalog.de/pdfzentrale/978/344/640/Leseprobe_l_9783446405585.pdf) https://www.edv-buchversand.de/productinfo.php?replace=false&cnt=productinfo&mode=2&type=2&id=dp-524&index=2&nr=0&window=edvbv&art=Leseprobe&preload=false
 
-Low Code lässt sich in den Generationen der Programmiersprachen in die 4. Generation, die Deklarative Programmierung einordnen. 
-Programmierparadigmen: ist der stil in dem eine Programmiersprache entworfen wurde
-
-
-1GL:
-Maschinensprache: Wie der Name bereits erläutert, gab es in der ersten Generation eine Sprache, die nur Computer verstehen konnten. Dies kann durch den Prozessors eines Computers gelesen werden und besteht aus binären und digitalen Sprachen. 
-Beispiel: 
-
-2Gl:
-Assemblersprache: Der Assembler übersetzt den Assembler Programmcode/ Quellcode in ein Maschinenprogramm. Assembler Code ist für den Menschen lesbar. Erschien erstmals im Jahr 1948
-Nachteile Schlechte Lesbarkeirt und wartbarkeit, ist an einem Prozesor gebunden 
-Beispiel Sprache: Fortran
-→ dabei Anwendungen wurden immer Komplexer, es war sehr Zeitaufwendig. Entwickler brauchten mehr Zeit, es scheiterten viele Projekte. Budget wurd gesprengt
-
-1960er erste Softwarekrise → neue sprechen wurden eingeführt
-3GL:
-Prozedurale Programmierung: Die Prozedurale Programmierung ist ein Paradigma der imperativen Programmiersprache. Es definiert eine Sequentieller/ Strukturierten Ablauf von Befehlen. Wiederverwendbare Teile werden in Funktionen ausgelagert, diese müssen vom Programmierer verstanden werden.  Sie besteht aus folgen anweisungen und verschiedenen Kontrollstrukturen ( schleifen, if-bedingungen, etc….).  → Strukturierte Programierung 
-in den 1970 mit der Programiersprache pascal
-1970 ebenfalls objektorientierte programmiersprach
-Objektorientierter Ansatz wurde 1990 in den meidsten programmiersprachen eingeführt 
-
-→ nichte mehr prozessor abhängig
+Abstraktion bedeutet die Beschränkung/ Konzentration auf das Wesentliche. (https://www.itwissen.info/Abstraktion-abstraction-OOP.html). Die Erhöhung des Abstraktionsgrades ist auch ein Ziel des Entwicklungsansatzes Modell Driven Development und gehört somit zur 4. Generation der Programmiersprachen. Dieser Ansatz wird im darauffolgenden Abschnitt genauer beschrieben. 
 
 
-4GL. 
-Ziel der Sprache höheres Abstraktniveu
-Was bedeutet Abstraktion:
-Vereinfachung, Kernproblem bleibt vorhanden→ auf des wesentliche konzentrieren
 
-Nochmal mit zeitangaben Programmiersprachen
-■ 1950er- bis 1960er-Jahre: 
-Programmiersprache ist Assemblersprach 
-Ablauf wird durch ein Flussdiagramm dargestellte
+==Model Driven Development – MDD
 
-■ 
-1970er-Jahre: 
-Strukturierende, Dominierende programmiersprachen 
-beispiel Pascal
-strukturierendedarstellungstechniken werden angewendet, wie strukturierendes design
-software prozesse orientieren sich am wasserfallmodell 
+Modelle dienen dazu Teile einer Software zu repräsentierten. Sie sind nützlich zur Planung und Dokumentation eines Programms. Sie abstrahieren teile eines Systems. Die Entwicklung einer Software ist sehr komplex, Abstraktion bedeutet hierbei der Fokus liegt auf wesentliche Teile eines Systems. Der Komplexe Teil wird außen vorgelassen. 
+Durch die Modellierung einer Software entsteht zum einen ein besseres Verständnis für Auftraggeber. Da der Ablauf eines Systems durch ein Modell einfacher zu verstehen ist als der Quellcode eines Programms. Die Anforderungen einer Software können besser verstanden werden und somit die Missverständnisse zwischen Entwickler und Auftraggeber verringert. 
+Es können Designprobleme besser erkannt werden. Werden diese erste nach der Entwicklung bekannt, können höher Kosten entstehen. (Model-Driven Software Development,Stephen W. Liddle)
+Aus einer Umfrage von Großunternehmen weltweit resultierte, das 70 % der befragten Unternehmen bereits, das Scheitern eines Projektes erlebt haben. Grund hierbei waren Anforderungen, die bei der Planung des Projektes nicht bekannt waren. (https://www.pressebox.de/pressemitteilung/alfabet-ag/Studie-belegt-In-70-der-Unternehmen-scheitern-IT-Projekte-wegen-unterschiedlicher-Planungssichten/boxid/596894).
 
-■ Ab 1990er-Jahre: 
-Objektorientiertprogrammiersprachen werden immer belieber C++, java
-Vereinheilichender prozess durch Unified Modeling Language (UML), 
-orientiert sich am spiralmodell (UML)
+Daraus resultiert, Modelle tragen einen wichtigen Bestandteil zur Entwicklung von Softwaresystemen bei. Dabei gibt es Unterschiede zwischen Modellbasierter- und Modellgetriebener Softwareentwicklung. Modellbasiert bedeutet, das Modell wird erstellt und darauf basierend wird anschließende der Code geschrieben. (http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf) Code und Modell sind somit unabhängig voneinander. Nimmt man eine Änderung im Code vor, wird dies nicht zeitgleich im Modell übernommen. (https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf). 
 
+In der Modellgetriebenen Softwareentwicklung hingegen wird ermöglicht aus einem Modell einen Lauffähigen Code zu generieren. Ein Kriterium ist, es muss sich um eine Formales Modell handeln. Formale Modell besitzen eindeutige Syntax und Semantik. (https://silo.tips/download/seminararbeit-modellgetriebene-softwareentwicklung-anhand-des-oaw-frameworks)
 
-== Model Dricen Development (MDD)
+ 
+Abbildung 1, https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
 
-1990: AT&T-Fernverkehrsnetz im Nordosten brach zusammen 
-Grund: fehlende Break Anweisung 
-kleine kodierungsfehler unerwartete folgen 
-Problem von Softwareentwickler und Designer entwicklung von Software ist sehr kommplex
-kann diese Komplexität eingegrenzt werden durch mdd? 
-Wenn wir zum Beispiel versuchen einen Wolkenkratzer ohne den Einsatz von modernenWerkzeuge wie Bulldozer und hydraulische Hebevorrichtungen zu bauen, ist zwar theoretisch machbar, aber wahrscheinlich eine sehr komplexe Aufgabe sein. Die einzig mögliche Lösung für den der zunehmenden Komplexität ist die Minimierung des Grad der zufälligen Komplexität zu minimieren.
+Durch die automatische Generierung von Quellcode, kann Entwicklungszeit eingespart werden und somit auch Kosten. Des Weiteren ist die Abstraktion höher. Durch gute Dokumentation ist es einfacher Fehler zu finden, in der Modellbasierten Entwicklung war dies ein nicht möglich, da durch ständige Änderungen des Quellcodes, das Modell oft nicht aktualisiert wurde. (https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf)
+Ein erster Ansatz der Modellgetriebenen Entwicklung starte in den 1990er mit Computer Aided Software Engineering (Case). Die war ein Ansatz um aus Modellen Quellcode zu erzeugen. (https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf) Dieser Ansatz war  allerdings nicht ausgearbeitet. Zum Beispiel Case-Werkzeuge waren Hersteller abhängig. Deswegen setzte sich Case nicht durch. (https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf) 
+In den 1990er der wurde der objektorientierte Ansatz in den meisten Sprachen durchgesetzt.  Der Fokus musste nun auf die Entwicklung von objektorientierten Werkzeugen liegen, dadurch entstand der bis heute verwendete Modellierungssprache „UML“ (Udenifind Modelling Language). Durch Tools wurde es ermöglicht, zeitgleich Modell und Code zu ändern. (http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf)
 
-MDD
+== Low Code? 
+Low-code ist auch eine Modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine Grafische Benutzeroberfläche. Es können per Drag and Drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Die Verknüpfung von Elementen funktioniert über Workflows, des Weiteren können Datentabellen in Form von Datenmodellen erstellt werden und in einer Cloud abgespeichert. 
 
-Modelle sind zum Beispiel auch in Ingenieurwesen sehr wichtig. 
-Enginere benutzen zum beispiel mathematische model um die tragfähigkeit zu analysieren 
-Problem: 
-Modelle werden von Hand in Code geschrieben, daher gibt es keine formale Verbindung zwischen modell und Programmcode 
-Schwierig modell zu pflegen, ist mit viel aufwand verbunden und implementierungen aktuelle zu halten ist schwierig. 
-Deswegen sind modelle ungenau, oft auch aufgrund von Zeitdruck 
-Dokumentation deswegen nicht vertrauenswürdig
+Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet und somit die Anforderungen am besten kennen. 
+https://link.springer.com/content/pdf/10.1007/978-3-662-61374-0.pdf?pdf=button
 
-Unterschied modellbasiert und Modellgetrieben: modellbasiert wird modellerstellt und code per hand geschrieben. Dient zur Dokumentation 
-Modellgetrieben nach erstellunge des modelles wird automatisch code generiert. 
-Geschichte von MDD
-Hohe Softwarekosten auswirkungen für Unternehmen, aber noch schlimmer ist ein schlechtes softwaredesign, das die produktivität beeinflusst
-Statistiken besagen, dass ca. 70% der Software-Projekte Budget und Termin überschreiten → anhaltenden Software-Krise.
-
-Geschichte hier nochmal rausschreben → was ist OMG
-http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf
-
-andere Quellen 
-Formale Modelle werden Automatisiert und lauffähiger Code wird generiert, in code übersetzt→ in lauffähige software übersetzt 
-Formale Modelle besitzen eindeutige Syntax und Semantik, Beispiel hierfür ist UML (Besispeil Tool, Enterprise Architekture
-anstelle der dokumentation wird durch modellierung programmcode erstellt
-
-https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf
-
-Automatisiert den Entwicklungsprozess
-ziel: Kosten senken, schwierigkeitsgrad reduzieren, Qualität verbessern 
-Prozess generiert das fertige Endprodukt
-Im gegensatz zu gewöhnlichen softwareentwicklungsprozessen, geht es nicht um dokumentation und analyse sondern um die entwicklung entwicklungsansatz)
-Normalerweise werden Modelle als Dokumentation benutzt
-Entwickler haben kein wissen über den 	Quellcode
-
-== Low Code
-
-Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet die Anforderungen am besten kennen. 
-
-Mithilfe von Low-Code können mit einer Drag- und Drop-Funktion Eingabe-, Navigation-, Dropdown-Felder und Steuerelemente hinzugefügt werden. Es können verschiedene Bildschirmansichten erstellt werden, diese werden mit Hilfe von  Steuerelementen miteinander verknüpft. 
-
-Programmierung läuft über eine grafische Benutzeroberfläche.
-Entwicklungsumgebung mit der code erstellt wird
-Es wird über eine grafische oberfläche code projeziert
-forster research hat den begriff ins leben gerufen 
-
-
-Geeignet für sogenannte Citizen Developers: 
-können Programme entwickeln, können aber keine genaue Programmiersprache. Kennen sich im Bereich aus. In der Programmierung verlassen sie sich auf das Tool. Nutzer sind auch Entwicklung. 
-
-=== Ziele von Low Code
-
-Einbeziehen von CItizen Developers in Modellierung von Geschäftsabläufen, da Sie schon damit vertraut sind
-Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet die Anforderungen am besten kennen. 
-
-Mithilfe von Low-Code können mit einer Drag- und Drop-Funktion Eingabe-, Navigation-, Dropdown-Felder und Steuerelemente hinzugefügt werden. Es können verschiedene Bildschirmansichten erstellt werden, diese werden mit Hilfe von  Steuerelementen miteinander verknüpft. 
-
-Programmierung läuft über eine grafische Benutzeroberfläche.
-Entwicklungsumgebung mit der code erstellt wird
-Es wird über eine grafische oberfläche code projeziert
-forster research hat den begriff ins leben gerufen 
-
-
-Geeignet für sogenannte Citizen Developers: 
-können Programme entwickeln, können aber keine genaue Programmiersprache. Kennen sich im Bereich aus. In der Programmierung verlassen sie sich auf das Tool. Nutzer sind auch Entwicklung.  von Wartungskosten in Softwareentwicklung
-siehe: https://dl.gi.de/handle/20.500.12116/37795
-leicht zusammengestellt werden
-Schnelligkeit: 5- 10 mal schneller als traditionelle programmierung
-Kosteneinsparung:
-Weniger Komplex: Fokus liegt darauf software individuell anzupassen und Benutzeranforderungen zu erfüllen 
-Einfache wartungsarbeiten: → wenig code anbieten wenig code muss gewartet werden. 
-Wenig technische Anforderungen erforderlich. Dadurch Abteilungsleiter die sich mit dem technischen nicht auskennen aber dafür viel fachliches wissen haben. könne beser anforderunge spezifizieren 
 
 === Architektur von Low Code
 
