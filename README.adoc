@@ -3,6 +3,8 @@ Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt, HTWK Leipzig 
 :toc:
 :toc-title: Gliederung
 
+:imagesdir: img/
+
 == Einleitung
 
 In der Softwareentwicklung wird ständig nach alternativen Entwicklungsansätzen und Prozessen gesucht, welche dabei helfen sollen, das Arbeiten effizienter und erfolgreicher gestalten. Ein Grund dafür ist die Anzahl von nicht vollständig erfolgreich abgeschlossenen IT-Projekten. Dem Chaos Report der Standish Group aus dem Jahr 2015 zufolge haben "52% der IT-Vorhaben [...] zumindest teilweise nicht die Wünsche und Anforderungen der Auftraggeber erfüllt. 19% der Projekte sind ein Totalausfall und wurden abgebrochen. Nur 29% der untersuchten Projekte waren total erfolgreich." [QUELLE] Diese Ergebnisse sind das Resultat von vielen unterschiedlichen Faktoren, welche bei der Softwareentwicklung eine Rolle spielen. Durch Untersuchungen wie diese wird deutlich, dass die in der Softwareentwicklung eingesetzten Prozesse noch Verbesserungsbedarf aufweisen. 
