@@ -13,7 +13,7 @@ Es ist im Rahmen dieser Arbeit nicht möglich, auf die Vielzahl von Faktoren, we
 
 * geringe Einbeziehung der Nutzer in den Entwicklungsprozess
 
-Dies führt potentiell zu ungenauer Anforderungsspezifikation, beziehungsweise sich im Laufe des Projekts ändernden Anforderungen oder zu geringer Ressourcenallokation auf Grund von unterschätztem Arbeitsaufwand.
+Dies führt potenziell zu ungenauer Anforderungsspezifikation, beziehungsweise sich im Laufe des Projekts ändernden Anforderungen oder zu geringer Ressourcenallokation auf Grund von unterschätztem Arbeitsaufwand.
 
 * hoher Arbeitsaufwand für Entwickler
 
@@ -173,12 +173,12 @@ Große Abhängigkeit von Tools
 
 == Ausblick
 
-Abschließend wollen wir einen Ausblick zur zukünftigen Entwicklung von Low-Code Entwicklungsplattformen geben. Hierzu wenden wir uns an den im August 2022 veröffentlichten Cloud Platform Technology Hype-Cycle der IT-Beratungsfirma Gartner [QUELLE]. Dabei handelt es sich um eine Visualisierung der Erwartungen von potentiellen Nutzern und Medien bezüglich einer Technologie in den frühen Phasen ihres Bestehens. Wie in Abbildung [ABBNR] sichtbar ist, befinden sich Low-Code Entwicklungsplattformen, verzeichnet als LCAP (Low-Code Application Platforms), am Ende des Hype Cycles. 
+Abschließend wollen wir einen Ausblick zur zukünftigen Entwicklung von Low-Code Entwicklungsplattformen geben. Hierzu wenden wir uns an den im August 2022 veröffentlichten Cloud Platform Technology Hype-Cycle der IT-Beratungsfirma Gartner [QUELLE]. Dabei handelt es sich um eine Visualisierung der Erwartungen von potenziellen Nutzern und Medien bezüglich einer Technologie in den frühen Phasen ihres Bestehens. Wie in Abbildung [ABBNR] sichtbar ist, befinden sich Low-Code Entwicklungsplattformen, verzeichnet als LCAP (Low-Code Application Platforms), am Ende des Hype Cycles. 
 
 .Bildunterschrift, [QUELLE1]
 image::cloud_hc_2022.jpg[]
 
-Diese Positionierung bedeutet, dass Low-Code Entwicklungsplattformen nach Einschätzung von Gartner, in weniger als 2 Jahren, also spätestens im Sommer 2024, das Plateau der Produktivität erreichen. Technologien, welche diese Phase in ihrer Entwicklung erreicht haben, sind laut Gartner [QUELLE2] praxiserprobt genug, um vom Mainstream adoptiert zu werden. Zudem sind Kriterien zur Auswahl von unterschiedlichen Anbietern klar definiert [Quelle2]. 
+Diese Positionierung bedeutet, dass Low-Code Entwicklungsplattformen nach Einschätzung von Gartner in weniger als 2 Jahren, also spätestens im Sommer 2024, das Plateau der Produktivität erreichen. Technologien, welche diese Phase in ihrer Entwicklung erreicht haben, sind laut Gartner [QUELLE2] praxiserprobt genug, um vom Mainstream adoptiert zu werden. Zudem sind Kriterien zur Auswahl von unterschiedlichen Anbietern klar definiert [Quelle2]. 
 
 Quelle1: https://www.gartner.com/en/newsroom/press-releases/2022-08-04-cloud-platform-hc-press-release
 Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
