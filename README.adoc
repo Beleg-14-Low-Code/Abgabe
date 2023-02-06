@@ -28,7 +28,7 @@ Abstraktion bedeutet die Beschränkung/ Konzentration auf das Wesentliche. (http
 
 
 
-==Model Driven Development – MDD
+== Model Driven Development – MDD
 
 Modelle dienen dazu Teile einer Software zu repräsentierten. Sie sind nützlich zur Planung und Dokumentation eines Programms. Sie abstrahieren teile eines Systems. Die Entwicklung einer Software ist sehr komplex, Abstraktion bedeutet hierbei der Fokus liegt auf wesentliche Teile eines Systems. Der Komplexe Teil wird außen vorgelassen. 
 Durch die Modellierung einer Software entsteht zum einen ein besseres Verständnis für Auftraggeber. Da der Ablauf eines Systems durch ein Modell einfacher zu verstehen ist als der Quellcode eines Programms. Die Anforderungen einer Software können besser verstanden werden und somit die Missverständnisse zwischen Entwickler und Auftraggeber verringert. 
