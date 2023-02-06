@@ -176,15 +176,18 @@ Um diese Aussage zu testen, haben wir zwei Webanwendungen mit der Programmierspr
 Wir haben als Beispiel beschlossen, eine Anwendung zu entwickeln, die den Prozess der Meldung eines Unfalls, der den versicherten Gegenständen eines Nutzers zugestoßen ist, vereinfacht.
 Mit dieser App kann man: 
 
+*   das versicherte Objekt des Benutzers auswählen
+*   einen der vier Vorfälle auswählen und die Einzelheiten des Vorfalls eintragen
+*   die Bilder des Schadens hochladen
+*   weitere Details des Unfalls ausfühllen
+*   zum Schluss erhält der Nutzer eine Übersicht und kann die Reklamierung absenden
 
-* das versicherte Objekt des Benutzers auswählen, 
-*   einen der vier Vorfälle auswählen und die Einzelheiten des Vorfalls eintragen, 
-*   Nach Eintragung der wichtigsten Angaben können Bilder des Schadens hochgeladen werden.
-*   Anschließend können weitere Details des Unfalls genannt werden. 
-*   Zum Schluss erhält der Nutzer eine Übersicht und kann die Reklamierung absenden.
+Abbildung ... stellt Screenshots einer Anwendung dar, die mit ReactJS und anderen Tools entwickelt wurde. 
 
-image:screen-react-1.png[,200]
+image:screen-react-1.png[,200] 
 image:screen-react-2.png[,300]
+
+//.Screenshots der React-Anwendung
 
 === verwendete Werkzeuge
 Für die Erstellung dieser Anwendungen wurden verschiedene Tools verwendet.
@@ -194,24 +197,27 @@ Für die Erstellung dieser Anwendungen wurden verschiedene Tools verwendet.
 Für die JavaScript-Entwicklung wurden die Bibliotheken React und React-Bootstrap gewählt, um die Benutzeroberfläche zu erstellen. React ermöglicht es, eine interaktive Benutzeroberfläche zu erstellen, und React-Bootstrap bietet eine einfache Anpassung der Stile, ohne dass große CSS-Dateien erstellt werden müssen. Für das Backend wurden Node.js und eine MySQL-Datenbank verwendet.
 
 ==== Mendix
-Mendix ist  eine vielseitige Softwareentwicklungsplattform, die es ermöglicht, mobile und Webanwendungen in großem Umfang zu erstellen, einzusetzen, zu warten und zu verbessern.
+Mendix ist  eine vielseitige Softwareentwicklungsplattform, die es ermöglicht, mobile und Webanwendungen in großem Umfang zu erstellen, einzusetzen, zu warten und zu verbessern. [...]
 
 https://www.netguru.com/blog/what-is-mendix
 
 Warum wurde Mendix gewählt?
 
-Weil Mendix ein Marktführer in seinem Bereich ist. Das IT-Beratungsunternehmen Gartner veröffentlichte im August 2022 einen Bericht zur Marktforschung über Low-Code-Unternehmensanwendungsplattformen (Enterprise Low-Code Application Platforms - LCAP). Sie verwenden den Magic Quadrant, der Markttrends wie Richtung, Reifegrad und Teilnehmer aufzeigt.
+Weil Mendix ein Marktführer in seinem Bereich ist. Das IT-Beratungsunternehmen Gartner veröffentlichte im August 2022 einen Bericht zur Marktforschung über Low-Code-Unternehmensanwendungsplattformen (Enterprise Low-Code Application Platforms - LCAP) [...]. Sie verwenden den Magic Quadrant, der Markttrends wie Richtung, Reifegrad und Teilnehmer aufzeigt.
 https://www.gartner.com/doc/reprints?id=1-2C8VSOAH&ct=230113&st=sb
 
+image:magic_Quadrant.png[,500 ]
+// Magic Quadrant for Enterprise Low-Code Application Platforms
 
-image:magic_Quadrant.png[,500 "Magic Quadrant for Enterprise Low-Code Application Platforms"]
+Horizontal (Completeness of Vision) wird die Vollständigkeit der Vision dargestellt. Das heißt, sie spiegelt die Innovationskraft des Anbieters wider und zeigt, ob der Anbieter den Markt steuert oder ihm folgt [...].
+https://www.gartner.de/de/methoden/magic-quadrants
 
-Horizontal (Completeness of Vision) wird die Vollständigkeit der Vision dargestellt. Das heißt, sie spiegelt die Innovationskraft des Anbieters wider und zeigt, ob der Anbieter den Markt steuert oder ihm folgt.
+Die Vertikale (Ability to execute) zeigt die Fähigkeit zur Ausführung. Er fasst Faktoren wie die finanzielle Rentabilität des Anbieters, seine Reaktionsfähigkeit auf dem Markt, die Produktentwicklung, die Vertriebskanäle und den Kundenstamm zusammen [...].
+https://www.gartner.de/de/methoden/magic-quadrants
 
-Die Vertikale (Ability to execute) zeigt die Fähigkeit zur Ausführung. Er fasst Faktoren wie die finanzielle Rentabilität des Anbieters, seine Reaktionsfähigkeit auf dem Markt, die Produktentwicklung, die Vertriebskanäle und den Kundenstamm zusammen.
 
-
-Der Magic Quadrant ist in vier Teile unterteilt und zeigt die Wettbewerbsposition von vier Arten von Technologieanbietern in Märkten mit hohem Wachstum und signifikanter Anbieterdifferenzierung:
+Darüber hinaus ist der Magic Quadrant in vier Teile unterteilt und zeigt die Wettbewerbsposition von vier Arten von Technologieanbietern in Märkten mit hohem Wachstum und signifikanter Anbieterdifferenzierung [...]:
+https://www.gartner.de/de/methoden/magic-quadrants
 
 
 - *Führungskräfte* (Leaders) setzen ihre aktuelle Vision gut um und sind für morgen gut aufgestellt.
@@ -219,7 +225,6 @@ Der Magic Quadrant ist in vier Teile unterteilt und zeigt die Wettbewerbspositio
 - *Nischenplayer* (Niche Players) konzentrieren sich erfolgreich auf ein kleines Segment oder sind unfokussiert und übertreffen andere nicht.
 - *Herausforderer* (Challengers) führen heute gut aus oder dominieren vielleicht ein großes Segment, zeigen aber kein Verständnis für die Marktrichtung.
 
-https://www.gartner.de/de/methoden/magic-quadrants
 
 Der Magic Quadrant zeigt, dass Mendix die obere rechte Position, d.h. die führende Position, besetzt.
 
@@ -234,11 +239,11 @@ Auf Grund der entwickelten Beispiele wird der Vergleich in 4 Punkten erfolgen:
 
 ==== GUI
 
-GUI steht für "Graphical User Interface" und bezieht sich auf die Art und Weise, wie ein Computerprogramm oder ein Betriebssystem dargestellt wird. Es nutzt Bilder und Symbole anstelle von Textbefehlen, um dem Benutzer die Interaktion mit dem Computer zu erleichtern.
+GUI steht für "Graphical User Interface" und bezieht sich auf die Art und Weise, wie ein Computerprogramm oder ein Betriebssystem dargestellt wird. 
 https://en.wikipedia.org/wiki/Graphical_user_interface 
 
 _Traditionelle Programmierung_ +
-Bei der Entwicklung in JavaScript gibt es keine grafische Benutzeroberfläche. Alle einzelnen Komponenten und Styles werden zunächst blind hinzugefügt, ohne zu wissen, wie die endgültige Benutzeroberfläche aussehen wird. Beim Start der Anwendung kann der Entwickler das Layout der einzelnen Komponenten im Code oder zunächst im Entwicklertool einrichten und dann alles in seinen Code übernehmen.
+Bei der Entwicklung in JavaScript gibt es keine grafische Benutzeroberfläche. Alle einzelnen Komponenten und Styles werden zunächst blind hinzugefügt, ohne zu wissen, wie die endgültige Benutzeroberfläche aussehen wird. Beim Start der Anwendung kann der Entwickler das Layout der einzelnen Komponenten im Code oder zunächst im Entwicklertool einrichten und dann alles in seinen Code übernehmen. Das heißt, der Entwickler muss mindestens drei Fenster verwenden (den Browser, das Entwicklertool im Browser und die Entwicklungsumgebung), um Änderungen vorzunehmen und auftretende Fehler zu sehen.
 
 _Mendix_ +
 Domänenmodell: Grafische Darstellung einer Datenbank. Besteht aus Entäitäten. Vergleichbar mit einer Datenbanktabelle. 
@@ -250,7 +255,7 @@ Damit meinen wir, wie die Anwendung auf die Events des Benutzers reagiert, d. h.
 
 _Traditionelle Programmierung_ +
 
-Zunächst entscheidet der Entwickler über die Architektur der Anwendung. Und je nach Architektur ist es möglich, über zusätzlichen Entwicklungsaufwand zu sprechen. In diesem Beispiel wurde eine Client-Server-Architektur verwendet.
+Zunächst entscheidet der Entwickler über die Architektur der Anwendung. Und je nach Architektur ist es möglich, über zusätzlichen Entwicklungsaufwand zu sprechen. In unserem Beispiel wurde eine Client-Server-Architektur verwendet.
 
 Wenn es um die Logik zwischen den Komponenten geht, dann ist für jeden Event eine eigene Funktion zu erstellen, die das Verhalten der Komponente definiert. Neben der Entwicklung muss der Entwickler auch Clean Code schreiben, d.h. der Programmcode muss optimiert und für andere Entwickler leicht verständlich gemacht werden.
 
@@ -273,13 +278,16 @@ Anbindung von Selenium oder JUnit möglich
 
 ==== Wiederverwendbarkeit
 
-Die Wiederverwendung von Code oder Komponenten, die neu entwickelt wurden. 
+Wiederverwendbarkeit, d. h. die Wiederverwendung von Komponenten oder Codeteilen. Dies ist eine sehr beliebte Methode in der Entwicklung: Software, Webservices, Design, usw. Durch die Systematisierung der Wiederverwendung von Komponenten werden die Kosten für Projekterstellung und -pflege gesenkt, die Entwicklungszeiten verkürzt und in vielen Fällen die Qualität der Softwareprodukte verbessert. [...] 
 
-_Traditionelle Programmierung_ +
+https://habr.com/ru/company/sberbank/blog/675660/
+
+_Traditionelle Programmierung_ 
 
 Bei der Entwicklung mit React kann man einzelne UI-Komponenten erstellen, die später im Projekt verwendet werden, oder sie können einfach in ein anderes Projekt kopiert werden. Man kann sie auch leicht nach Bedarf ändern. Eine weitere Möglichkeit, entwickelte Funktionen und Komponenten zu verwenden, besteht darin, eine eigene Bibliothek dieser Komponenten zu erstellen. Diese Bibliothek kann in andere Projekte importiert werden. 
 
 _Mendix_
+
 Speicherung von eigenen Komponenten möglich
 Wiederverwendbarkeit Plattform intern
 
@@ -296,6 +304,11 @@ Das Interessanteste an diesem Vergleich ist die Entwicklungszeit. Wie der Begrif
 |40 h |Entwicklungszeit |15h
 |44,5 h |*Gesamt* |25 h
 |===
+
+_Traditionelle Programmierung_
+
+_Mendix_
+
 
 === Literaturvergleich
 
