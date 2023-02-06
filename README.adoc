@@ -1,25 +1,27 @@
 = Low-Code Ansatz zur Anwendungsprogrammierung
-Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt 
+Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt, HTWK Leipzig (WS22/23 MIM Modul Software Engineering, Prof. Andreas Both)
 :toc:
 :toc-title: Gliederung
 
-== Motivation
+== Einleitung
 
-Statistik der unbesetzten stellen von It-Kräften in deutschland. Die Anzahl steigt stetig. Es wird erkennbar, dass im jahr 2019 die zahl enorm Anstieg, dies hat hauptsächlich die Coronapandemie zu Schulden.
+In der Softwareentwicklung wird ständig nach alternativen Entwicklungsansätzen und Prozessen gesucht, welche dabei helfen sollen, das Arbeiten effizienter und erfolgreicher gestalten. Ein Grund dafür ist die Anzahl von nicht vollständig erfolgreich abgeschlossenen IT-Projekten. Dem Chaos Report der Standish Group aus dem Jahr 2015 zufolge haben "52% der IT-Vorhaben [...] zumindest teilweise nicht die Wünsche und Anforderungen der Auftraggeber erfüllt. 19% der Projekte sind ein Totalausfall und wurden abgebrochen. Nur 29% der untersuchten Projekte waren total erfolgreich." [QUELLE] Diese Ergebnisse sind das Resultat von vielen unterschiedlichen Faktoren, welche bei der Softwareentwicklung eine Rolle spielen. Durch Untersuchungen wie diese wird deutlich, dass die in der Softwareentwicklung eingesetzten Prozesse noch Verbesserungsbedarf aufweisen. 
 
+https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf
 
-Hintergedanke von Low-Code: Menschen mit wenige Programmierkenntnisse können Anwendungen entwickeln.
-Boilerplatecode → Abnahmen von trivialen aufgaben, dinge die man immer machen musst
-Missverständnisse bei den Anforderungen 
-Wartungskosten
+Es ist im Rahmen dieser Arbeit nicht möglich, auf die Vielzahl von Faktoren, welche den Ausgang eines Softwareprojekts beeinflussen können, einzugehen. Dementsprechend werden im Weiteren nur ausgewählte Faktoren betrachtet. Im Verlauf dieser Arbeit wird auf die folgenden Problempunkte der Softwareentwicklung sowie die zugehörigen, von Low-Code Entwicklungsplattformen verfolgten, Lösungsansätze eingegangen:
 
-Ergebnis Metaanalyse von 2020: Verhältnis von Softwarewartungs- und Entwicklungskosten, Mittelwerte aus einschlägigen wissenschaftlichen Arbeiten
-Reduktion ermöglicht durch:
-???
-Softwareentwicklern werden “triviale” Aufgaben abgenommen
-dadurch entsteht mehr Zeit für Aufgaben wie Problemlösung oder Algorithmenentwicklung (wofür Devs ja ausgebildet werden)
-Boilerplate Code wird für templates mit generiert, Benutzeroberfläche kann 
-It- Kräfte an Mangel 
+* geringe Einbeziehung der Nutzer in den Entwicklungsprozess
+
+Dies führt potentiell zu ungenauer Anforderungsspezifikation, beziehungsweise sich im Laufe des Projekts ändernden Anforderungen oder zu geringer Ressourcenallokation auf Grund von unterschätztem Arbeitsaufwand.
+
+* hoher Arbeitsaufwand für Entwickler
+
+* hohe Wartungskosten für Software
+
+Auf Grund der hohen Komplexität von Anwendungen ist Wartung aufwändig und erfordert geschultes Personal, wodurch der Ressourcenaufwand für die Softwarewartung steigt. Die Kosten für Softwarewartung bewegen sich seit den 1970er Jahren, wie von Lehner [QUELLE2] gezeigt, zwischen 50% und 90% anteilig zu den Entwicklungskosten. Eine Reduktion der Wartungskosten für Software würde also erhebliche Ressourcen freisetzen. 
+
+ Lehner, F., (2021). Die Softwarewartungskosten als Managementproblem im Wandel der Zeit – Ergebnisse einer Metaanalyse. In: Helferich, A., Henzel, R., Herzwurm, G. & Mikusz, M. (Hrsg.), Software Management 2021. Bonn: Gesellschaft für Informatik e.V.. (S. 73-89). DOI: 10.18420/swm2021-006 
 
 == Generationen von Programmiersprachen
 
