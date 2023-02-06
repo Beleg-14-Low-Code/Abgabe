@@ -27,27 +27,26 @@ Abstraktion bedeutet die Beschränkung bzw. Konzentration auf das Wesentliche. <
 
 
 == Model Driven Development – MDD
-
-Modelle dienen dazu Teile einer Software zu repräsentierten. Sie sind nützlich zur Planung und Dokumentation eines Programms. Sie abstrahieren Teile eines Systems. Die Entwicklung einer Software ist sehr komplex, daher bedeutet Abstraktion hierbei, dass der Fokus auf den wesentlichen Teilen eines Systems liegt. Der komplexe Teil wird außen vorgelassen. 
+Modelle dienen dazu, Teile einer Software zu repräsentierten. Sie sind nützlich zur Planung und Dokumentation eines Programms. Sie abstrahieren Teile eines Systems. Die Entwicklung einer Software ist sehr komplex, daher bedeutet Abstraktion hierbei, dass der Fokus auf den wesentlichen Teilen eines Systems liegt. Der komplexe Teil wird außen vorgelassen. 
 Durch die Modellierung einer Software entsteht zum einen ein besseres Verständnis für Auftraggeber, da der Ablauf eines Systems durch ein Modell einfacher zu verstehen ist als der Quellcode eines Programms. Die Anforderungen einer Software können besser verstanden werden und somit die Missverständnisse zwischen Entwickler und Auftraggeber verringern. 
-Es können Designprobleme besser erkannt werden. Werden diese erste nach der Entwicklung bekannt, können höhere Kosten entstehen.<<6>>
-Aus einer Umfrage von Großunternehmen weltweit resultierte, dass 70 % der befragten Unternehmen bereits, das Scheitern eines Projektes erlebt haben. Grund hierbei waren Anforderungen, die bei der Planung des Projektes nicht bekannt waren. <<7>>
+Es können Designprobleme besser erkannt werden, denn wenn diese erst nach der Entwicklung erkannt werden, können hohe Kosten entstehen.<<6>>
+Aus einer Umfrage von Großunternehmen weltweit resultierte, dass 70 % der befragten Unternehmen bereits das Scheitern eines Projektes erlebt haben. Grund hierbei waren Anforderungen, die bei der Planung des Projektes nicht bekannt waren. <<7>>
 
-Daraus resultiert, dass Modelle einen wichtigen Bestandteil zur Entwicklung von Softwaresystemen beitragen. Dabei gibt es Unterschiede zwischen modellbasierter- und modellgetriebener Softwareentwicklung. Modellbasiert bedeutet, das Modell wird erstellt und darauf basierend wird anschließende der Code geschrieben.<<8>> Code und Modell sind somit unabhängig voneinander. Nimmt man eine Änderung im Code vor, wird dies nicht zeitgleich im Modell übernommen. <<9>> 
+Daraus resultiert, dass Modelle einen wichtigen Bestandteil zur Entwicklung von Softwaresystemen beitragen. Dabei gibt es Unterschiede zwischen modellbasierter- und modellgetriebener Softwareentwicklung. Modellbasiert bedeutet, das Modell wird erstellt und darauf basierend wird anschließende der Code geschrieben.<<8>> Code und Modell sind somit unabhängig voneinander. Wird eine Änderung im Code vorgenommen, wird dies nicht zeitgleich im Modell übernommen. <<9>>
 
-In der modellgetriebenen Softwareentwicklung hingegen wird ermöglicht aus einem Modell einen lauffähigen Code zu generieren. Ein Kriterium hierbei ist es, dass es sich um eine Formales Modell handeln muss. Formale Modell besitzen eindeutige Syntax und Semantik. <<10>>
+In der modellgetriebenen Softwareentwicklung hingegen wird ermöglicht, aus einem Modell einen lauffähigen Code zu generieren. Ein Kriterium hierbei ist es, dass es sich um ein formales Modell handelt. Formale Modelle besitzen eine eindeutige Syntax und Semantik. <<10>>
 
 
-.https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
+.Ablauf von Modellgetriebener Softwareentwicklung, https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
 image::Modell_Driven_Development.png[] 
 
 
-Durch die automatische Generierung von Quellcode, kann Entwicklungszeit eingespart werden und somit auch Kosten. Des Weiteren ist die Abstraktion höher. Durch gute Dokumentation ist es einfacher Fehler zu finden. In der modellbasierten Entwicklung war dies nicht möglich, da durch ständige Änderungen des Quellcodes, das Modell oft nicht aktualisiert wurde.<<11>>
-Ein erster Ansatz der modellgetriebenen Entwicklung startete in den 1990er mit Computer Aided Software Engineering (Case). Die war ein Ansatz um aus Modellen Quellcode zu erzeugen.  Dieser Ansatz war  allerdings nicht ausgearbeitet. Zum Beispiel waren Case-Werkzeuge waren Hersteller abhängig. Deswegen setzte sich Case nicht durch. <<9>>
-In den 1990er der wurde der objektorientierte Ansatz in den meisten Sprachen durchgesetzt.  Der Fokus musste nun auf die Entwicklung von objektorientierten Werkzeugen liegen, dadurch entstand der bis heute verwendete Modellierungssprache „UML“ (Udenifind Modelling Language). Durch Tools wurde es ermöglicht, zeitgleich Modell und Code zu ändern. <<8>>
+Durch die automatische Generierung von Quellcode kann Entwicklungszeit eingespart werden und somit auch Kosten. Des Weiteren ist die Abstraktion höher. Durch gute Dokumentation ist es einfacher Fehler zu finden. In der modellbasierten Entwicklung war dies nicht möglich, da durch ständige Änderungen des Quellcodes das Modell oft nicht aktualisiert wurde.<<11>>
+Ein erster Ansatz der modellgetriebenen Entwicklung startete in den 1990er mit Computer Aided Software Engineering (Case). Die war ein Ansatz um aus Modellen, Quellcode zu erzeugen. Dieser Ansatz war allerdings nicht ausgearbeitet. Zum Beispiel waren Case-Werkzeuge Hersteller abhängig. Case setzt sich in der modellgetriebenen Softwareentwicklung nicht durch. <<9>>
+In den 1990er der wurde der objektorientierte Ansatz in den meisten Sprachen durchgesetzt. Der Fokus musste nun auf die Entwicklung von objektorientierten Werkzeugen liegen, dadurch entstand der bis heute verwendete Modellierungssprache „UML“ (Udenifind Modelling Language). Durch Tools wurde es ermöglicht, zeitgleich Modell und Code zu ändern. <<8>>
 
 == Low Code
-Low-code ist auch eine Modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine Grafische Benutzeroberfläche. Es können per Drag and Drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Die Verknüpfung von Elementen funktioniert über Workflows, des Weiteren können Datentabellen in Form von Datenmodellen erstellt und in einer Cloud abgespeichert werden. Es können Desktop als auch Mobileanwendungen schnell entwickelt werden. 
+Low Code ist auch eine modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine grafische Benutzeroberfläche. Es können per Drag-and-drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Die Verknüpfung von Elementen funktioniert über Workflows des Weiteren können Datentabellen in Form von Datenmodellen erstellt und in einer Cloud abgespeichert werden. Der Quellcode wird automatisch im Hintergrund generiert. Es können Desktop- als auch Mobilanwendungen schnell entwickelt werden.
 
 Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet und somit die Anforderungen am besten kennen. 
 <<12>>
@@ -116,6 +115,8 @@ https://www.gartner.de/de/methoden/magic-quadrants
 
 
 Darüber hinaus ist der Magic Quadrant in vier Teile unterteilt und zeigt die Wettbewerbsposition von vier Arten von Technologieanbietern in Märkten mit hohem Wachstum und signifikanter Anbieterdifferenzierung [...]:
+
+Darüber hinaus ist der Magic Quadrant in vier Kategorien unterteilt. Er zeigt die Position der unterschielichen Low-Code Anbietern im Markt:
 https://www.gartner.de/de/methoden/magic-quadrants
 
 
