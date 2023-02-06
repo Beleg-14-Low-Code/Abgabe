@@ -60,7 +60,7 @@ Dadurch können zum Beispiel Abteilungsleiter, die sich mit Programmieren kaum o
 
 Alle Low Code Plattformen sind ähnlich aufgebaut. Hierbei gibt es eine Teilung in zwei verschiedene Teile: IDE, welches die integrierte Entwicklungsumgebung beschreibt und dem Platform Server, welche das Backend der Plattform ist.
 Im IDE befindet sich zum einen der Vision Application Modeler. In diesem werden alle Funktionalitäten vom Nutzer entwickelt und implementiert. Dazu gehört die Codeerstellung, welche grafisch oder mit Text angefertigt werden kann, das Debugging und das Testen. Zum anderen befindet sich im IDE der Encoder. Dieser exportiert das visuelle Anwendungsmodell in ein neues Format, ohne das Funktionen verloren gehen. 
-Der Decoder, welcher sich im Platform Server befindet, interpretiert dann die codierten Daten und gibt sie an den Source Code Generator weiter. Hier wird der Code dann in Quellcode umgewandelt, wobei man die Entscheidung treffen kann, in welche Sprache es geniert werden soll. Der Deployer stellt das Projekt in der gewünschten Plattform bereit und im Compiler wird der Code dann übersetzt. (https://www.researchgate.net/publication/354862325_OLP-A_RESTful_Open_Low-Code_Platform/fulltext/6151c756f8c9c51a8af9f640/OLP-A-RESTful-Open-Low-Code-Platform.pdf?origin=publication_detail)
+Der Decoder, welcher sich im Platform Server befindet, interpretiert dann die codierten Daten und gibt sie an den Source Code Generator weiter. Hier wird der Code dann in Quellcode umgewandelt, wobei man die Entscheidung treffen kann, in welche Sprache es geniert werden soll. Der Deployer stellt das Projekt in der gewünschten Plattform bereit und im Compiler wird der Code dann übersetzt. <<14>>
 
 .grundlegende Architektur von Low-code Entwicklungsplattformen
 image::httpswww.researchgate.netpublication354862325_OLP-A_RESTful_Open_Low-Code_Platformfulltext6151c756f8c9c51a8af9f640OLP-A-.png[]
@@ -95,27 +95,26 @@ Für die Erstellung dieser Anwendungen wurden verschiedene Tools verwendet.
 Für die JavaScript-Entwicklung wurden die Bibliotheken React und React-Bootstrap gewählt, um die Benutzeroberfläche zu erstellen. React ermöglicht es, eine interaktive Benutzeroberfläche zu erstellen, und React-Bootstrap bietet eine einfache Anpassung der Stile, ohne dass große CSS-Dateien erstellt werden müssen. Für das Backend wurden Node.js und eine MySQL-Datenbank verwendet.
 
 ==== Mendix
-Mendix ist  eine vielseitige Softwareentwicklungsplattform, die es ermöglicht, mobile und Webanwendungen in großem Umfang zu erstellen, einzusetzen, zu warten und zu verbessern. [...]
-
-https://www.netguru.com/blog/what-is-mendix
+Mendix ist  eine vielseitige Softwareentwicklungsplattform, die es ermöglicht, mobile und Webanwendungen in großem Umfang zu erstellen, einzusetzen, zu warten und zu verbessern. 
+<<15>>
 
 Warum wurde Mendix gewählt?
 
-Weil Mendix ein Marktführer in seinem Bereich ist. Das IT-Beratungsunternehmen Gartner veröffentlichte im August 2022 einen Bericht zur Marktforschung über Low-Code-Unternehmensanwendungsplattformen (Enterprise Low-Code Application Platforms - LCAP) [...]. Sie verwenden den Magic Quadrant, der Markttrends wie Richtung, Reifegrad und Teilnehmer aufzeigt.
-https://www.gartner.com/doc/reprints?id=1-2C8VSOAH&ct=230113&st=sb
+Weil Mendix ein Marktführer in seinem Bereich ist. Das IT-Beratungsunternehmen Gartner veröffentlichte im August 2022 einen Bericht zur Marktforschung über Low-Code-Unternehmensanwendungsplattformen (Enterprise Low-Code Application Platforms - LCAP). Sie verwenden den Magic Quadrant, der Markttrends wie Richtung, Reifegrad und Teilnehmer aufzeigt.
+<<16>>
 
 .Magic Quadrant for Enterprise Low-Code Application Platforms
 image::magic_Quadrant.png[,500 ]
 
-Horizontal (Completeness of Vision) wird die Vollständigkeit der Vision dargestellt. Das heißt, sie spiegelt die Innovationskraft des Anbieters wider und zeigt, ob der Anbieter den Markt steuert oder ihm folgt [...].
-https://www.gartner.de/de/methoden/magic-quadrants
+Horizontal (Completeness of Vision) wird die Vollständigkeit der Vision dargestellt. Das heißt, sie spiegelt die Innovationskraft des Anbieters wider und zeigt, ob der Anbieter den Markt steuert oder ihm folgt.
+<<17>>
 
-Die Vertikale (Ability to execute) zeigt die Fähigkeit zur Ausführung. Er fasst Faktoren wie die finanzielle Rentabilität des Anbieters, seine Reaktionsfähigkeit auf dem Markt, die Produktentwicklung, die Vertriebskanäle und den Kundenstamm zusammen [...].
-https://www.gartner.de/de/methoden/magic-quadrants
+Die Vertikale (Ability to execute) zeigt die Fähigkeit zur Ausführung. Er fasst Faktoren wie die finanzielle Rentabilität des Anbieters, seine Reaktionsfähigkeit auf dem Markt, die Produktentwicklung, die Vertriebskanäle und den Kundenstamm zusammen.
+<<17>>
 
 
 Darüber hinaus ist der Magic Quadrant in vier Kategorien unterteilt. Er zeigt die Position der unterschielichen Low-Code Anbietern im Markt:
-https://www.gartner.de/de/methoden/magic-quadrants
+<<17>>
 
 
 - *Führungskräfte* (Leaders) setzen ihre aktuelle Vision gut um und sind für morgen gut aufgestellt.
@@ -132,13 +131,13 @@ Auf Grund der entwickelten Beispiele wird der Vergleich in 4 Punkten erfolgen:
 
 - GUI
 - Anwendungslogik
-- Qualitätskontrolle
+- Qualitätssicherung/Qualitätskontrolle
 - Wiederverwendbarkeit
 
 ==== GUI
 
 GUI steht für "Graphical User Interface" und bezieht sich auf die Art und Weise, wie ein Computerprogramm oder ein Betriebssystem dargestellt wird. 
-https://en.wikipedia.org/wiki/Graphical_user_interface 
+<<18>>
 
 _Traditionelle Programmierung_ 
 
@@ -147,10 +146,10 @@ Bei der Entwicklung in JavaScript gibt es keine grafische Benutzeroberfläche. A
 _Low Code_
 
 Die grafische Oberfläche einer Low Code Plattform ist das einzige und wichtigste Tool für den Nutzer. Hier kann über ein Drag & Drop Baukasten grafisch „programmiert“ werden, wobei die Frontend-Elemente mit Workflows verknüpft werden können. Workflows beschreiben hierbei die Anwendungslogik. Die Nutzung von vorgefertigten Code-Elementen vereinfachen das Bauen von diversen Anwendungen, jedoch ist das Hinzufügen von eigenem Code auch über die GUI möglich.
-(https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode)
+<<19>>
 
 ==== Logik
-Damit meinen wir, wie die Anwendung auf die Events des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
+Die Logik bezieht sich darauf, wie die Anwendung auf die Events des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
 
 _Traditionelle Programmierung_ 
 
@@ -160,33 +159,30 @@ Wenn es um die Logik zwischen den Komponenten geht, dann ist für jeden Event ei
 
 _Low Code_ 
 
-Die Anwendungslogik basiert bei Low Code Plattformen auf Workflows, Microflows und Datenmodellen. Es ist möglich, seine Anwendung so mit einfachen Abläufen zusammenzustellen, wobei man auch hier die Möglichkeit hat, auf vorgefertigte Flows und Datenmodelle zuzugreifen. (https://docs.mendix.com/studio/workflows/, https://docs.mendix.com/studio/microflows/, https://docs.mendix.com/studio/work-with-data/)
+Die Anwendungslogik basiert bei Low Code Plattformen auf Workflows, Microflows und Datenmodellen. Es ist möglich, seine Anwendung so mit einfachen Abläufen zusammenzustellen, wobei man auch hier die Möglichkeit hat, auf vorgefertigte Flows und Datenmodelle zuzugreifen. <<20>> <<21>> <<22>>
 
 ==== Qualitätssicherung/Qualitätskontrolle
 
 Die Qualität der Software ist ein wichtiger Bestandteil für den Kunden. Der Kunde hat ein großes Interesse daran, dass sein Produkt störungsfrei läuft und seinen Anforderungen entspricht. 
 
-Softwaretests ermöglichen einen gewissen Einblick in die Softwarequalität. Softwaretests ermöglichen einen Einblick in die Softwarequalität. Alle dokumentierten und entwickelten Tests geben dem Kunden einen klaren Hinweis darauf, ob die Software die Anforderungen erfüllt, welchen Belastungen sie standhält, welcher Prozentsatz des Codes von den Tests abgedeckt wird usw.
+Softwaretests ermöglichen einen Einblick in die Softwarequalität. Alle dokumentierten und entwickelten Tests geben dem Kunden einen klaren Hinweis darauf, ob die Software die Anforderungen erfüllt, welchen Belastungen sie standhält, welcher Prozentsatz des Codes von den Tests abgedeckt wird usw.
 
 _Traditionelle Programmierung_ 
 
 Bei der traditionellen Programmierung können Tests manuell durchgeführt oder automatisierte Tests entwickelt werden. 
 
-Es gibt viele verschiedene Arten von automatisierten Tests. Welches Konzept, d.h. welche Art von Tests angewendet wird, hängt von der Art der Software ab. Das heißt, Testen auf verschiedenen Ebenen, von Unit-Tests bis zu End2End- und Akzeptanztest.
+Es gibt viele verschiedene Arten von automatisierten Tests. Welcher Satz von verschiedenen Testtypen angewendet wird, hängt von der Art der Software ab. Dies könnte z.B. ein Satz von Unit-, Integrations- und End2End-Tests oder Unit- und Akzeptanztests sein.
 
-Die Entwicklung automatisierter Tests ist sehr zeitaufwändig. In der Praxis besteht die meiste Entwicklung immer zu 50 Prozent aus Entwicklungszeit und zu 50 Prozent aus der Entwicklung automatisierter Tests.
+Die Entwicklung automatisierter Tests ist sehr zeitaufwändig. Statistisch gesehen nimmt die Entwicklung von automatisierten Tests zwischen 20 und 50 % der Entwicklungszeit in Anspruch.<<26>>
 
 _Low Code_ 
 
 Bei Mendix ist die Qualitätssicherung dadurch gegeben, dass alle plattforminternen Elemente vorgetestet sind. Das bedeutet, dass alle Komponenten ohne zusätzliche Tests ausgeführt werden können. Zusätzlich dazu laufen im Hintergrund für den Nutzer nicht ersichtlich, Test. Hier wird dann ausgegeben und auf der GUI direkt gekennzeichnet, wo und was der Fehler ist. 
-Das Anbinden von externen Testsystemen wie Selenium oder JUnit, wird von Mendix unterstützt. (https://www.mendix.com/blog/three-tools-to-test-your-mendix-application/)
-
+Das Anbinden von externen Testsystemen wie Selenium oder JUnit, wird von Mendix unterstützt. <<23>>
 
 ==== Wiederverwendbarkeit
 
-Wiederverwendbarkeit, d. h. die Wiederverwendung von Komponenten oder Codeteilen. Dies ist eine sehr beliebte Methode in der Entwicklung: Software, Webservices, Design, usw. Durch die Systematisierung der Wiederverwendung von Komponenten werden viele Kosten und Entwicklungszeiten gesenkt und in vielen Fällen wird die Qualität der Softwareprodukte verbessert. [...] 
-
-https://habr.com/ru/company/sberbank/blog/675660/
+Wiederverwendbarkeit, d. h. die Wiederverwendung von Komponenten oder Codeteilen. Dies ist eine sehr beliebte Methode in der Entwicklung: Software, Webservices, Design, usw. Durch die Systematisierung der Wiederverwendung von Komponenten werden viele Kosten und Entwicklungszeiten gesenkt und in vielen Fällen wird die Qualität der Softwareprodukte verbessert. <<24>>
 
 _Traditionelle Programmierung_ 
 
@@ -195,8 +191,7 @@ Bei der Entwicklung mit React kann man einzelne UI-Komponenten erstellen, die sp
 _Low Code_
 
 Die Wiederverwendbarkeit bei Low Code Plattformen ist durch das Nutzen von vorgefertigten Elementen grundsätzlich gegeben. Die Speicherung und dadurch auch die Wiederverwendung von eigenen Segmenten ist je nach Plattform möglich. So kann die eigene Bibliothek kontinuierlich erweitert werden und ermöglicht auch anderen Nutzer des Teams auf diese zugreifen zu können.
-Ein Nachteil hierbei ist, dass die Wiederverwendbarkeit nur plattformintern gegeben ist. (https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode)
-
+Ein Nachteil hierbei ist, dass die Wiederverwendbarkeit nur plattformintern gegeben ist. <<25>>
 
 ==== Zeitaufwand
 
@@ -231,7 +226,7 @@ Zur Erweiterung der im vorangegangenen Abschnitt dargestellten Ergebnisse wurde 
 
 Zusätzlich zu der von uns betrachteten Entwicklungszeit wurden in diesem Experiment die Anzahl an selbst geschriebenen Codezeilen, die Zeiten zum Laden der graphischen Oberfläche sowie die Zeiten zum Ausführen verschiedener anwendungsspezifischer Operationen erfasst. Die genauen Anforderungen und untersuchten Operationen sind in [QUELLE] aufgelistet. In Abbildung [ABBNR] sind jeweils die durchschnittlichen Werte zwischen den beiden Anwendungen erfasst. Beim Vergleich dieser Ergebnisse mit den von uns gesammelten Daten ergibt sich zunächst eine Ähnlichkeit bezüglich der Entwicklungszeiten. In beiden Versuchen liegt bei der Low-Code Anwendung die niedrigste Entwicklungszeit vor, wobei der Unterschied zwischen Low-Code und JavaScript im Experiment von Calçada und Bernardino wesentlich geringer ist als in unserem Beispiel.
 
-.Messdaten aus Low-Code Vergleichsexperiment, [QUELLE]
+.Bildunterschrift, [QUELLE]
 image::literature_comparison_table.PNG[]
 
 Zudem ist die hohe Diskrepanz zwischen den beim Aufbauen der GUI ermittelten Zeiten bemerkenswert, da diese auf einen eventuellen Tradeoff von Performance zugunsten von Entwicklungszeit bei der Low-Code Entwicklung hinweist. Allerdings ist hierbei sowohl auf die geringe Stichprobenmenge als auch auf die fehlenden Vergleiche zwischen verschiedenen Low-Code Plattformen hinzuweisen, weshalb diese Ergebnisse nicht belastbar sind, um allgemeine  Schlussfolgerungen zu Low-Code zu ziehen.
@@ -282,6 +277,25 @@ Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
 * [11] https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
 * [12] https://link.springer.com/content/pdf/10.1007/978-3-662-61374-0.pdf?pdf=button
 * [13] Raquel Sanchis, Óscar García-Perales , Francisco Fraile und Raul Poler(2019): Low-Code as Enabler of Digital Transformation in Manufacturing Industry
+* [14] https://www.researchgate.net/publication/354862325_OLP-A_RESTful_Open_Low-Code_Platform/fulltext/6151c756f8c9c51a8af9f640/OLP-A-RESTful-Open-Low-Code-Platform.pdf?origin=publication_detail
+* [15] https://www.netguru.com/blog/what-is-mendix
+* [16] https://www.gartner.com/doc/reprints?id=1-2C8VSOAH&ct=230113&st=sb
+* [17] https://www.gartner.de/de/methoden/magic-quadrants
+* [18] https://en.wikipedia.org/wiki/Graphical_user_interface 
+* [19] https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode
+* [20] https://docs.mendix.com/studio/workflows/ 
+* [21] https://docs.mendix.com/studio/microflows/
+* [22] https://docs.mendix.com/studio/work-with-data/)
+* [23] https://www.mendix.com/blog/three-tools-to-test-your-mendix-application/
+* [24] https://habr.com/ru/company/sberbank/blog/675660/
+* [25] https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode
+* [26] https://devm.io/testing/time-estimation-for-software-testing-128078
+
+
+
+
+
+
 
 
 
