@@ -1,169 +1,67 @@
 = Low-Code Ansatz zur Anwendungsprogrammierung
-Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt 
+Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt, HTWK Leipzig (WS22/23 MIM Modul Software Engineering, Prof. Andreas Both)
 :toc:
 :toc-title: Gliederung
-:imagesdir: ./img
+:imagesdir: img/
 
-== Motivation
+== Einleitung
 
-Statistik der unbesetzten stellen von It-Kräften in deutschland. Die Anzahl steigt stetig. Es wird erkennbar, dass im jahr 2019 die zahl enorm Anstieg, dies hat hauptsächlich die Coronapandemie zu Schulden.
+In der Softwareentwicklung wird ständig nach alternativen Entwicklungsansätzen und Prozessen gesucht, welche dabei helfen sollen, das Arbeiten effizienter und erfolgreicher gestalten. Ein Grund dafür ist die Anzahl von nicht vollständig erfolgreich abgeschlossenen IT-Projekten. Dem Chaos Report der Standish Group aus dem Jahr 2015 zufolge haben "52% der IT-Vorhaben [...] zumindest teilweise nicht die Wünsche und Anforderungen der Auftraggeber erfüllt. 19% der Projekte sind ein Totalausfall und wurden abgebrochen. Nur 29% der untersuchten Projekte waren total erfolgreich." <<1>> Diese Ergebnisse sind das Resultat von vielen unterschiedlichen Faktoren, welche bei der Softwareentwicklung eine Rolle spielen. Durch Untersuchungen wie diese wird deutlich, dass die in der Softwareentwicklung eingesetzten Prozesse noch Verbesserungsbedarf aufweisen. 
 
+Es ist im Rahmen dieser Arbeit nicht möglich, auf die Vielzahl von Faktoren, welche den Ausgang eines Softwareprojekts beeinflussen können, einzugehen. Dementsprechend werden im Weiteren nur ausgewählte Faktoren betrachtet. Im Verlauf dieser Arbeit wird auf die folgenden Problempunkte der Softwareentwicklung sowie die zugehörigen, von Low-Code Entwicklungsplattformen verfolgten, Lösungsansätze eingegangen:
 
-Hintergedanke von Low-Code: Menschen mit wenige Programmierkenntnisse können Anwendungen entwickeln.
-Boilerplatecode → Abnahmen von trivialen aufgaben, dinge die man immer machen musst
-Missverständnisse bei den Anforderungen 
-Wartungskosten
+* geringe Einbeziehung der Nutzer in den Entwicklungsprozess
 
-Ergebnis Metaanalyse von 2020: Verhältnis von Softwarewartungs- und Entwicklungskosten, Mittelwerte aus einschlägigen wissenschaftlichen Arbeiten
-Reduktion ermöglicht durch:
-???
-Softwareentwicklern werden “triviale” Aufgaben abgenommen
-dadurch entsteht mehr Zeit für Aufgaben wie Problemlösung oder Algorithmenentwicklung (wofür Devs ja ausgebildet werden)
-Boilerplate Code wird für templates mit generiert, Benutzeroberfläche kann 
-It- Kräfte an Mangel 
+Dies führt potentiell zu ungenauer Anforderungsspezifikation, beziehungsweise sich im Laufe des Projekts ändernden Anforderungen oder zu geringer Ressourcenallokation auf Grund von unterschätztem Arbeitsaufwand.
 
-== Generationen von Programmiersprachen
+* hoher Arbeitsaufwand für Entwickler
 
-Low Code lässt sich in den Generationen der Programmiersprachen in die 4. Generation, die Deklarative Programmierung einordnen. 
-Programmierparadigmen: ist der stil in dem eine Programmiersprache entworfen wurde
+* hohe Wartungskosten für Software
+
+Auf Grund der hohen Komplexität von Anwendungen ist Wartung aufwändig und erfordert geschultes Personal, wodurch der Ressourcenaufwand für die Softwarewartung steigt. Die Kosten für Softwarewartung bewegen sich seit den 1970er Jahren, wie von Lehner <<2>> gezeigt, zwischen 50% und 90% anteilig zu den Entwicklungskosten. Eine Reduktion der Wartungskosten für Software würde also erhebliche Ressourcen freisetzen. 
+
+== Die Entwicklung von Programmiersprachen und Einordnung von Low Code
+Die Entwicklung von Programmiersprachen begann im 19. Jahrhundert. Sie lässt sich in 5 Generationen einteilen. Es begann mit der ersetzen Generation, der Maschinensprachen. Diese Sprachen waren prozessorspezifisch und nur für Maschinen lesbar. Hierbei wurde ein binärer Programmcode and den Prozessor gesendet. Im Jahr 1948 wurde erstmals von Assemblersprachen gesprochen. Im Gegensatz zur Maschinensprache ist die Assemblersprache auch für den Menschen lesbar. Hierbei wird der Code durch einen Assembler in Maschinensprache übersetzt. Die Assemblersprache ersetzte in kurzer Zeit die Maschinensprache. In den 1960er gab es einen großen Sprung in der Programmierentwicklung. Programmcode war nicht mehr Hardware beziehungsweise Software abhängig. Aufgrund dessen wird oft von höheren Programmiersprachen gesprochen. Dazu gehören zum Beispiel prozedurale Sprachen. Zu den prozeduralen Sprachen gehört zum Beispiel die, in den 1970er entwickelten Programmiersprachen Pascal. Es wird auch von strukturierten Programmiersprachen gesprochen. Ebenfalls in den 1970er entstand die objektorientierte Programmierung. Der objektorientierte Ansatz wurde in den 1990er in den meisten Programmiersprachen durchgesetzt. Ein Beispiel für eine objektorientierte Programmiersprache ist Java. In der darauffolgenden 4. Generation können keine exakten Programmiersprachen zugeordnete werde. Dazu gehören alle Sprachen, die einen höheren Abstraktionsgrad erzeugen, als in der 3. Generation. <<3>> <<4>>
+Abstraktion bedeutet die Beschränkung bzw. Konzentration auf das Wesentliche. <<5>> Die Erhöhung des Abstraktionsgrades ist auch ein Ziel des Entwicklungsansatzes Modell Driven Development und gehört somit zur 4. Generation der Programmiersprachen. Dieser Ansatz wird im darauffolgenden Abschnitt genauer beschrieben. 
 
 
-1GL:
-Maschinensprache: Wie der Name bereits erläutert, gab es in der ersten Generation eine Sprache, die nur Computer verstehen konnten. Dies kann durch den Prozessors eines Computers gelesen werden und besteht aus binären und digitalen Sprachen. 
-Beispiel: 
 
-2Gl:
-Assemblersprache: Der Assembler übersetzt den Assembler Programmcode/ Quellcode in ein Maschinenprogramm. Assembler Code ist für den Menschen lesbar. Erschien erstmals im Jahr 1948
-Nachteile Schlechte Lesbarkeirt und wartbarkeit, ist an einem Prozesor gebunden 
-Beispiel Sprache: Fortran
-→ dabei Anwendungen wurden immer Komplexer, es war sehr Zeitaufwendig. Entwickler brauchten mehr Zeit, es scheiterten viele Projekte. Budget wurd gesprengt
+== Model Driven Development – MDD
 
-1960er erste Softwarekrise → neue sprechen wurden eingeführt
-3GL:
-Prozedurale Programmierung: Die Prozedurale Programmierung ist ein Paradigma der imperativen Programmiersprache. Es definiert eine Sequentieller/ Strukturierten Ablauf von Befehlen. Wiederverwendbare Teile werden in Funktionen ausgelagert, diese müssen vom Programmierer verstanden werden.  Sie besteht aus folgen anweisungen und verschiedenen Kontrollstrukturen ( schleifen, if-bedingungen, etc….).  → Strukturierte Programierung 
-in den 1970 mit der Programiersprache pascal
-1970 ebenfalls objektorientierte programmiersprach
-Objektorientierter Ansatz wurde 1990 in den meidsten programmiersprachen eingeführt 
+Modelle dienen dazu Teile einer Software zu repräsentierten. Sie sind nützlich zur Planung und Dokumentation eines Programms. Sie abstrahieren Teile eines Systems. Die Entwicklung einer Software ist sehr komplex, daher bedeutet Abstraktion hierbei, dass der Fokus auf den wesentlichen Teilen eines Systems liegt. Der komplexe Teil wird außen vorgelassen. 
+Durch die Modellierung einer Software entsteht zum einen ein besseres Verständnis für Auftraggeber, da der Ablauf eines Systems durch ein Modell einfacher zu verstehen ist als der Quellcode eines Programms. Die Anforderungen einer Software können besser verstanden werden und somit die Missverständnisse zwischen Entwickler und Auftraggeber verringern. 
+Es können Designprobleme besser erkannt werden. Werden diese erste nach der Entwicklung bekannt, können höhere Kosten entstehen.<<6>>
+Aus einer Umfrage von Großunternehmen weltweit resultierte, dass 70 % der befragten Unternehmen bereits, das Scheitern eines Projektes erlebt haben. Grund hierbei waren Anforderungen, die bei der Planung des Projektes nicht bekannt waren. <<7>>
 
-→ nichte mehr prozessor abhängig
+Daraus resultiert, dass Modelle einen wichtigen Bestandteil zur Entwicklung von Softwaresystemen beitragen. Dabei gibt es Unterschiede zwischen modellbasierter- und modellgetriebener Softwareentwicklung. Modellbasiert bedeutet, das Modell wird erstellt und darauf basierend wird anschließende der Code geschrieben.<<8>> Code und Modell sind somit unabhängig voneinander. Nimmt man eine Änderung im Code vor, wird dies nicht zeitgleich im Modell übernommen. <<9>> 
 
+In der modellgetriebenen Softwareentwicklung hingegen wird ermöglicht aus einem Modell einen lauffähigen Code zu generieren. Ein Kriterium hierbei ist es, dass es sich um eine Formales Modell handeln muss. Formale Modell besitzen eindeutige Syntax und Semantik. <<10>>
 
-4GL. 
-Ziel der Sprache höheres Abstraktniveu
-Was bedeutet Abstraktion:
-Vereinfachung, Kernproblem bleibt vorhanden→ auf des wesentliche konzentrieren
+ 
+Abbildung 1, https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
 
-Nochmal mit zeitangaben Programmiersprachen
-■ 1950er- bis 1960er-Jahre: 
-Programmiersprache ist Assemblersprach 
-Ablauf wird durch ein Flussdiagramm dargestellte
-
-■ 
-1970er-Jahre: 
-Strukturierende, Dominierende programmiersprachen 
-beispiel Pascal
-strukturierendedarstellungstechniken werden angewendet, wie strukturierendes design
-software prozesse orientieren sich am wasserfallmodell 
-
-■ Ab 1990er-Jahre: 
-Objektorientiertprogrammiersprachen werden immer belieber C++, java
-Vereinheilichender prozess durch Unified Modeling Language (UML), 
-orientiert sich am spiralmodell (UML)
-
-
-== Model Dricen Development (MDD)
-
-1990: AT&T-Fernverkehrsnetz im Nordosten brach zusammen 
-Grund: fehlende Break Anweisung 
-kleine kodierungsfehler unerwartete folgen 
-Problem von Softwareentwickler und Designer entwicklung von Software ist sehr kommplex
-kann diese Komplexität eingegrenzt werden durch mdd? 
-Wenn wir zum Beispiel versuchen einen Wolkenkratzer ohne den Einsatz von modernenWerkzeuge wie Bulldozer und hydraulische Hebevorrichtungen zu bauen, ist zwar theoretisch machbar, aber wahrscheinlich eine sehr komplexe Aufgabe sein. Die einzig mögliche Lösung für den der zunehmenden Komplexität ist die Minimierung des Grad der zufälligen Komplexität zu minimieren.
-
-MDD
-
-Modelle sind zum Beispiel auch in Ingenieurwesen sehr wichtig. 
-Enginere benutzen zum beispiel mathematische model um die tragfähigkeit zu analysieren 
-Problem: 
-Modelle werden von Hand in Code geschrieben, daher gibt es keine formale Verbindung zwischen modell und Programmcode 
-Schwierig modell zu pflegen, ist mit viel aufwand verbunden und implementierungen aktuelle zu halten ist schwierig. 
-Deswegen sind modelle ungenau, oft auch aufgrund von Zeitdruck 
-Dokumentation deswegen nicht vertrauenswürdig
-
-Unterschied modellbasiert und Modellgetrieben: modellbasiert wird modellerstellt und code per hand geschrieben. Dient zur Dokumentation 
-Modellgetrieben nach erstellunge des modelles wird automatisch code generiert. 
-Geschichte von MDD
-Hohe Softwarekosten auswirkungen für Unternehmen, aber noch schlimmer ist ein schlechtes softwaredesign, das die produktivität beeinflusst
-Statistiken besagen, dass ca. 70% der Software-Projekte Budget und Termin überschreiten → anhaltenden Software-Krise.
-
-Geschichte hier nochmal rausschreben → was ist OMG
-http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf
-
-andere Quellen 
-Formale Modelle werden Automatisiert und lauffähiger Code wird generiert, in code übersetzt→ in lauffähige software übersetzt 
-Formale Modelle besitzen eindeutige Syntax und Semantik, Beispiel hierfür ist UML (Besispeil Tool, Enterprise Architekture
-anstelle der dokumentation wird durch modellierung programmcode erstellt
-
-https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf
-
-Automatisiert den Entwicklungsprozess
-ziel: Kosten senken, schwierigkeitsgrad reduzieren, Qualität verbessern 
-Prozess generiert das fertige Endprodukt
-Im gegensatz zu gewöhnlichen softwareentwicklungsprozessen, geht es nicht um dokumentation und analyse sondern um die entwicklung entwicklungsansatz)
-Normalerweise werden Modelle als Dokumentation benutzt
-Entwickler haben kein wissen über den 	Quellcode
+Durch die automatische Generierung von Quellcode, kann Entwicklungszeit eingespart werden und somit auch Kosten. Des Weiteren ist die Abstraktion höher. Durch gute Dokumentation ist es einfacher Fehler zu finden. In der modellbasierten Entwicklung war dies nicht möglich, da durch ständige Änderungen des Quellcodes, das Modell oft nicht aktualisiert wurde.<<11>>
+Ein erster Ansatz der modellgetriebenen Entwicklung startete in den 1990er mit Computer Aided Software Engineering (Case). Die war ein Ansatz um aus Modellen Quellcode zu erzeugen.  Dieser Ansatz war  allerdings nicht ausgearbeitet. Zum Beispiel waren Case-Werkzeuge waren Hersteller abhängig. Deswegen setzte sich Case nicht durch. <<9>>
+In den 1990er der wurde der objektorientierte Ansatz in den meisten Sprachen durchgesetzt.  Der Fokus musste nun auf die Entwicklung von objektorientierten Werkzeugen liegen, dadurch entstand der bis heute verwendete Modellierungssprache „UML“ (Udenifind Modelling Language). Durch Tools wurde es ermöglicht, zeitgleich Modell und Code zu ändern. <<8>>
 
 == Low Code
+Low-code ist auch eine Modellgetriebene Softwareentwicklung. Die Erstellung eines Programms läuft über eine Grafische Benutzeroberfläche. Es können per Drag and Drop Steuerungselemente wie Buttons oder Inputfelder hinzugefügt werden. Die Verknüpfung von Elementen funktioniert über Workflows, des Weiteren können Datentabellen in Form von Datenmodellen erstellt werden und in einer Cloud abgespeichert. 
 
-Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet die Anforderungen am besten kennen. 
+Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet und somit die Anforderungen am besten kennen. 
+<<12>>
 
-Mithilfe von Low-Code können mit einer Drag- und Drop-Funktion Eingabe-, Navigation-, Dropdown-Felder und Steuerelemente hinzugefügt werden. Es können verschiedene Bildschirmansichten erstellt werden, diese werden mit Hilfe von  Steuerelementen miteinander verknüpft. 
-
-Programmierung läuft über eine grafische Benutzeroberfläche.
-Entwicklungsumgebung mit der code erstellt wird
-Es wird über eine grafische oberfläche code projeziert
-forster research hat den begriff ins leben gerufen 
-
-
-Geeignet für sogenannte Citizen Developers: 
-können Programme entwickeln, können aber keine genaue Programmiersprache. Kennen sich im Bereich aus. In der Programmierung verlassen sie sich auf das Tool. Nutzer sind auch Entwicklung. 
-
-=== Ziele von Low Code
-
-Einbeziehen von CItizen Developers in Modellierung von Geschäftsabläufen, da Sie schon damit vertraut sind
-Low-Code ermöglicht es Personen ohne großen Programmierkenntnissen eine Anwendung zu erstellen. Somit sind Unternehmen nicht auf IT-Spezialisten angewiesen. Zum einen kann die IT-Abteilung entlastet werden und zum anderen können die Anwendungsanforderungen spezifischer gestaltet werden, da Experten des Themengebiet die Anforderungen am besten kennen. 
-
-Mithilfe von Low-Code können mit einer Drag- und Drop-Funktion Eingabe-, Navigation-, Dropdown-Felder und Steuerelemente hinzugefügt werden. Es können verschiedene Bildschirmansichten erstellt werden, diese werden mit Hilfe von  Steuerelementen miteinander verknüpft. 
-
-Programmierung läuft über eine grafische Benutzeroberfläche.
-Entwicklungsumgebung mit der code erstellt wird
-Es wird über eine grafische oberfläche code projeziert
-forster research hat den begriff ins leben gerufen 
-
-
-Geeignet für sogenannte Citizen Developers: 
-können Programme entwickeln, können aber keine genaue Programmiersprache. Kennen sich im Bereich aus. In der Programmierung verlassen sie sich auf das Tool. Nutzer sind auch Entwicklung.  von Wartungskosten in Softwareentwicklung
-siehe: https://dl.gi.de/handle/20.500.12116/37795
-leicht zusammengestellt werden
-Schnelligkeit: 5- 10 mal schneller als traditionelle programmierung
-Kosteneinsparung:
-Weniger Komplex: Fokus liegt darauf software individuell anzupassen und Benutzeranforderungen zu erfüllen 
-Einfache wartungsarbeiten: → wenig code anbieten wenig code muss gewartet werden. 
-Wenig technische Anforderungen erforderlich. Dadurch Abteilungsleiter die sich mit dem technischen nicht auskennen aber dafür viel fachliches wissen haben. könne beser anforderunge spezifizieren 
+=== Ziele von LC:
+Das Ziel von Low-Code ist es zum einem über einen kurzen Zeitraum Anwendungen zu entwickeln. Es werden Zeit und Kosten gespart. Des Weiteren sind wenig technische Anforderungen erforderlich und kaum Programmierkenntnisse nötig. Die Einarbeitungszeit ist wesentliche geringer als das Beibringen von Programmiersprachen. 
+Dadurch können zum Beispiel Abteilungsleiter, die sich mit Programmieren   kaum oder überhaupt nicht auskennen Anwendungen erstellen. Ein Vorteil ist, sie besitzen viel Fachliches Wissen und können dadurch besser Anforderungen spezifizieren.  
+<<13>>
 
 === Architektur von Low Code
 
-Visual Application Modeler: 
-Das Fronte-end der Platform damit arbeitet der Entwickler
-Entwicklungen und implementiert alle funktionalitäten mit den ein entwickler interagiert, wie code erstellung (grafisch oder mit text) Debugging, Datenmodellierung, debugging, testen, Anwendungsversionen
-Encoder:
-Exportiert visuelle Anwendungsmodell  in ein json oder xml Format exportiert, ohne das Funktionalitäten verloren gehen. 
-Decoder:
- Interpretiert die encodierten Daten 
-Source Code Generator: 
-Aus dem Format wird ein Quellcode generiert. Dies können unterschiedliche Sprachen sein. Skripte müssen enthalten sein, um mit einer Datenbank zu arbeiten. 
-Compiler: Quellcode wir compiliert, geprüft ob der code correct ist
-Deployer: Software bereitstellen. Zum beispiel Webanwendung
+Alle Low Code Plattformen sind ähnlich aufgebaut. Hierbei gibt es eine Teilung in zwei verschiedene Teile: IDE, welches die integrierte Entwicklungsumgebung beschreibt und dem Platform Server, welche das Backend der Plattform ist.
+Im IDE befindet sich zum einen der Vision Application Modeler. In diesem werden alle Funktionalitäten vom Nutzer entwickelt und implementiert. Dazu gehört die Codeerstellung, welche grafisch oder mit Text angefertigt werden kann, das Debugging und das Testen. Zum anderen befindet sich im IDE der Encoder. Dieser exportiert das visuelle Anwendungsmodell in ein neues Format, ohne das Funktionen verloren gehen. 
+Der Decoder, welcher sich im Platform Server befindet, interpretiert dann die codierten Daten und gibt sie an den Source Code Generator weiter. Hier wird der Code dann in Quellcode umgewandelt, wobei man die Entscheidung treffen kann, in welche Sprache es geniert werden soll. Der Deployer stellt das Projekt in der gewünschten Plattform bereit und im Compiler wird der Code dann übersetzt. (https://www.researchgate.net/publication/354862325_OLP-A_RESTful_Open_Low-Code_Platform/fulltext/6151c756f8c9c51a8af9f640/OLP-A-RESTful-Open-Low-Code-Platform.pdf?origin=publication_detail)
+
+image::httpswww.researchgate.netpublication354862325_OLP-A_RESTful_Open_Low-Code_Platformfulltext6151c756f8c9c51a8af9f640OLP-A-.png[]
 
 
 == Vergleich von Low Code und traditioneller Programmierung an Anwendungsbeispiel
@@ -189,7 +87,7 @@ image:screen-react-2.png[,300]
 
 //.Screenshots der React-Anwendung
 
-=== verwendete Werkzeuge
+=== Verwendete Werkzeuge
 Für die Erstellung dieser Anwendungen wurden verschiedene Tools verwendet.
 
 ==== ReactJS etc.
@@ -246,10 +144,10 @@ _Traditionelle Programmierung_
 
 Bei der Entwicklung in JavaScript gibt es keine grafische Benutzeroberfläche. Alle einzelnen Komponenten und Styles werden zunächst blind hinzugefügt, ohne zu wissen, wie die endgültige Benutzeroberfläche aussehen wird. Beim Start der Anwendung kann der Entwickler das Layout der einzelnen Komponenten im Code oder zunächst im Entwicklertool einrichten und dann alles in seinen Code übernehmen. Das heißt, der Entwickler muss mindestens drei Fenster verwenden (den Browser, das Entwicklertool im Browser und die Entwicklungsumgebung), um Änderungen vorzunehmen und auftretende Fehler zu sehen.
 
-_Mendix_ 
-Domänenmodell: Grafische Darstellung einer Datenbank. Besteht aus Entäitäten. Vergleichbar mit einer Datenbanktabelle. 
-Auf der Seite (“Page”)wird die Benutzeroberfläche erstellt. 
-Microflows (Hier passiert die Logik) : Mit Mikroflows wie bentzerdefniert logik ausgeführt 
+_Low Code_
+
+Die grafische Oberfläche einer Low Code Plattform ist das einzige und wichtigste Tool für den Nutzer. Hier kann über ein Drag & Drop Baukasten grafisch „programmiert“ werden, wobei die Frontend-Elemente mit Workflows verknüpft werden können. Workflows beschreiben hierbei die Anwendungslogik. Die Nutzung von vorgefertigten Code-Elementen vereinfachen das Bauen von diversen Anwendungen, jedoch ist das Hinzufügen von eigenem Code auch über die GUI möglich.
+(https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode)
 
 ==== Logik
 Damit meinen wir, wie die Anwendung auf die Events des Benutzers reagiert, d. h. was passiert, wenn der Benutzer auf die eine oder andere Taste klickt, was passiert, wenn der Benutzer die ausgefüllten Daten abschickt.
@@ -260,11 +158,9 @@ Zunächst entscheidet der Entwickler über die Architektur der Anwendung. Und je
 
 Wenn es um die Logik zwischen den Komponenten geht, dann ist für jeden Event eine eigene Funktion zu erstellen, die das Verhalten der Komponente definiert. Neben der Entwicklung muss der Entwickler auch Clean Code schreiben, d.h. der Programmcode muss optimiert und für andere Entwickler leicht verständlich gemacht werden.
 
-_Mendix_ 
+_Low Code_ 
 
-The graphical notation of microflows is based on the Business Process Model and Notation (BPMN).
-Nanoflows. Most of the actions run directly on the device, so there is also a speed benefit for logic which does not need access to the server.
-Funktionen über Flows, Microflows und Datenmodelle
+Die Anwendungslogik basiert bei Low Code Plattformen auf Workflows, Microflows und Datenmodellen. Es ist möglich, seine Anwendung so mit einfachen Abläufen zusammenzustellen, wobei man auch hier die Möglichkeit hat, auf vorgefertigte Flows und Datenmodelle zuzugreifen. (https://docs.mendix.com/studio/workflows/, https://docs.mendix.com/studio/microflows/, https://docs.mendix.com/studio/work-with-data/)
 
 ==== Qualitätssicherung/Qualitätskontrolle
 
@@ -280,12 +176,10 @@ Es gibt viele verschiedene Arten von automatisierten Tests. Welches Konzept, d.h
 
 Die Entwicklung automatisierter Tests ist sehr zeitaufwändig. In der Praxis besteht die meiste Entwicklung immer zu 50 Prozent aus Entwicklungszeit und zu 50 Prozent aus der Entwicklung automatisierter Tests.
 
+_Low Code_ 
 
-_Mendix_ 
-
-alle Komponenten sind vorgetestet
-Test werden automatisch im Hintergrund durchgeführt
-Anbindung von Selenium oder JUnit möglich 
+Bei Mendix ist die Qualitätssicherung dadurch gegeben, dass alle plattforminternen Elemente vorgetestet sind. Das bedeutet, dass alle Komponenten ohne zusätzliche Tests ausgeführt werden können. Zusätzlich dazu laufen im Hintergrund für den Nutzer nicht ersichtlich, Test. Hier wird dann ausgegeben und auf der GUI direkt gekennzeichnet, wo und was der Fehler ist. 
+Das Anbinden von externen Testsystemen wie Selenium oder JUnit, wird von Mendix unterstützt. (https://www.mendix.com/blog/three-tools-to-test-your-mendix-application/)
 
 
 ==== Wiederverwendbarkeit
@@ -298,10 +192,10 @@ _Traditionelle Programmierung_
 
 Bei der Entwicklung mit React kann man einzelne UI-Komponenten erstellen, die später im Projekt verwendet werden, oder sie können einfach in ein anderes Projekt kopiert werden. Man kann sie auch leicht nach Bedarf ändern. Eine weitere Möglichkeit, entwickelte Funktionen und Komponenten zu verwenden, besteht darin, eine eigene Bibliothek dieser Komponenten zu erstellen. Diese Bibliothek kann in andere Projekte importiert werden. 
 
-_Mendix_
+_Low Code_
 
-Speicherung von eigenen Komponenten möglich
-Wiederverwendbarkeit Plattform intern
+Die Wiederverwendbarkeit bei Low Code Plattformen ist durch das Nutzen von vorgefertigten Elementen grundsätzlich gegeben. Die Speicherung und dadurch auch die Wiederverwendung von eigenen Segmenten ist je nach Plattform möglich. So kann die eigene Bibliothek kontinuierlich erweitert werden und ermöglicht auch anderen Nutzer des Teams auf diese zugreifen zu können.
+Ein Nachteil hierbei ist, dass die Wiederverwendbarkeit nur plattformintern gegeben ist. (https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#merkmale-und-vorteile-von-lowcode)
 
 
 ==== Zeitaufwand
@@ -327,17 +221,31 @@ Die Aufsetzung des Projekts dauerte etwa 3,5 Stunden. Wir mussten bestimmte Bibl
 
 Die Entwicklung hat am meisten Zeit in Anspruch genommen. Dies ist jedoch nicht der endgültige Zeitaufwand, da einige kleine Dinge nicht fertiggestellt wurden.
 
-_Mendix_
+_Low Code_
 
+Wie aus der. Grafik erkennbar ist, war der Zeitaufwand um einiges kürzer. Hierbei ist jedoch die Verteilung der Zeiten komplett anders als bei der traditionellen Programmierung. Die erste Einarbeitung und Kennenlernen der Plattform ist zeitaufwendig. Wenn man es aber mit der Erlernen einer neuen Programmiersprache vergleichen würde, ist der Zeitaufwand jedoch relativ gering. Das Aufsetzen eines neuen Projektes funktioniert hier über einen Klick voraus gesetzt man möchte ein neues leeres Projekt aufsetzten, da die Auswahl einer Vorlage wahrscheinlich ein bisschen mehr Zeit in Anspruch nehmen würde. Die Entwicklungszeit ist bei Low Code direkt abhängig von dem Verhältnis selbst geschriebenen und vorgefertigten Codes.
 
 === Literaturvergleich
 
+Zur Erweiterung der im vorangegangenen Abschnitt dargestellten Ergebnisse wurde nach vergleichbaren Experimenten in der wissenschaftlichen Literatur gesucht. Dabei fiel das Experiment von Calçada und Bernardino [QUELLE] auf, dessen Ergebnisse in Abbildung [ABBNR] zu sehen sind. Dieses Experiment befasste sich mit der Programmierung von zwei simplen Anwendungen in verschiedenen Entwicklungsumgebungen und dem Vergleich verschiedener Metriken bezüglich der Entwicklung. Es wurden je ein einfacher Taschenrechner sowie ein Texteditor entwickelt. Bei den verwendeten Umgebungen handelte es sich um Java Swing, die Low-Code Umgebung Neptune9 und JavaScript.
+
+Zusätzlich zu der von uns betrachteten Entwicklungszeit wurden in diesem Experiment die Anzahl an selbst geschriebenen Codezeilen, die Zeiten zum Laden der graphischen Oberfläche sowie die Zeiten zum Ausführen verschiedener anwendungsspezifischer Operationen erfasst. Die genauen Anforderungen und untersuchten Operationen sind in [QUELLE] aufgelistet. In Abbildung [ABBNR] sind jeweils die durchschnittlichen Werte zwischen den beiden Anwendungen erfasst. Beim Vergleich dieser Ergebnisse mit den von uns gesammelten Daten ergibt sich zunächst eine Ähnlichkeit bezüglich der Entwicklungszeiten. In beiden Versuchen liegt bei der Low-Code Anwendung die niedrigste Entwicklungszeit vor, wobei der Unterschied zwischen Low-Code und JavaScript im Experiment von Calçada und Bernardino wesentlich geringer ist als in unserem Beispiel.
+
+.Bildunterschrift, [QUELLE]
+image::literature_comparison_table.png[]
+
+Zudem ist die hohe Diskrepanz zwischen den beim Aufbauen der GUI ermittelten Zeiten bemerkenswert, da diese auf einen eventuellen Tradeoff von Performance zugunsten von Entwicklungszeit bei der Low-Code Entwicklung hinweist. Allerdings ist hierbei sowohl auf die geringe Stichprobenmenge als auch auf die fehlenden Vergleiche zwischen verschiedenen Low-Code Plattformen hinzuweisen, weshalb diese Ergebnisse nicht belastbar sind, um allgemeine  Schlussfolgerungen zu Low-Code zu ziehen.
+
+Vergleiche dieser Art sind in der Literatur allerdings selten, da sie zum einen abhängig von den Vorkenntnissen der jeweils beteiligten Entwickler unterschiedlich ausfallen. Zum anderen sind diese Experimente zeitaufwendig und geben auf Grund der schwer definierbaren Rahmenbedingungen nur wenig objektive Rückschlüsse auf die verwendeten Technologien.
+
+Quelle: Calçada, André, and Jorge Bernardino. “Experimental Evaluation of Low Code Development, Java Swing and JavaScript Programming.” International	Database Engineered Applications Symposium, September 22, 2022. https://doi.org/10.1145/3548785.3548792.
+
+
 === Grenzen von Low Code
 
-vorgebaute Komponenten / Widgets nur für häufig auftretende / wenig innovative Anwendungsfälle verfügbar
-Für neue Funktionalitäten muss Low Code mit selbst geschriebenem Code unterstützt werden → je nach Innovationsgrad lohnt sich der Einsatz von Low Code nicht mehr?
-dazu bei neueren Plattformen die Möglichkeit, selbst geschriebenen Code hinzuzufügen
-Toolabhängigkeit. Die Anwendung selbest als auch die Datenstruktur ist von einem Tollabhängig. Vorteile mann muss keine vorinstalationen treffen. Nachteil man ist an ein tool gebunden. Möchte man auf ein anderes System umsteigen, ist dies mit viel aufwand verbunden,
+Es ist nicht möglich, klare Grenzen von Low Code zu definieren. Die Grenzen beschreiben hier bei eher den Aufwand und Nutzen.
+Die Nutzung von Low Code Plattformen eignet sich vor allem für nicht innovative Anwendungen, wie zum Beispiel Zugriff auf verschiedene APIs oder das Einrichten einer simplen Website. Neue Funktionen müssen immer mit eigenen Code unterstützt werden, somit muss man zu Beginn des Projektes eine Einschätzung treffen, ob man mit Low Code schneller sein würde, weil man zum Teil vorgefertigte Komponenten nutzen kann oder ob es sinnvoller ist, ein traditionelles Programm aufzusetzen.
+Außerdem sind bei jeder Plattform die Grenzen verschieden, da oftmals Low Code Plattformen auf verschiedene Funktionalitäten spezialisiert sind. Deswegen ist die Wahl des richtigen Systems umso wichtiger, da ein Wechsel auf eine andere Plattform oftmals nicht möglich ist, weil man an die Plattform gebunden ist. (https://www.mendix.com/de/ein-leitfaden-zur-app-entwicklung-mit-low-code/#eine-lowcodeplattform-auswählen)
 
 
 == Fazit
@@ -350,6 +258,32 @@ Große Abhängigkeit von Tools
 
 == Ausblick
 
-=== Garter Hype Cycle
+Abschließend wollen wir einen Ausblick zur zukünftigen Entwicklung von Low-Code Entwicklungsplattformen geben. Hierzu wenden wir uns an den im August 2022 veröffentlichten Cloud Platform Technology Hype-Cycle der IT-Beratungsfirma Gartner [QUELLE]. Dabei handelt es sich um eine Visualisierung der Erwartungen von potentiellen Nutzern und Medien bezüglich einer Technologie in den frühen Phasen ihres Bestehens. Wie in Abbildung [ABBNR] sichtbar ist, befinden sich Low-Code Entwicklungsplattformen, verzeichnet als LCAP (Low-Code Application Platforms), am Ende des Hype Cycles. 
 
+.Bildunterschrift, [QUELLE1]
+image::cloud_hc_2022.jpg[]
+
+Diese Positionierung bedeutet, dass Low-Code Entwicklungsplattformen nach Einschätzung von Gartner, in weniger als 2 Jahren, also spätestens im Sommer 2024, das Plateau der Produktivität erreichen. Technologien, welche diese Phase in ihrer Entwicklung erreicht haben, sind laut Gartner [QUELLE2] praxiserprobt genug, um vom Mainstream adoptiert zu werden. Zudem sind Kriterien zur Auswahl von unterschiedlichen Anbietern klar definiert [Quelle2]. 
+
+Quelle1: https://www.gartner.com/en/newsroom/press-releases/2022-08-04-cloud-platform-hc-press-release
+Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
+
+[bibloigraphy]
 == Literaturverzeichnis
+
+* [1] Chaos Report 2015, Standish Group - https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf
+* [2] Lehner, F., (2021). Die Softwarewartungskosten als Managementproblem im Wandel der Zeit – Ergebnisse einer Metaanalyse. In: Helferich, A., Henzel, R., Herzwurm, G. & Mikusz, M. (Hrsg.), Software Management 2021. Bonn: Gesellschaft für Informatik e.V.. (S. 73-89). DOI: 10.18420/swm2021-006
+* [3] https://medien.umbreitkatalog.de/pdfzentrale/978/344/640/Leseprobe_l_9783446405585.pdf
+* [4]https://www.edv-buchversand.de/productinfo.php?replace=false&cnt=productinfo&mode=2&type=2&id=dp-524&index=2&nr=0&window=edvbv&art=Leseprobe&preload=false
+* [5] https://www.itwissen.info/Abstraktion-abstraction-OOP.html
+* [6] Model-Driven Software Development,Stephen W. Liddle
+* [7] https://www.pressebox.de/pressemitteilung/alfabet-ag/Studie-belegt-In-70-der-Unternehmen-scheitern-IT-Projekte-wegen-unterschiedlicher-Planungssichten/boxid/596894
+* [8] http://eddi.informatik.uni-bremen.de/SUSE/pdfs/Diplomarbeit_Radek_Eckert.pdf
+* [9] https://swa.informatik.uni-hamburg.de/files/abschlussarbeiten/Diplomarbeit%20Michael%20Wilk%20final.pdf
+* [10] https://silo.tips/download/seminararbeit-modellgetriebene-softwareentwicklung-anhand-des-oaw-frameworks
+* [11] https://wiki.eclipse.org/images/8/8d/Using_MDD_Eclipse_Technology_to_implement_SOA.pdf
+* [12] https://link.springer.com/content/pdf/10.1007/978-3-662-61374-0.pdf?pdf=button
+* [13] Raquel Sanchis, Óscar García-Perales , Francisco Fraile und Raul Poler(2019): Low-Code as Enabler of Digital Transformation in Manufacturing Industry
+
+
+
