@@ -1,25 +1,27 @@
 = Low-Code Ansatz zur Anwendungsprogrammierung
-Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt 
+Elisabeth Lorenz, Erik Semmler, Galiia Shaekhova, Luisa Schnebelt, HTWK Leipzig (WS22/23 MIM Modul Software Engineering, Prof. Andreas Both)
 :toc:
 :toc-title: Gliederung
 
-== Motivation
+== Einleitung
 
-Statistik der unbesetzten stellen von It-Kräften in deutschland. Die Anzahl steigt stetig. Es wird erkennbar, dass im jahr 2019 die zahl enorm Anstieg, dies hat hauptsächlich die Coronapandemie zu Schulden.
+In der Softwareentwicklung wird ständig nach alternativen Entwicklungsansätzen und Prozessen gesucht, welche dabei helfen sollen, das Arbeiten effizienter und erfolgreicher gestalten. Ein Grund dafür ist die Anzahl von nicht vollständig erfolgreich abgeschlossenen IT-Projekten. Dem Chaos Report der Standish Group aus dem Jahr 2015 zufolge haben "52% der IT-Vorhaben [...] zumindest teilweise nicht die Wünsche und Anforderungen der Auftraggeber erfüllt. 19% der Projekte sind ein Totalausfall und wurden abgebrochen. Nur 29% der untersuchten Projekte waren total erfolgreich." [QUELLE] Diese Ergebnisse sind das Resultat von vielen unterschiedlichen Faktoren, welche bei der Softwareentwicklung eine Rolle spielen. Durch Untersuchungen wie diese wird deutlich, dass die in der Softwareentwicklung eingesetzten Prozesse noch Verbesserungsbedarf aufweisen. 
 
+https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf
 
-Hintergedanke von Low-Code: Menschen mit wenige Programmierkenntnisse können Anwendungen entwickeln.
-Boilerplatecode → Abnahmen von trivialen aufgaben, dinge die man immer machen musst
-Missverständnisse bei den Anforderungen 
-Wartungskosten
+Es ist im Rahmen dieser Arbeit nicht möglich, auf die Vielzahl von Faktoren, welche den Ausgang eines Softwareprojekts beeinflussen können, einzugehen. Dementsprechend werden im Weiteren nur ausgewählte Faktoren betrachtet. Im Verlauf dieser Arbeit wird auf die folgenden Problempunkte der Softwareentwicklung sowie die zugehörigen, von Low-Code Entwicklungsplattformen verfolgten, Lösungsansätze eingegangen:
 
-Ergebnis Metaanalyse von 2020: Verhältnis von Softwarewartungs- und Entwicklungskosten, Mittelwerte aus einschlägigen wissenschaftlichen Arbeiten
-Reduktion ermöglicht durch:
-???
-Softwareentwicklern werden “triviale” Aufgaben abgenommen
-dadurch entsteht mehr Zeit für Aufgaben wie Problemlösung oder Algorithmenentwicklung (wofür Devs ja ausgebildet werden)
-Boilerplate Code wird für templates mit generiert, Benutzeroberfläche kann 
-It- Kräfte an Mangel 
+* geringe Einbeziehung der Nutzer in den Entwicklungsprozess
+
+Dies führt potentiell zu ungenauer Anforderungsspezifikation, beziehungsweise sich im Laufe des Projekts ändernden Anforderungen oder zu geringer Ressourcenallokation auf Grund von unterschätztem Arbeitsaufwand.
+
+* hoher Arbeitsaufwand für Entwickler
+
+* hohe Wartungskosten für Software
+
+Auf Grund der hohen Komplexität von Anwendungen ist Wartung aufwändig und erfordert geschultes Personal, wodurch der Ressourcenaufwand für die Softwarewartung steigt. Die Kosten für Softwarewartung bewegen sich seit den 1970er Jahren, wie von Lehner [QUELLE2] gezeigt, zwischen 50% und 90% anteilig zu den Entwicklungskosten. Eine Reduktion der Wartungskosten für Software würde also erhebliche Ressourcen freisetzen. 
+
+ Lehner, F., (2021). Die Softwarewartungskosten als Managementproblem im Wandel der Zeit – Ergebnisse einer Metaanalyse. In: Helferich, A., Henzel, R., Herzwurm, G. & Mikusz, M. (Hrsg.), Software Management 2021. Bonn: Gesellschaft für Informatik e.V.. (S. 73-89). DOI: 10.18420/swm2021-006 
 
 == Generationen von Programmiersprachen
 
@@ -235,6 +237,20 @@ Wie aus der. Grafik erkennbar ist, war der Zeitaufwand um einiges kürzer. Hierb
 
 === Literaturvergleich
 
+Zur Erweiterung der im vorangegangenen Abschnitt dargestellten Ergebnisse wurde nach vergleichbaren Experimenten in der wissenschaftlichen Literatur gesucht. Dabei fiel das Experiment von Calçada und Bernardino [QUELLE] auf, dessen Ergebnisse in Abbildung [ABBNR] zu sehen sind. Dieses Experiment befasste sich mit der Programmierung von zwei simplen Anwendungen in verschiedenen Entwicklungsumgebungen und dem Vergleich verschiedener Metriken bezüglich der Entwicklung. Es wurden je ein einfacher Taschenrechner sowie ein Texteditor entwickelt. Bei den verwendeten Umgebungen handelte es sich um Java Swing, die Low-Code Umgebung Neptune9 und JavaScript.
+
+Zusätzlich zu der von uns betrachteten Entwicklungszeit wurden in diesem Experiment die Anzahl an selbst geschriebenen Codezeilen, die Zeiten zum Laden der graphischen Oberfläche sowie die Zeiten zum Ausführen verschiedener anwendungsspezifischer Operationen erfasst. Die genauen Anforderungen und untersuchten Operationen sind in [QUELLE] aufgelistet. In Abbildung [ABBNR] sind jeweils die durchschnittlichen Werte zwischen den beiden Anwendungen erfasst. Beim Vergleich dieser Ergebnisse mit den von uns gesammelten Daten ergibt sich zunächst eine Ähnlichkeit bezüglich der Entwicklungszeiten. In beiden Versuchen liegt bei der Low-Code Anwendung die niedrigste Entwicklungszeit vor, wobei der Unterschied zwischen Low-Code und JavaScript im Experiment von Calçada und Bernardino wesentlich geringer ist als in unserem Beispiel.
+
+.Bildunterschrift, [QUELLE]
+image::literature_comparison_table.png[]
+
+Zudem ist die hohe Diskrepanz zwischen den beim Aufbauen der GUI ermittelten Zeiten bemerkenswert, da diese auf einen eventuellen Tradeoff von Performance zugunsten von Entwicklungszeit bei der Low-Code Entwicklung hinweist. Allerdings ist hierbei sowohl auf die geringe Stichprobenmenge als auch auf die fehlenden Vergleiche zwischen verschiedenen Low-Code Plattformen hinzuweisen, weshalb diese Ergebnisse nicht belastbar sind, um allgemeine  Schlussfolgerungen zu Low-Code zu ziehen.
+
+Vergleiche dieser Art sind in der Literatur allerdings selten, da sie zum einen abhängig von den Vorkenntnissen der jeweils beteiligten Entwickler unterschiedlich ausfallen. Zum anderen sind diese Experimente zeitaufwendig und geben auf Grund der schwer definierbaren Rahmenbedingungen nur wenig objektive Rückschlüsse auf die verwendeten Technologien.
+
+Quelle: Calçada, André, and Jorge Bernardino. “Experimental Evaluation of Low Code Development, Java Swing and JavaScript Programming.” International	Database Engineered Applications Symposium, September 22, 2022. https://doi.org/10.1145/3548785.3548792.
+
+
 === Grenzen von Low Code
 
 Es ist nicht möglich, klare Grenzen von Low Code zu definieren. Die Grenzen beschreiben hier bei eher den Aufwand und Nutzen.
@@ -252,6 +268,14 @@ Große Abhängigkeit von Tools
 
 == Ausblick
 
-=== Garter Hype Cycle
+Abschließend wollen wir einen Ausblick zur zukünftigen Entwicklung von Low-Code Entwicklungsplattformen geben. Hierzu wenden wir uns an den im August 2022 veröffentlichten Cloud Platform Technology Hype-Cycle der IT-Beratungsfirma Gartner [QUELLE]. Dabei handelt es sich um eine Visualisierung der Erwartungen von potentiellen Nutzern und Medien bezüglich einer Technologie in den frühen Phasen ihres Bestehens. Wie in Abbildung [ABBNR] sichtbar ist, befinden sich Low-Code Entwicklungsplattformen, verzeichnet als LCAP (Low-Code Application Platforms), am Ende des Hype Cycles. 
+
+.Bildunterschrift, [QUELLE1]
+image::cloud_hc_2022.jpg[]
+
+Diese Positionierung bedeutet, dass Low-Code Entwicklungsplattformen nach Einschätzung von Gartner, in weniger als 2 Jahren, also spätestens im Sommer 2024, das Plateau der Produktivität erreichen. Technologien, welche diese Phase in ihrer Entwicklung erreicht haben, sind laut Gartner [QUELLE2] praxiserprobt genug, um vom Mainstream adoptiert zu werden. Zudem sind Kriterien zur Auswahl von unterschiedlichen Anbietern klar definiert [Quelle2]. 
+
+Quelle1: https://www.gartner.com/en/newsroom/press-releases/2022-08-04-cloud-platform-hc-press-release
+Quelle2: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
 
 == Literaturverzeichnis

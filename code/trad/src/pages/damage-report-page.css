@@ -1,0 +1,144 @@
+.app {
+    background-color: #b1b1b1;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 4vw 44vw 4vw 44vw 4vw;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.damage-image {
+    cursor: pointer;
+}
+
+.damage-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #0cabf9;
+    color: white;
+    cursor: pointer;
+}
+
+.detail-list-wrapper {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    grid-column: 4 / 5;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.detail-item {
+    display: grid;
+    grid-template-columns: 70% 20% 10%;
+    margin-top: 5px;
+    font-size: smaller;
+}
+
+.list-divider {
+    grid-column: span 3;
+}
+
+.detail-head {
+    grid-column: 1;
+}
+
+.compact-details {
+    grid-column: 2;
+    border: 0px;
+    background-color: transparent;
+}
+
+.compact-icon {
+    height: 25px;
+    width: 25px;
+}
+
+.delete-damage {
+    grid-column: 3;
+    border: 0px;
+    background-color: transparent;
+}
+
+.delete-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.hideable-content {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.detail-pic {
+    grid-column: 1;
+}
+
+.detail-href {
+    grid-column: 5;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.detail-notes {
+    grid-column: 1 / 3;
+}
+
+.notes-switch {
+    grid-column: 5;
+    justify-self: center;
+}
+
+.note-block {
+    display: grid;
+    grid-column: span 5;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.note-label {
+    grid-column: 1;
+    align-self: center;
+    font-weight: 600;
+}
+
+.notes-input {
+    grid-column: 2 / 6;
+    height: 80px;
+}
+
+.popup-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.popup-bg {
+    position:fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.file-popup {
+    position: absolute;
+    top: 25vh;
+    left: 20vw;
+    width: 60vw;
+    height: 50vh;
+    background-color: white;
+}
